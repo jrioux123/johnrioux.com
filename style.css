@@ -66,13 +66,6 @@ body {
   font-weight: 500;
 }
 
-.selected {
-  opacity: 1;
-  border-bottom: 2px solid;
-  padding-bottom: 18px;
-  color: #db4437;
-}
-
 .menuitem:hover {
   opacity: 1;
 }
