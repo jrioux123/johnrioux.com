@@ -16,24 +16,26 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
  rel="stylesheet" />
 
+<script src="w3data.js"></script>
+
 </head>
 
 <style>
-.moviestab {   <!--See the navbar html to find the classes-->
-  opacity: 1;
+.moviestab {
+  opacity: 1 !important;
   border-bottom: 2px solid;
-  padding-bottom: 18px;
-  color: #db4437;
+  padding-bottom: 18px !important;
+  color: #db4437 !important;
 }
 </style>
 
 <body>
 
-<div class="navbar">
-<iframe src="navbar.html" width="100%" height="104px" frameBorder="0" scrolling="no"> 
-    Your browser isn't supported. Try upgrading to a new browser. 
-</iframe>
-</div>
+<div w3-include-html="navbar.html"></div> 
+
+<script>
+w3IncludeHTML();
+</script>
 
 <div style="height:120px;"></div> <!--pushes content below navbar -->
 

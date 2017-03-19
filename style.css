@@ -70,13 +70,6 @@ body {
   opacity: 1;
 }
 
-.moviestab {
-  border-bottom: 2px solid;
-  opacity: 1;
-  padding-bottom: 18px;
-  color: #db4437;
-}
-
 .article {
     font-size: 14px;
     margin: auto;
