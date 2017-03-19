@@ -83,7 +83,8 @@ body {
     margin-bottom: 8px;
     min-width: 280px;
     max-width: 760px;
-    word-wrap: break-word;    
+    word-wrap: break-word;   
+    background color: red; 
 }
 
 .card {
