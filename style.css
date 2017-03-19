@@ -70,7 +70,7 @@ body {
   opacity: 1;
 }
 
-menuitem.moviestab {   <!--See the navbar html to find the classes-->
+.menuitem.moviestab {   <!--See the navbar html to find the classes-->
   opacity: 1;
   border-bottom: 2px solid;
   padding-bottom: 18px;
