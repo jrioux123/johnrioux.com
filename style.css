@@ -70,9 +70,9 @@ body {
   opacity: 1;
 }
 
-.moviestab {   <!--See the navbar html to find the classes-->
-  opacity: 1;
+.moviestab {
   border-bottom: 2px solid;
+  opacity: 1;
   padding-bottom: 18px;
   color: #db4437;
 }
