@@ -16,6 +16,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
  rel="stylesheet" />
 
+<script src="w3data.js"></script>
+
 </head>
 
 <style>
@@ -29,7 +31,11 @@
 
 <body>
 
-<?php include "navbar.html"; ?>
+<div w3-include-html="navbar.html"></div> 
+
+<script>
+w3IncludeHTML();
+</script>
 
 <div style="height:120px;"></div> <!--pushes content below navbar -->
 
