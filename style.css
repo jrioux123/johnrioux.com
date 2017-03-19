@@ -77,10 +77,19 @@ body {
   opacity: 1;
 }
 
+.article {
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 8px;
+    min-width: 280px;
+    max-width: 760px;
+    word-wrap: break-word;    
+}
+
 .card {
 
     font-size: 14px;
-	margin: auto;
+    margin: auto;
     margin-bottom: 8px;
     min-width: 280px;
     max-width: 530px;
@@ -104,7 +113,6 @@ p {
     padding: 16px;
     margin: 0px;
 }
-
 
 .cardtitle {
     font-size: 24px;
