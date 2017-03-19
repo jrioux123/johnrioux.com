@@ -70,7 +70,7 @@ body {
   opacity: 1;
 }
 
-.menuitem.moviestab {   <!--See the navbar html to find the classes-->
+.moviestab {   <!--See the navbar html to find the classes-->
   opacity: 1;
   border-bottom: 2px solid;
   padding-bottom: 18px;
@@ -83,8 +83,7 @@ body {
     margin-bottom: 8px;
     min-width: 280px;
     max-width: 760px;
-    word-wrap: break-word;   
-    background color: red; 
+    word-wrap: break-word;
 }
 
 .card {
