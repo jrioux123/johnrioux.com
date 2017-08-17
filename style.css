@@ -68,6 +68,7 @@ body {
 .topimage {
 	width: 100%;
 	height:auto;
+	top: -56px;
 }
 
 .tabsbar {
