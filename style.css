@@ -99,6 +99,7 @@ body {
 
 .aboveimage {
 	position: relative;
+	background-color: #fff;
 	z-index: 99;
 	padding-bottom: 100%;
 }
