@@ -97,6 +97,12 @@ body {
   opacity: 1;
 }
 
+.aboveimage {
+	position: relative;
+	z-index: 99;
+	padding-bottom: 100%;
+}
+
 .normaltext {
     font-size: 14px;
     margin: auto;
