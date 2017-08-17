@@ -50,6 +50,8 @@ body {
   padding-top: 16px;
   padding-left: 16px;
   color: #fff;
+  position: fixed;
+  z-index: 101;
 }
 
 .topshadow {
