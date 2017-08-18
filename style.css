@@ -56,7 +56,6 @@ body {
 }
 
 .dropdown {
-    display: inline-block;
 }
 .dropdown-content {
     display: none;
