@@ -147,7 +147,7 @@ body {
 	position: relative;
 	background-color: #fff;
 	z-index: 105;
-	padding-bottom: 100%;
+	padding-bottom: 66vh;
 }
 
 .normaltext {
