@@ -60,12 +60,12 @@ body {
 .dropdown-content {
     display: none;
     margin-left:100%;
-    left:-176px;
+    left:-120px;
     position: fixed;
     padding-top:8px;
     padding-bottom:8px;
     background-color: #fff;
-    min-width: 168px;
+    min-width: 112px;
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
     border-radius: 2px;
     margin-right: 8px;
