@@ -55,12 +55,15 @@ body {
   z-index: 101;
 }
 
+a:-webkit-any-link{
+color:#000 !important;
+}
+
 .dropbtn {
   float:right;
   padding-top: 16px;
   padding-right: 16px;
   padding-left: 16px;
-  color: #000 !important;
   opacity: 0.7;
   border: none;
   background: none;
