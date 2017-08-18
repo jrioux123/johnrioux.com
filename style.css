@@ -76,8 +76,8 @@ color:#000;
 }
 .dropdown-content {
     display: none;
-    /* margin-left:100%; */
-    /* left:-176px; */
+    margin-left:100%;
+    left:-176px;
     position: fixed;
     padding-top:8px;
     padding-bottom:8px;
