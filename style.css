@@ -59,6 +59,7 @@ body {
 }
 .dropdown-content {
     display: none;
+    float: right;
     position: absolute;
     padding-top:8px;
     padding-bottom:8px;
