@@ -62,6 +62,8 @@ body {
   padding-left: 16px;
   color: #000;
   opacity: 0.7;
+  border: none;
+  background: none;
 }
 .dropbtn:hover {
   opacity: 1;
