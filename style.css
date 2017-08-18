@@ -136,7 +136,7 @@ a {
 	float: left;
 	width: 105px;
 	height: auto;
-	top: -16px;
+	margin-top: -16px;
 }
 
 .tabsbar {
