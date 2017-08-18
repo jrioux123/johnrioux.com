@@ -55,6 +55,30 @@ body {
   z-index: 101;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color: #fff;
+    min-width: 168px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
+    border-radius: 2px;
+    font-size:16px;
+    z-index: 100;
+}
+.dropdown-content a {
+    padding: 20px 16px;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #efefef;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
 .topshadow {
   content: "";
   position: fixed;
