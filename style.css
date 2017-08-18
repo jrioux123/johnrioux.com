@@ -140,6 +140,11 @@ a {
 	z-index: 90;
 }
 
+.thumbnail {
+	margin-right: 16px;
+	
+}
+
 .tabsbar {
   width: 100%;
   height: 48px;
