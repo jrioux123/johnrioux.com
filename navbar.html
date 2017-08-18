@@ -25,33 +25,33 @@
 <div class="titlebar">
   <img class="jrcircle" src="https://1.bp.blogspot.com/-Z3bYY_pT588/VsPka9a2NvI/AAAAAAAALXk/WWHgITzWpNQ/s1600/John%2BRioux%2BCircle%2B%2528no%2Bmargin%2529.png">
   <div class="title">John Rioux</div>
-  <div class="dropdown"> 
+<div class="dropdown"> 
     <button onclick="myFunction()" class="dropbtn material-icons">more_vert</button>
     <div id="myDropdown" class="dropdown-content">
        <a href="movies.html">About me</a>
        <a href="http://johnrcomics.blogspot.com/">My old site</a>
     </div>
   </div>
+
 <script>
- /* When the user clicks on the button, 
- toggle between hiding and showing the dropdown content */
- function myFunction() {
-     document.getElementById("myDropdown").classList.toggle("show");
- }
- // Close the dropdown if the user clicks outside of it
- window.onclick = function(event) {
-   if (!event.target.matches('.dropbtn')) {
- 
-     var dropdowns = document.getElementsByClassName("dropdown-content");
-     var i;
-     for (i = 0; i < dropdowns.length; i++) {
-       var openDropdown = dropdowns[i];
-       if (openDropdown.classList.contains('show')) {
-         openDropdown.classList.remove('show');
-       }
-     }
-   }
- }
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
  
 <!-- other social icons below --> 
