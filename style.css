@@ -124,7 +124,7 @@ body {
 .aboveimage {
 	position: relative;
 	background-color: #fff;
-	z-index: 99;
+	z-index: 105;
 	padding-bottom: 100%;
 }
 
