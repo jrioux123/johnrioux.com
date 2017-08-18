@@ -68,6 +68,9 @@ body {
 .dropbtn:hover {
   opacity: 1;
 }
+.dropbtn:focus {
+  outline: 0;
+}
 
 .dropdown {
 }
