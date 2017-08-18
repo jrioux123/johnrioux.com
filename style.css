@@ -59,7 +59,7 @@ body {
 }
 .dropdown-content {
     display: none;
-    margin-left:50%;
+    margin-left:100%;
     left:-176px;
     position: fixed;
     padding-top:8px;
@@ -68,13 +68,15 @@ body {
     min-width: 168px;
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
     border-radius: 2px;
-    margin: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
     font-size:16px;
     z-index: 100;
 }
 .dropdown-content a {
     padding-left: 20px;
     padding-bottom: 16px;
+    padding-top: 8px;
     display: block;
     text-decoration: none;
     color: #000;
