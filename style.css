@@ -94,8 +94,7 @@ body {
     color: #000;
 }
 .dropdown-content a:hover {background-color: #efefef;}
-
-.dropdown:hover .dropdown-content {display: block;}
+.show {display:block;}
 
 .topshadow {
   content: "";
