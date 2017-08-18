@@ -41,13 +41,6 @@ w3IncludeHTML();
 
 <div style="padding:0 8px 0 8px;"> <!-- wrapper creates an 8px minimum margin (</div> below) -->
 
-<div class="card">
-<img src="https://lh3.googleusercontent.com/DITSJ8PUZHDeY_ESZKkjBc1zE2LGC-xbJZFnLrHYaj-e0onJ0X1QQVX3AyH0ZhTu5l56Ho6u2kPx7i4M7jdOotcFK4LPlcHo68fC1YYI1LoLDFoBPYLnd3F7VWaBFPRCGveuRQgNlno3DQMqYCeAj0rZ-ZlUR5IiKl5Ga1kUbNnG3r3zbtkrkk9pzDxMe0bTNRMpZWFngnufWMu1SYx9nE2o04G8TotHrIWSRYT-aTGF2QdYXjigJv4ML-LwMoJaJ5QlMMl_ERh28JiOC1QnDyAtxO8P2b7spuJTE-R78-N5wyW8pg_95if2BSOle_ZyrSQgg5hPTYwURF708CpmM-evDKBrpq5Erl9QxBMTNy6ZTfEkIWpxgT2ZzWSYxcjfl3tvkNNw7tcBoBDnPqH3n6z6Kl9VDVAUNt1v1TQjMzVp1VzfqaPTOT_RA9BzXH1hmTJfqfCnU2SHubZKNpk6oXnu9ayNXikBKe0TF6GiJrOWSnhaacp1y5OnQywR8aaaFU7BoxSBr0dveWrwNuDBJj0SMPT9dYi1tIMC2YcNfSvmsH4TaQIMJwlBtjl5iWDnGx2muPok4xUPub6PDojaiZ430qSu0bT4E9nKOx-L0P2SBWkDcEoCFg=w2573-h1838-no">
-<div class="cardtitle">Welcome to johnrioux.net</div>
-<p>The only place to consume content created by John Rioux. Except YouTube. And a few other places. This is a brand new website full of cool things.</p>
-<a href="noheader.html" class="button buttonred">READ MORE</a>
-</div>
-
  <div class="card">
   <div class="cardtitle">Test card</div>
   <div class="dropdown">
@@ -66,7 +59,40 @@ w3IncludeHTML();
        <a href="http://johnrcomics.blogspot.com/">My old site</a>
     </div>
   </div>
+  <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
  </div>
+ 
+ 
+ /* real card below */
+ 
+ 
+<div class="card">
+<img src="https://lh3.googleusercontent.com/DITSJ8PUZHDeY_ESZKkjBc1zE2LGC-xbJZFnLrHYaj-e0onJ0X1QQVX3AyH0ZhTu5l56Ho6u2kPx7i4M7jdOotcFK4LPlcHo68fC1YYI1LoLDFoBPYLnd3F7VWaBFPRCGveuRQgNlno3DQMqYCeAj0rZ-ZlUR5IiKl5Ga1kUbNnG3r3zbtkrkk9pzDxMe0bTNRMpZWFngnufWMu1SYx9nE2o04G8TotHrIWSRYT-aTGF2QdYXjigJv4ML-LwMoJaJ5QlMMl_ERh28JiOC1QnDyAtxO8P2b7spuJTE-R78-N5wyW8pg_95if2BSOle_ZyrSQgg5hPTYwURF708CpmM-evDKBrpq5Erl9QxBMTNy6ZTfEkIWpxgT2ZzWSYxcjfl3tvkNNw7tcBoBDnPqH3n6z6Kl9VDVAUNt1v1TQjMzVp1VzfqaPTOT_RA9BzXH1hmTJfqfCnU2SHubZKNpk6oXnu9ayNXikBKe0TF6GiJrOWSnhaacp1y5OnQywR8aaaFU7BoxSBr0dveWrwNuDBJj0SMPT9dYi1tIMC2YcNfSvmsH4TaQIMJwlBtjl5iWDnGx2muPok4xUPub6PDojaiZ430qSu0bT4E9nKOx-L0P2SBWkDcEoCFg=w2573-h1838-no">
+<div class="cardtitle">Welcome to johnrioux.net</div>
+<p>The only place to consume content created by John Rioux. Except YouTube. And a few other places. This is a brand new website full of cool things.</p>
+<a href="noheader.html" class="button buttonred">READ MORE</a>
+</div>
+
+
 
 </div> <!-- End of the 8px margin wrapper-->
 
