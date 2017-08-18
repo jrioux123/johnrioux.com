@@ -131,15 +131,6 @@ a {
   z-index: 100;
 }
 
-.topimage {
-	width: 100%;
-	height:auto;
-	margin: auto; /* an attempt to center it */
-	position: fixed;
-	top: 0px;
-	z-index: 90;
-}
-
 .thumbnail {
 	margin-right: 16px;
 	float: left;
