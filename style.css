@@ -40,6 +40,16 @@ body {
 	line-height: 24px;
 }
 
+.credittitle {
+	font-size:12px;
+	color:#000;
+	padding-top:16px;
+}
+.creditnames {
+	font-size:12px;
+	color:#616161;
+}
+
 .topright {
   float:right;
   padding-top: 16px;
