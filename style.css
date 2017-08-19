@@ -20,7 +20,7 @@ body {
 .jrcircle {
   padding-left:16px;
   padding-top:16px;
-  padding-right:16px;
+  padding-right:24px;
   float:left;
   width:32px;
   height:auto;
@@ -29,7 +29,6 @@ body {
 .title {
   font-size: 20px;
   float:left;
-  padding-left: 8px;
   padding-top: 20px;
   color: #000;
   font-weight: 500;
