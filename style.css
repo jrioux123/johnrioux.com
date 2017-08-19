@@ -189,7 +189,6 @@ a {
 .normaltext {
     font-size: 16px;
     margin: auto;
-    margin-bottom: 8px;
     min-width: 280px;
     max-width: 760px;
     word-wrap: break-word;
