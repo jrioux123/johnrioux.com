@@ -36,6 +36,8 @@ body {
 .subtitle {
 	font-size: 14px;
 	font-weight: 400;
+	color: #616161;
+	line-height: 36px;
 }
 
 .topright {
