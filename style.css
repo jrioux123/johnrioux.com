@@ -135,8 +135,6 @@ a {
   positon:fixed;
   top: 0px;
   min-height: 40vh;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .thumbnail {
