@@ -50,6 +50,10 @@ body {
 	color:#616161;
 	line-height: 16px;
 }
+.textcolumn {
+	float: left;
+	width: 348px;
+}
 
 .topright {
   float:right;
