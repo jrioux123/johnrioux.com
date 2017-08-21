@@ -294,7 +294,7 @@ p {
      left: 0;
      top: 0;
      width: 100%; /* Full width */
-     height: calc(100% + 56px)
+     height: calc(100% + 56px);
      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  }
 
