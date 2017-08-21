@@ -74,7 +74,7 @@ body {
   padding-left: 16px;
   color: #fff;
   position: fixed;
-  z-index: 101 !important;
+  z-index: 101;
 }
 
 .dropbtn {
