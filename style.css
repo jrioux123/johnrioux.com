@@ -215,7 +215,6 @@ a {
     min-width: 280px;
     max-width: 760px;
     word-wrap: break-word;
-	overflow: auto;
 }
 
 .bottomline {
