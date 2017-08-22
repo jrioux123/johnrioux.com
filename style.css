@@ -313,7 +313,7 @@ p {
      top:0;
      left:0;
      right:0;
-     padding-bottom: 56.25%;
+     padding-bottom: calc((100% - 48px) * .5625);
      max-width: 1056px;
      max-height: 594px;
 }
