@@ -102,7 +102,7 @@ body {
     font-size:16px;
     z-index: 100;
 }
-.dropdown-content a {
+.moremenu-content a {
     padding-left: 16px;
     padding-bottom: 16px;
     padding-top: 16px;
@@ -110,8 +110,16 @@ body {
     text-decoration: none;
     color: #000;
 }
-.dropdown-content a:hover {background-color: #efefef;}
-.show {display:block;}
+.dropdown-content a:hover {
+	background-color: #efefef;
+}
+.show {
+	display:block !important;
+}
+
+.dropdown-content .title {
+    padding-left: 16px;
+}
 
 .sharedialogue-content {
     display: none;
@@ -128,6 +136,14 @@ body {
     margin-top: 8px;
     font-size:16px;
     z-index: 100;
+}
+.sharedialogue-content a {
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: block;
+    text-decoration: none;
+    color: #000;
 }
 
 a {
