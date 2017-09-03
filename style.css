@@ -86,7 +86,7 @@ body {
 .dropbtn:focus {
   outline: 0;
 }
-.dropdown-content {
+.moremenu-content {
     display: none;
     margin-left:100%;
     left:-176px;
