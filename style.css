@@ -113,9 +113,6 @@ body {
 .dropdown-content a:hover {
 	background-color: #efefef;
 }
-.show {
-	display:block !important;
-}
 
 .sharedialogue-content {
     display: none;
@@ -149,6 +146,10 @@ body {
     display: block;
     text-decoration: none;
     color: #000;
+}
+
+.show {
+	display:block !important;
 }
 
 a {
