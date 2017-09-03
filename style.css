@@ -147,6 +147,11 @@ body {
     text-decoration: none;
     color: #000;
 }
+.sharedialogue-content img {
+  float:left;
+  width:40px;
+  height:auto;	
+}
 
 .show {
 	display:block !important;
