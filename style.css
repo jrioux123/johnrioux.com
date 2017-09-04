@@ -110,7 +110,7 @@ body {
     text-decoration: none;
     color: #000;
 }
-.dropdown-content a:hover {
+.moremenu-content a:hover {
 	background-color: #efefef;
 }
 
@@ -146,6 +146,9 @@ body {
     display: block;
     text-decoration: none;
     color: #000;
+}
+.sharedialogue-content a:hover {
+	background-color: #e1e1e1;
 }
 .sharedialogue-content img {
   float:left;
