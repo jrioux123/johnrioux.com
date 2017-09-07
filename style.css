@@ -77,7 +77,7 @@ body {
   z-index: 101;
 }
 
-.dropbtn {
+button {
   border: none;
   background: none;
   cursor: pointer;
