@@ -18,3 +18,19 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+// Create shade onclick
+function shadeappear() {
+    document.getElementById("shadeID").classList.toggle("show");
+}
+
+// Kill the shade when it appears
+function shadekill() {
+    var x = document.getElementById('shadeID');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
