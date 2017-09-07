@@ -19,18 +19,24 @@ window.onclick = function(event) {
   }
 }
 
+// Dialog and shade:
 
-// Create shade onclick
-function shadeappear() {
-    document.getElementById("shadeID").classList.toggle("show");
+function shadeCreate() {
+    var x = document.getElementById('shadeID');
+    x.style.display = 'block';
 }
 
-// Kill the shade when it appears
-function shadekill() {
+function shadeKill() {
     var x = document.getElementById('shadeID');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
+    x.style.display = 'none';
+}
+
+function dialogCreate() {
+    var x = document.getElementById('dialogID')
+    x.style.display = 'block';
+}
+
+function dialogKill() {
+    var x = document.getElementById('dialogID');
+    x.style.display = 'none';
 }
