@@ -2,7 +2,23 @@
 <html>
 <body>
 
-<a id="tweetID"></a>
+<div style="height:52px;" class="normaltext bottomline">
+    <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
+</div>
+
+<button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+
+<div id="dialogID" class="dropdown-content sharedialogue-content">
+       <div class="title">Share via</div>
+       <a id="tweetID">
+         <img src="http://www.johnrioux.net/images/social/Twitter_Circle.png">
+           <div style="padding-top:10px;">Twitter</div>
+       </a>
+       <a href="#facebook">
+         <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
+           <div style="padding-top:10px;">Facebook</div>
+       </a>
+</div> 
 
 <script>
 document.getElementById("tweetID").innerHTML = 
