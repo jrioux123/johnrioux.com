@@ -54,10 +54,15 @@ w3IncludeHTML();
     <div class="subtitle">September 1, 2017</div>
 </div>
  
+  <!-- Share button below -->
+ 
 <div style="height:52px;" class="normaltext bottomline">
-    <div class="dropdown noSelect"> 
-    <button onclick="myFunction()" class="dropbtn button buttonraised">SHARE</button>
-    <div id="myDropdown" class="dropdown-content sharedialogue-content">
+    <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
+</div>
+
+<button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+
+<div id="dialogID" class="dropdown-content sharedialogue-content">
        <div class="title">Share via</div>
        <a href="#twitter">
          <img src="http://www.johnrioux.net/images/social/Twitter_Circle.png">
@@ -67,9 +72,9 @@ w3IncludeHTML();
          <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
            <div style="padding-top:8px;padding-bottom:8px;">Facebook</div>
        </a>
-    </div>
-  </div>
 </div>
+ 
+ <!-- End of share button-->
  
 <div class="normaltext bottomline">
    <p>Welcome, reader, to the all-new johnrioux.net, the only site on the internet to enjoy content created by John Rioux. Except for YouTube. And, like, deviantART, I think.</p>
