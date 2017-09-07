@@ -154,6 +154,7 @@ button:focus {
     display: block;
     text-decoration: none;
     color: #000;
+    overflow: auto;
 }
 .sharedialogue-content a:hover {
 	background-color: #e1e1e1;
