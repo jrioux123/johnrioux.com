@@ -130,7 +130,7 @@ button:focus {
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
     border-radius: 2px;
     font-size:16px;
-    z-index: 100;
+    z-index: 112;
     top: 50%;
     transform: translateY(-50%);
      margin-top: 56px;
@@ -345,6 +345,10 @@ p {
      height: calc(100% + 56px);
      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  }
+ 
+.shadehidden {
+     display: none;
+}
 
 .videowrapper1 {
      max-width:1056px;
