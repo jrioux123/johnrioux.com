@@ -4,6 +4,13 @@
 
 <p>If you can read this, the include-html thing is working but the tweetID javascript stuff isn't.</p>
 <a id="tweetID"></a>
+  
+<a id="tweetID"><a href="https://twitter.com/intent/tweet?status=file:///C:/Users/johnr/Desktop/text.html">Click here</a></a>
+
+<script>
+document.getElementById("tweetID").innerHTML = 
+"<a href=https://twitter.com/intent/tweet?status=" + window.location.href + ">Click here</a>";
+</script>
 
 <script>
 document.getElementById("tweetID").innerHTML = 
