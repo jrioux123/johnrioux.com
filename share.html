@@ -2,11 +2,26 @@
 <html>
 <body>
 
-<p>If you can read this, the include-html thing is working but the tweetID javascript stuff isn't.</p>
-<a id="tweetID"></a>
-  
-<a id="tweetID"><a href="https://twitter.com/intent/tweet?status=file:///C:/Users/johnr/Desktop/text.html">Click here</a></a>
 
+ 
+<div style="height:52px;" class="normaltext bottomline">
+    <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
+</div>
+
+<button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+
+<div id="dialogID" class="dropdown-content sharedialogue-content">
+       <div class="title">Share via</div>
+       <a id="tweetID"><a href="https://twitter.com/intent/tweet?status=file:///C:/Users/johnr/Desktop/text.html">
+         <img src="http://www.johnrioux.net/images/social/Twitter_Circle.png">
+           <div style="padding-top:10px;">Twitter</div>
+       </a>
+       <a href="#facebook">
+         <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
+           <div style="padding-top:10px;">Facebook</div>
+       </a>
+</div>>
+  
 <script>
 document.getElementById("tweetID").innerHTML = 
 "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + ">Click here</a>";
