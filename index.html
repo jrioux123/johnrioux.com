@@ -52,12 +52,13 @@ w3IncludeHTML();
 <div class="card">
  <div class="cardtitle">This is a test</div>
  <div w3-include-html="share.html"></div>
- <script>
+ <p>If there's no paragraph above this, then your include-html thing didn't work.</p>
+</div>
+ 
+<script>
   document.getElementById("tweetID").innerHTML = 
    "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + ">Click here</a>";
  </script>
- <p>If there's no paragraph above this, then your include-html thing didn't work.</p>
-</div>
 
 </div> <!-- End of the 8px margin wrapper-->
 
