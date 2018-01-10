@@ -18,7 +18,6 @@
 
 <script src="w3data.js"></script>
 <script src="http://www.johnrioux.net/dropdown.js"></script>
-<script src="http://www.johnrioux.net/tweetbutton.js"></script>
 
 </head>
 
@@ -54,8 +53,9 @@ w3IncludeHTML();
  <div class="cardtitle">This is a test</div>
  <div w3-include-html="share.html"></div>
  <script>
-w3IncludeHTML();
-</script>
+  document.getElementById("tweetID").innerHTML = 
+   "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + ">Click here</a>";
+ </script>
  <p>If there's no paragraph above this, then your include-html thing didn't work.</p>
 </div>
 
