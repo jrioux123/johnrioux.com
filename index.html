@@ -52,18 +52,33 @@ w3IncludeHTML();
    </script>
 </div> 
  
+ 
+   <!-- Share button below -->
+ 
+<div style="height:52px;" class="normaltext bottomline">
+    <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
+</div>
+<button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+<div id="dialogID" class="dropdown-content sharedialogue-content">
+       <div class="title">Share via</div>
+       <a href="#twitter">
+         <img src="http://www.johnrioux.net/images/social/Twitter_Circle.png">
+           <div style="padding-top:10px;">Twitter</div>
+       </a>
+       <a href="#facebook">
+         <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
+           <div style="padding-top:10px;">Facebook</div>
+       </a>
+</div>
+ 
+ <!-- End of share button-->
+ 
+ 
 <div class="card">
 <img src="images/johnriouxdotnet_card.png">
 <div class="cardtitle">Welcome to johnrioux.net</div>
 <p>The only place to consume content created by John Rioux. Except YouTube. And a few other places. This is a brand new website full of cool things.</p>
 <a href="noheader.html" class="button buttonred">READ MORE</a>
-</div>
- 
-<div class="card">
- <div class="cardtitle">This is a test</div>
- <p>If there's no paragraph below this, then your include-html thing didn't work.</p>
- <p>Safety paragraph! Because the include-html thing EATS WHATEVER THE FUCK IS ABOVE IT!??</p>
- <p w3-include-html="share.html"></p>
 </div>
 
 </div> <!-- End of the 8px margin wrapper-->
