@@ -6,14 +6,13 @@
 
 <div id="dialogID" class="dropdown-content sharedialogue-content">
        <div class="title">Share via</div>
-       <a id="tweetID">If you can read this, the javascript did not work.</a>
-         <script>
-          document.getElementById("tweetID").innerHTML = 
-          "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + ">Click here</a>";
-         </script>
-         <img src="http://www.johnrioux.net/images/social/Twitter_Circle.png">
-           <div style="padding-top:10px;">Twitter</div>
+       <a id="tweetID">An error occured.
        </a>
+       <script>
+          document.getElementById("tweetID").innerHTML = 
+          "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><img src="http://www.johnrioux.net/images/social/Twitter_Circle.png">
+           <div style="padding-top:10px;">Twitter</div></a>";
+       </script>
        <a href="#facebook">
          <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
            <div style="padding-top:10px;">Facebook</div>
