@@ -57,15 +57,23 @@ body {
 
 .topright {
   float:right;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 8px;
+  margin: 8px;
   color: #000;
   opacity: 0.7;
 }
 
+.topright img {
+	display: block;
+}
+
 .topright:hover {
   opacity: 1;
+}
+
+.topright:active {
+	border-radius: 100%;
+	background-color: #e1e1e1;
 }
 
 .topleft {
@@ -78,6 +86,7 @@ body {
 }
 
 button {
+  cursor: pointer;
   border: none;
   background: none;
   font-family: "Roboto";
@@ -229,7 +238,7 @@ a {
 }
 
 .menuitem:active {
-    background-color: #efefef;
+    background-color: #e1e1e1;
 }
 
 .aboveimage {
