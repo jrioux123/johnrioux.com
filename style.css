@@ -95,7 +95,8 @@ body {
 }
 
 .searchcontainer {
-    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
     margin: auto;
     width: 100%;
     max-width: 720px;
