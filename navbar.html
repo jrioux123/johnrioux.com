@@ -32,6 +32,21 @@
        <a href="http://johnrcomics.blogspot.com/">My old site</a>
     </div>
   </div>
+ 
+ <div class="dropdown noSelect">
+    <button onclick="shadeCreate();dialogCreate();" class="topright material-icons">search</button>
+ </div>
+ <button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+ <div id="dialogID" class="searchcontainer">
+   <div class="searchbar">
+     <div class="material-icons" style="margin: 4px !important;">search</div>
+   </div>
+ </div>
+ <script>
+      document.getElementById("tweetID").innerHTML = 
+      "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><img src=http://www.johnrioux.net/images/social/Twitter_Circle.png><div style=padding-top:10px;>Twitter</div></a>";
+ </script>
+ 
   <a href="https://www.instagram.com/johnrioux98/" class="topright">
     <img src="Instagram_Logo.png" width="24px;"></a>
   <a href="https://twitter.com/johnrioux98" class="topright">
