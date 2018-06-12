@@ -87,6 +87,11 @@ body {
   z-index: 101;
 }
 
+.topleft:active {
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.88);
+}
+
 button {
   cursor: pointer;
   border: none;
