@@ -95,11 +95,10 @@ body {
 }
 
 .searchcontainer {
-    padding-left: 72px;
-    padding-right: 56px;
+    padding: 4px;
     margin: auto;
     width: 100%;
-    max-width: 848px;
+    max-width: 720px;
     display: none;
 }
 
@@ -108,11 +107,21 @@ body {
 	top: 4px;
 	height: 48px;
 	background-color: white;
-	width: calc(100% - 128px);
+	width: calc(100% - 8px);
 	border-radius: 2px;
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
 	z-index: 112;
 	max-width: 720px;
+}
+
+.exitsearch {
+	margin: 4px !important;
+	opacity: .54;
+}
+
+.exitsearch:active {
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.22);
 }
 
 button {
