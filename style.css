@@ -69,6 +69,8 @@ body {
 
 .topright img {
 	display: block;
+	padding: 8px;
+        margin: 8px;
 }
 
 .topright:hover {
