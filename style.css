@@ -55,6 +55,10 @@ body {
 	width: 348px;
 }
 
+.material-icons {
+  text-decoration: none;	
+}
+
 .topright {
   float:right;
   padding: 8px;
