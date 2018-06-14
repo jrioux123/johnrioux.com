@@ -18,6 +18,7 @@
 
 <script src="w3data.js"></script>
 <script src="https://www.johnrioux.net/dropdown.js"></script>
+<script src="googlecustomsearch.js"></script>
 
 </head>
 
@@ -45,20 +46,7 @@ w3IncludeHTML();
 <div class="card">
  <div class="cardtitle">Search Engine Test!</div>
  <p>The Google Custom Search bar should appear below this line.</p>
- <div>
-   <script>
-  (function() {
-    var cx = '016891107299133920326:wwaszvag6gw';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-document.write("<gcse:search><\/gcse:search>");
-</script>
-</div>
+ <div><gcse:search><\/gcse:search></div>
  <p>And above this one.</p>
 </div> 
  
