@@ -43,8 +43,23 @@ w3IncludeHTML();
 <div style="padding:0 8px 0 8px;"> <!-- wrapper creates an 8px minimum margin (</div> below) -->
 
 <div class="card">
- <div class="cardtitle">New Stuff Coming Soon!</div>
- <p>Yeah! Get hype.</p>
+ <div class="cardtitle">Search Engine Test!</div>
+ <p>The Google Custom Search bar should appear below this line.</p>
+ <div>
+  <script>
+  (function() {
+    var cx = '016891107299133920326:wwaszvag6gw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+ </div>
+ <p>And above this one.</p>
 </div> 
  
 
