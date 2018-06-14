@@ -118,6 +118,7 @@ body {
 .exitsearch {
 	margin: 4px !important;
 	opacity: .54;
+	float:left;
 }
 
 .exitsearch:active {
