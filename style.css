@@ -149,6 +149,7 @@ body {
 .gsc-input {
 	height: 48px !important;
 	padding: 0px !important;
+	font-family: Roboto !important;
 }
 
 .gsc-search-button {
