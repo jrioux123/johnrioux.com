@@ -190,6 +190,7 @@ body {
     visibility: visible;
     content: "close";
     margin: 4px !important;
+    color: #000 !important;
     opacity: .54;
     float: right;	
     text-decoration: none;
