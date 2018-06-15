@@ -191,11 +191,9 @@ body {
     content: "close";
     margin: 4px !important;
     color: #000 !important;
-    opacity: .54;
-    float: right;	
+    opacity: .54;	
     text-decoration: none;
     padding: 8px;
-    margin: 8px;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
