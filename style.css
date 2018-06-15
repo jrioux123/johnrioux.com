@@ -159,6 +159,8 @@ body {
 	padding: 0px !important;
 	font-family: Roboto !important;
 	border-radius: 2px;
+	text-indent: -50px !important;
+	background: none !important;
 }
 
 .gsc-search-box {
