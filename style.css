@@ -139,6 +139,7 @@ body {
 .gsib_b {
 	background-color: white;
 	border-radius: 2px;
+	float: right;
 }
 
 .gsc-input-box {
@@ -147,11 +148,19 @@ body {
 
 .gsc-input {
 	height: 48px !important;
-	padding:0px;
+	padding: 0px !important;
 }
 
 .gsc-search-button {
 	display: none;
+}
+
+.gsst_a {
+	padding: 0px;
+}
+
+.gsst_b {
+	padding:0px;
 }
 
 button {
