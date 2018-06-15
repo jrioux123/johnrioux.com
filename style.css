@@ -177,6 +177,26 @@ body {
 	padding:0px;
 }
 
+.gscb_a {	
+        visibility: hidden;
+}
+
+.gscb_a.active {
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.22);
+}
+
+.gscb_a::after {
+    visibility: visible;
+    content: "close";
+  margin: 4px !important;
+  opacity: .54;
+  float: right;	
+  text-decoration: none;
+  padding: 8px;
+  margin: 8px;
+}
+
 button {
   cursor: pointer;
   border: none;
