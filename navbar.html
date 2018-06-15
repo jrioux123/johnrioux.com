@@ -42,9 +42,11 @@
     <div class="searchbar">
       <button id="shadeID" onclick="shadeKill();dialogKill();" class="material-icons exitsearch">arrow_back</button>
        <div style="margin-left: 48px;"><gcse:search></gcse:search></div>
-      <!-- Here's your temporary one that actually looks good:
-        <input type="text" autofocus placeholder="Search johnrioux.net" style="position: absolute; height: calc(100% - 0px); border: none; padding: 0px; font-family: Roboto; font-size: 16px; width: 100%; font-weight: 300; float: left; outline: none;">
-       -->
+       <script>         
+        document.getElementById("gs_cb50").innerHTML = "close";
+        document.getElementById("gs_cb50").classList.add("material-icons");
+        document.getElementById("gs_cb50").classList.add("exitsearch");
+       </script>
     </div>
   </div>
   <script>
