@@ -19,6 +19,7 @@
  <script src="w3data.js"></script>
  <script src="https://www.johnrioux.net/dropdown.js"></script>
  <script src="googlecustomsearch.js"></script>
+ <script src="onload.js"></script>
 
 </head>
 
@@ -31,7 +32,7 @@
 }
 </style>
 
-<body onload="searchedit()">
+<body onload="onload()">
 
 <div w3-include-html="navbar.html"></div> 
 
@@ -57,16 +58,6 @@ w3IncludeHTML();
 </div>
 
 </div> <!-- End of the 8px margin wrapper-->
-
-
-
-<script>
-function searchedit() {
-    document.getElementsByName("search")[0].value="";
-    document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
-    document.querySelector('input').autofocus = true;    
-}
-</script> 
 
 </body>
 </html>
