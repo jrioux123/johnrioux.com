@@ -40,7 +40,18 @@
     <div class="searchbar">
       <button id="shadeID" onclick="shadeKill();dialogKill();" class="material-icons exitsearch">arrow_back</button>
        <div style="margin-left: 48px;"><gcse:search></gcse:search></div>
-       <script src="googlecustomsearch.js"></script>
+       <!-- hold up <script src="googlecustomsearch.js"></script> -->
+       <script>
+        (function() {
+          var cx = '016891107299133920326:wwaszvag6gw';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+        </script>
     </div>
   </div>
   <!-- Social media buttons - make these a thing when you start using them.
