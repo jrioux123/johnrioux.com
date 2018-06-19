@@ -212,7 +212,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.gsc-results-close-button {
+.gsc-results-close-btn {
 	display: none !important;
 }
 
@@ -241,7 +241,7 @@ body {
 	background-color: #efefef !important;
 }
 
-.gsc-snippet {
+.gs-snippet {
 	background-color: white !important;
 	border: none !important;
 }
