@@ -251,8 +251,8 @@ body {
 	display: none !important;
 }
 
-.gs-title {
-	text-decoration: none;
+.gs-result {
+	text-decoration: none !important;
 }
 
 .gsc-webResult gsc-result {
