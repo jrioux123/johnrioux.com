@@ -126,9 +126,6 @@ body {
 	background-color: rgba(255,255,255,0.22);
 }
 
-
-//* Beginning of GCS *//
-
 .gsc-control-cse {
 	padding: 0px;
 	border: 0px;
@@ -215,8 +212,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-//* Results *//
-
 .gsc-results-close-button {
 	display:none;
 }
@@ -251,9 +246,6 @@ body {
 	background-color: white !important;
 	border: none;
 }
-
-//* End of GCS *//
-
 
 button {
   cursor: pointer;
