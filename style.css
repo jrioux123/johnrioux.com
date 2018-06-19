@@ -229,7 +229,7 @@ body {
 }
 
 .gsc-selected-option-container {
-	background-color: white !important;
+	background-color: white;
 	border: none;
 	box-shadow: none;
 	font-size: 13px;
@@ -238,7 +238,7 @@ body {
 }
 
 .gsc-selected-option-container:hover {
-	background-color: #efefef !important;
+	background-color: #efefef;
 }
 
 .gs-snippet {
