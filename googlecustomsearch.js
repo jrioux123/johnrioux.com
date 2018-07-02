@@ -1,4 +1,4 @@
-  (function() {
+ (function() {
     var cx = '016891107299133920326:wwaszvag6gw';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
