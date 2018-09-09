@@ -55,11 +55,19 @@
        <!-- hold up <script src="googlecustomsearch.js"></script> -->
     </div>
   </div>
-  <!-- Social media buttons - make these a thing when you start using them.
-  <a href="https://www.instagram.com/johnrioux98/" class="topright">
-    <img src="Instagram_Logo.png" width="24px;"></a>
-  <a href="https://twitter.com/johnrioux98" class="topright">
-    <img src="Twitter_Logo.png" width="24px;"></a> -- end of the Social media buttons-->
+  <!-- Follow Me button --><div class="dropdown noSelect">
+     <button onclick="shadeCreate();dialogCreate();" class="topright material-icons">person_add</button>
+  </div>
+ <button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+<div id="dialogID" class="dropdown-content sharedialogue-content">
+       <div class="title">Follow me on</div>
+       <!-- Twitter Button --> <div id="tweetID"></div>
+       <a href="#facebook">
+         <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
+           <div style="padding-top:10px;">Facebook</div>
+       </a>
+</div>
+ 
 </div> <!-- end of the titlebar div -->
 
 <div class="tabsbar">
