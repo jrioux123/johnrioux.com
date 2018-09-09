@@ -40,3 +40,13 @@ function shareKill() {
     var x = document.getElementById('shareID');
     x.style.display = 'none';
 }
+
+function followCreate() {
+    var x = document.getElementById('followID')
+    x.style.display = 'block';
+}
+
+function followKill() {
+    var x = document.getElementById('followID');
+    x.style.display = 'none';
+}
