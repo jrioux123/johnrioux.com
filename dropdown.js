@@ -31,12 +31,12 @@ function shadeKill() {
     x.style.display = 'none';
 }
 
-function dialogCreate() {
-    var x = document.getElementById('dialogID')
+function shareCreate() {
+    var x = document.getElementById('shareID')
     x.style.display = 'block';
 }
 
-function dialogKill() {
-    var x = document.getElementById('dialogID');
+function shareKill() {
+    var x = document.getElementById('shareID');
     x.style.display = 'none';
 }
