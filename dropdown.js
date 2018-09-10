@@ -28,11 +28,11 @@ function shadeCreate() {
 
 function shadeKill() {
     var x = document.getElementById('shadeID');
-    x.style.display = 'none';
-    var y = document.getElementById('searchID')
+    var y = document.getElementById('searchID');    
+    var z = document.getElementById('dialogID');    
+    x.style.display = 'none' &&
     y.style.display = 'none' ||
-    var z = document.getElementById('dialogID')
-    z.style.display = 'none'
+    z.style.display = 'none';
 }
 
 function searchCreate() {
