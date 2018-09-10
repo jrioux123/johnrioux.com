@@ -47,6 +47,11 @@ function dialogKill() {
     showDialog(dialogIndex);
     }
     
+    function currentDialog(n) {
+      showDialog(dialogIndex = n);
+    }
+
+    
     function showDialog(n) {
       var i;
       var dialog = document.getElementsByClassName("dialog-indexer");
