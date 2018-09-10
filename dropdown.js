@@ -40,3 +40,26 @@ function dialogKill() {
     var x = document.getElementById('dialogID');
     x.style.display = 'none';
 }
+
+// Here's some maybe dangerous garbage:
+
+    var dialogIndex = 1;
+    showDialog(dialogIndex);
+    }
+    
+    function showDialog(n) {
+      var i;
+      var dialog = document.getElementsByClassName("dialog-indexer");
+      var dialogButtons = document.getElementsByClassName("dialogButton");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dialogButtons.length; i++) {
+          dialogButtons[i].className = dialogButtons[i].className.replace(" active", "");
+      }
+      dialog[dialogIndex-1].style.display = "block";  
+      diaogButtons[dialogIndex-1].className += " active";
+    }
+
