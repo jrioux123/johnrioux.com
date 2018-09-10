@@ -450,6 +450,10 @@ a {
     word-wrap: break-word;
 }
 
+.normaltext .title {
+	padding:0 8px 0 8px;
+}
+
 .imagelist {
 	width:240px;
 	height:388px;
