@@ -454,10 +454,13 @@ a {
 	width:240px;
 	height:388px;
 	margin-right:24px;
-	font-weight:500px;
+	margin-bottom:32px;
+	font-weight:500;
+	color:black;
 	font-size: 16px;
 	cursor:pointer;
 	text-decoration: none;
+	float:left;
 }
 
 .imagelist img {
