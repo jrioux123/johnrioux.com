@@ -29,14 +29,18 @@ function shadeCreate() {
 function shadeKill() {
     var x = document.getElementById('shadeID');
     x.style.display = 'none';
+    var y = document.getElementById('searchID');
+    y.style.display = 'none';
+    var z = document.getElementById('dialogID');
+    z.style.display = 'none';
+}
+
+function searchCreate() {
+    var y = document.getElementById('searchID')
+    y.style.display = 'block';
 }
 
 function dialogCreate() {
-    var x = document.getElementById('dialogID')
-    x.style.display = 'block';
-}
-
-function dialogKill() {
-    var x = document.getElementById('dialogID');
-    x.style.display = 'none';
+    var z = document.getElementById('dialogID')
+    z.style.display = 'block';
 }
