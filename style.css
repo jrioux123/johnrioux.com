@@ -446,8 +446,16 @@ a {
     line-height: 24px;
     margin: auto;
     min-width: 280px;
-    max-width: 760px;
+    max-width: 768px;
     word-wrap: break-word;
+}
+
+.imagelist {
+	width:240px;
+	height:388px;
+	margin-right:24px;
+	font-weight:500px;
+	font-size: 16px;
 }
 
 .bottomline {
