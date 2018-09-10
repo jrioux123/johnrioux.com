@@ -45,7 +45,6 @@ function dialogKill() {
 
     var dialogIndex = 1;
     showDialog(dialogIndex);
-    }
     
     function currentDialog(n) {
       showDialog(dialogIndex = n);
