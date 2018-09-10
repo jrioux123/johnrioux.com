@@ -55,10 +55,10 @@ function dialogKill() {
       var i;
       var dialog = document.getElementsByClassName("dialog-indexer");
       var dialogButtons = document.getElementsByClassName("dialogButton");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+      if (n > dialog.length) {dialogIndex = 1}    
+      if (n < 1) {dialogIndex = dialog.length}
+      for (i = 0; i < dialog.length; i++) {
+          dialog[i].style.display = "none";  
       }
       for (i = 0; i < dialogButtons.length; i++) {
           dialogButtons[i].className = dialogButtons[i].className.replace(" active", "");
