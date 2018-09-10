@@ -448,13 +448,13 @@ a {
     min-width: 280px;
     max-width: 768px;
     word-wrap: break-word;
+    clear: both;
 }
 
 .imagelist {
 	width:240px;
 	height:388px;
-	margin-right:24px;
-	margin-bottom:32px;
+	margin: 8px;
 	font-weight:500;
 	color:black;
 	font-size: 16px;
