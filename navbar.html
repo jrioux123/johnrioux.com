@@ -32,13 +32,14 @@
        <a href="https://johnrcomics.blogspot.com/">My old site</a>
     </div>
   </div>
-  <!-- Search button --> <div class="dropdown noSelect">
-     <button onclick="shadeCreate();shareCreate();" class="topright material-icons">search</button>
+  <!-- Search button -->
+  <div class="dropdown noSelect">
+     <button onclick="shadeCreate();dialogCreate();" class="topright material-icons">search</button>
   </div>
-  <button id="shadeID" onclick="shadeKill();shareKill();" class="shade shadehidden"></button>
-  <div id="shareID" class="searchcontainer">
+  <button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+  <div id="dialogID" class="searchcontainer">
     <div class="searchbar">
-      <button id="shadeID" onclick="shadeKill();shareKill();" class="material-icons exitsearch">arrow_back</button>       
+      <button id="shadeID" onclick="shadeKill();dialogKill();" class="material-icons exitsearch">arrow_back</button>       
        <div style="margin-left: 48px;">
         <script>
         (function() {
@@ -52,14 +53,14 @@
         })();
         </script>
         <gcse:search></gcse:search></div>
-       <!-- hold up <script src="googlecustomsearch.js"></script> -->
     </div>
   </div>
-  <!-- Follow Me button --><div class="dropdown noSelect">
-     <button onclick="shadeCreate();followCreate();" class="topright material-icons">person_add</button>
+  <!-- Follow Me button -->
+  <div class="dropdown noSelect">
+     <button onclick="shadeCreate();dialogCreate();" class="topright material-icons">person_add</button>
   </div>
- <button id="shadeID" onclick="shadeKill();followKill();" class="shade shadehidden"></button>
-<div id="followID" class="dropdown-content sharedialogue-content">
+ <button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+<div id="dialogID" class="dropdown-content sharedialogue-content">
        <div class="title">Follow me on</div>
        <!-- Twitter Button --> <div id="tweetID"></div>
        <a href="#facebook">
