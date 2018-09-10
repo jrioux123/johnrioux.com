@@ -351,11 +351,19 @@ button:focus {
 .sharedialogue-content a:hover {
 	background-color: #e1e1e1;
 }
-.sharedialogue-content img {
+
+.sharedialogue-content .iconwrapper {
   float:left;
   width:40px;
   height:auto;
   padding-right: 16px;
+  border-radius: 20px;
+}
+
+.sharedialogue-content img {
+  width: 20px;
+  height: auto;
+  padding: 10px;
 }
 
 .show {
