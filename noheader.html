@@ -57,15 +57,15 @@
 <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
 <div id="dialogID" class="dropdown-content sharedialogue-content">
        <div class="title">Share via</div>
-       <!-- Twitter Button --> <div id="tweetID" class="iconwrapper"></div>
-       <a href="#facebook" class="iconwrapper">
-         <img src="https://www.johnrioux.net/images/social/Facebook_Circle.png">
+       <!-- Twitter Button --> <div id="tweetID"></div>
+       <a href="#facebook">
+         <div  class="iconwrapper"><img src="https://www.johnrioux.net/images/social/Facebook_Circle.png"></div>
            <div style="padding-top:10px;">Facebook</div>
        </a>
 </div>
  <script>
       document.getElementById("tweetID").innerHTML = 
-      "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><img src=https://www.johnrioux.net/images/social/Twitter_Circle.png><div style=padding-top:10px;>Twitter</div></a>";
+      "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><div class=iconwrapper><img src=https://www.johnrioux.net/images/social/Twitter_Circle.png></div><div style=padding-top:10px;>Twitter</div></a>";
  </script>
  
  <!-- End of share button-->
