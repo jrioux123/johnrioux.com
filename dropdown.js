@@ -30,7 +30,7 @@ function shadeKill() {
     var x = document.getElementById('shadeID');
     x.style.display = 'none';
     var y = document.getElementById('searchID');
-    y.style.display = 'none';
+    y.style.display = 'none'; ||
     var z = document.getElementById('dialogID');
     z.style.display = 'none';
 }
