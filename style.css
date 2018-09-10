@@ -456,6 +456,13 @@ a {
 	margin-right:24px;
 	font-weight:500px;
 	font-size: 16px;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+.imagelist img {
+	width:240px;
+	height:auto;
 }
 
 .bottomline {
