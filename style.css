@@ -356,14 +356,14 @@ button:focus {
   float:left;
   width:40px;
   height:auto;
-  padding-right: 16px;
+  padding: 10px;
+  margin-right: 16px;
   border-radius: 20px;
 }
 
 .sharedialogue-content img {
   width: 20px;
   height: auto;
-  padding: 10px;
 }
 
 .show {
