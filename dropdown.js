@@ -27,20 +27,20 @@ function shadeCreate() {
 }
 
 function shadeKill() {
-    var x = document.getElementById('shadeID');
-    var y = document.getElementById('searchID');    
-    var z = document.getElementById('dialogID');    
-    x.style.display = 'none';
+    var x = document.getElementById('shadeID');    
+    var y = document.getElementById('dialogID'); 
+    var z = document.getElementById('searchID');     
+    x.style.display = 'none';    
     y.style.display = 'none';
     z.style.display = 'none';
 }
 
-function searchCreate() {
-    var y = document.getElementById('searchID')
+function dialogCreate() {
+    var y = document.getElementById('dialogID')
     y.style.display = 'block';
 }
 
-function dialogCreate() {
-    var z = document.getElementById('dialogID')
+function searchCreate() {
+    var z = document.getElementById('searchID')
     z.style.display = 'block';
 }
