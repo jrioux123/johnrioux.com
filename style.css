@@ -467,12 +467,13 @@ a {
 	width:128px;
 	margin: 8px 8px 16px 0px;
 	font-weight:500;
-	color:black;
+	color: black;
 	font-size: 16px;
 	cursor:pointer;
 	text-decoration: none;
 	display: inline-block;
 	vertical-align: top;
+	white-space: normal;
 }
 
 .imagelist img {
