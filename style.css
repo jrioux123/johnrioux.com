@@ -455,6 +455,14 @@ a {
 	padding-right:8px;
 }
 
+.imagelistwrapper {
+	overflow: auto;
+	white-space: nowrap;
+	margin: auto;
+	min-width: 280px;
+	max-width: 530px;
+}
+
 .imagelist {
 	width:128px;
 	margin: 8px;
