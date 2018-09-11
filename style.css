@@ -462,11 +462,12 @@ a {
 	min-width: 280px;
 	max-width: 530px;
 	padding-left: 8px;
+	padding-bottom: 8px;
 }
 
 .imagelist {
 	width:128px;
-	margin: 8px 8px 16px 0px;
+	margin: 16px 8px 16px 0px;
 	font-weight:500;
 	color: black;
 	font-size: 16px;
