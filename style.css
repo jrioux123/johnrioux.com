@@ -450,18 +450,13 @@ a {
     word-wrap: break-word;
 }
 
-.normaltext .title {
-	padding-left:8px;
-	padding-right:8px;
-}
-
 .imagelistwrapper {
 	overflow: auto;
 	white-space: nowrap;
 	margin: auto;
 	min-width: 280px;
 	max-width: 530px;
-	padding-left: 8px;
+	padding-left: 16px;
 }
 
 .imagelist {
