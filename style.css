@@ -461,6 +461,7 @@ a {
 	margin: auto;
 	min-width: 280px;
 	max-width: 530px;
+	padding-left: 8px;
 }
 
 .imagelist {
