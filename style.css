@@ -456,8 +456,7 @@ a {
 }
 
 .imagelist {
-	width:240px;
-	height:388px;
+	width:128px;
 	margin: 8px;
 	font-weight:500;
 	color:black;
@@ -468,7 +467,7 @@ a {
 }
 
 .imagelist img {
-	width:240px;
+	width:128px;
 	height:auto;
 }
 
