@@ -465,18 +465,20 @@ a {
 
 .imagelist {
 	width:128px;
-	margin: 8px;
+	margin: 8px 8px 16px 0px;
 	font-weight:500;
 	color:black;
 	font-size: 16px;
 	cursor:pointer;
 	text-decoration: none;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .imagelist img {
-	width:128px;
-	height:auto;
+	width: 100%;
+	height: auto;
+	padding-bottom: 8px;
 }
 
 .bottomline {
