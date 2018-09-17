@@ -1,12 +1,19 @@
 <div style="height:52px;" class="normaltext bottomline">
     <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
 </div>
-<button id="shadeID" onclick="shadeKill();dialogKill();" class="shade shadehidden"></button>
+<button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
 <div id="dialogID" class="dropdown-content sharedialogue-content">
        <div class="title">Share via</div>
        <!-- Twitter Button --> <div id="tweetID"></div>
-       <a href="#facebook">
-         <img src="http://www.johnrioux.net/images/social/Facebook_Circle.png">
+       <a href="" id="fb_share">
+         <div  class="iconwrapper" style="background-color:#3B5998;"><img src="https://www.johnrioux.net/images/social/Facebook_Circle.png"></div>
            <div style="padding-top:10px;">Facebook</div>
        </a>
 </div>
+ <script>
+      window.onload = function() {
+        fb_share.href ='http://www.facebook.com/share.php?u=' + encodeURIComponent(location.href); 
+      }  
+      document.getElementById("tweetID").innerHTML = 
+      "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><div class=iconwrapper style=background-color:#1DA1F2;><img src=https://www.johnrioux.net/images/social/Twitter_Circle.png></div><div style=padding-top:10px;>Twitter</div></a>";
+ </script>
