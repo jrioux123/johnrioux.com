@@ -20,7 +20,7 @@
  
 <style>
 .headerimage {
-   background: url("https://www.johnrioux.net/images/johnriouxdotnet.png");
+   background: url("https://www.johnrioux.net/images/placeholder.jpg");
      /* Here's where you put the header image */
    background-size: cover;
    background-repeat: no-repeat;
@@ -49,29 +49,11 @@
     <div class="subtitle">September 1, 2017</div>
 </div>
  
-  <!-- Share button below -->
- 
-<div style="height:52px;" class="normaltext bottomline">
-    <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
-</div>
-<button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
-<div id="dialogID" class="dropdown-content sharedialogue-content">
-       <div class="title">Share via</div>
-       <!-- Twitter Button --> <div id="tweetID"></div>
-       <a href="" id="fb_share">
-         <div  class="iconwrapper" style="background-color:#3B5998;"><img src="https://www.johnrioux.net/images/social/Facebook_Circle.png"></div>
-           <div style="padding-top:10px;">Facebook</div>
-       </a>
-</div>
- <script>
-      window.onload = function() {
-        fb_share.href ='http://www.facebook.com/share.php?u=' + encodeURIComponent(location.href); 
-      }  
-      document.getElementById("tweetID").innerHTML = 
-      "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><div class=iconwrapper style=background-color:#1DA1F2;><img src=https://www.johnrioux.net/images/social/Twitter_Circle.png></div><div style=padding-top:10px;>Twitter</div></a>";
- </script>
- 
- <!-- End of share button-->
+<div w3-include-html="share.html"></div> 
+
+<script>
+w3IncludeHTML();
+</script>
  
 <div class="normaltext bottomline">
    <p>Welcome, reader, to the all-new johnrioux.net, the only site on the internet to enjoy content created by John Rioux. Except for YouTube. And, like, deviantART, I think.</p>
