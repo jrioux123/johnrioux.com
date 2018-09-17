@@ -16,10 +16,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
  rel="stylesheet" />
  
- <script src="https://www.johnrioux.net/w3data.js"></script>
  <script src="https://www.johnrioux.net/dropdown.js"></script>
- <script src="https://www.johnrioux.net/googlecustomsearch.js"></script>
- <script src="https://www.johnrioux.net/onload.js"></script>
  
 <style>
 .headerimage {
@@ -30,21 +27,15 @@
    background-position: center;
 }
 </style>
-
 </head>
 <body>
-
 <div class="titlebar topshadow">
-</div>
- 
+</div> 
 <i class="titlebar">
   <a href="https://www.johnrioux.net" class="topleft material-icons">arrow_back</a>
  </i>
-
-<div class="headerimage"></div> <!-- Pushes content down -->
- 
-<div class="aboveimage"> <!-- Makes the content below the top image go above the top image. -->
- 
+<div class="headerimage"></div> <!-- Pushes content down --> 
+<div class="aboveimage"> <!-- Makes the content below the top image go above the top image. --> 
 <div style="padding:0 16px 0 16px;position:relative"> <!-- wrapper creates an 16px minimum margin (for non-card content)-->
 
 <div class="normaltext">
@@ -52,12 +43,29 @@
     <div class="subtitle">September 1, 2017</div>
 </div>
  
-<div w3-include-html="https://www.johnrioux.net/share.html"></div> 
-
+<!--Share Button-->
+ <div style="height:52px;" class="normaltext bottomline">
+    <button onclick="shadeCreate();dialogCreate();" class="button buttonraised">SHARE</button>
+</div>
+<button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
+<div id="dialogID" class="dropdown-content sharedialogue-content">
+       <div class="title">Share via</div>
+       <!-- Twitter Button --> <div id="tweetID"></div>
+       <a href="" id="fb_share">
+         <div  class="iconwrapper" style="background-color:#3B5998;"><img src="https://www.johnrioux.net/images/social/Facebook_Circle.png"></div>
+           <div style="padding-top:10px;">Facebook</div>
+       </a>
+</div>
 <script>
-w3IncludeHTML();
-</script>
+      window.onload = function() {
+        fb_share.href ='http://www.facebook.com/share.php?u=' + encodeURIComponent(location.href); 
+      }  
+      document.getElementById("tweetID").innerHTML = 
+      "<a href=https://twitter.com/intent/tweet?status=" + window.location.href + "><div class=iconwrapper style=background-color:#1DA1F2;><img src=https://www.johnrioux.net/images/social/Twitter_Circle.png></div><div style=padding-top:10px;>Twitter</div></a>";
+ </script>
+ <!--End of Share Button-->
  
+<!--Content-->
 <div class="normaltext bottomline">
    <p>Welcome, reader, to the all-new johnrioux.net, the only site on the internet to enjoy content created by John Rioux. Except for YouTube. And, like, deviantART, I think.</p>
    <p>For those of you who’ve somehow arrived at this site without knowing who John Rioux is, John is a writer and filmmaker from Falmouth, Maine. He graduated from Falmouth High School in 2017. He hasn’t gotten into college yet, but he will as soon, he’s working on it, don’t worry about it.</p>
@@ -67,11 +75,8 @@ w3IncludeHTML();
  
 <div class="normaltext" style="overflow:auto;padding:16px 8px 16px 8px">
  <div class="subtitle">© 2017 John Rioux. All rights reserved.</div>
-</div>
- 
+</div> 
 </div> <!-- End of the 16px margin wrapper -->
- 
 </div> <!-- End of the z-index wrapper -->
-
 </body>
 </html>
