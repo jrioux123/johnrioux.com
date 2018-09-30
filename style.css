@@ -432,6 +432,7 @@ a {
   position: fixed;
   background-color: #FFEBEEx;
   white-space: nowrap;
+  overflow: auto;
 }
 
 .menuitem {
@@ -444,10 +445,10 @@ a {
   color: #000;
   font-size: 14px;
   font-weight: 500;
-  float: left;
   box-sizing: border-box;
   text-align: center;
   min-width: 90px;
+  display: inline-block;
 }
 
 .menuitem:hover {
