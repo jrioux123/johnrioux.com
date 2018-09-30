@@ -446,6 +446,8 @@ a {
   font-weight: 500;
   float: left;
   box-sizing: border-box;
+  text-align: center;
+  min-width: 90px;
 }
 
 .menuitem:hover {
