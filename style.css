@@ -130,7 +130,8 @@ a {
     border-radius: 2px;
     color: white;
     background-color: #616161e6;
-    margin-left: -100%;
+    margin-left: -12px;
+    transform: translateX(-50%);
     top: 44px;
 }
 
