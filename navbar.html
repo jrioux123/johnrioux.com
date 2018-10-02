@@ -25,7 +25,9 @@
   <div class="title" style="float:left;">John Rioux</div>
  
   <!-- More button --> <div class="dropdown noSelect">
-    <button onclick="myFunction()" class="dropbtn topright material-icons">more_vert</button>
+    <button onclick="myFunction()" class="dropbtn topright material-icons">more_vert
+       <span class="tooltip">More</span>
+    </button>
     <div id="myDropdown" class="dropdown-content moremenu-content">
        <a href="movies.html">About me</a>
        <a href="https://johnrcomics.blogspot.com/">My old site</a>
@@ -34,7 +36,9 @@
   
   <!-- Follow Me button -->
   <div class="dropdown noSelect">
-     <button onclick="shadeCreate();dialogCreate();" class="topright material-icons">person_add</button>
+     <button onclick="shadeCreate();dialogCreate();" class="topright material-icons">person_add
+        <span class="tooltip">Follow Me</span>
+     </button>
   </div>
  <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
 <div id="dialogID" class="dropdown-content sharedialogue-content">
@@ -59,7 +63,9 @@
  
  <!-- Search button -->
   <div class="dropdown noSelect">
-     <button onclick="shadeCreate();searchCreate();" class="topright material-icons">search</button>
+     <button onclick="shadeCreate();searchCreate();" class="topright material-icons">search
+        <span class="tooltip">Search</span>
+     </button>
   </div>
   <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
   <div id="searchID" class="searchcontainer">
