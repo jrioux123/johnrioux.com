@@ -16,6 +16,11 @@ body {
   background-color: #f0f0f0;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .navbar-content-pusher {
 	height:112px;
 }
