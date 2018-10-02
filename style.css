@@ -1,14 +1,21 @@
+/* Desktop Mode */
 @media only screen and (min-width: 800px) {
-	.titlebar {
-		padding: 4px;
-	}	
-	.navbar-content-pusher {
-		padding:4px;
-	}
-	.searchbar {
-		margin:4px;
-	}
+	
+.titlebar {
+	padding: 4px;
+}	
+.navbar-content-pusher {
+	padding:4px;
 }
+.searchbar {
+	margin:4px;
+}
+	
+.topright:hover .tooltip {
+    visibility: visible;
+}
+	
+} /* End of Desktop Mode */
 
 body {
   margin: 0px;
@@ -112,10 +119,6 @@ a {
 
 .topright {
     position: relative;
-}
-
-.topright:hover .tooltip {
-    visibility: visible;
 }
 
 .topright .tooltip {
