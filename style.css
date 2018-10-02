@@ -1,10 +1,12 @@
 @media only screen and (min-width: 800px) {
-    .titlebar {
-        padding: 4px;
-    }
-	
+	.titlebar {
+		padding: 4px;
+	}	
 	.navbar-content-pusher {
 		padding:4px;
+	}
+	.searchbar {
+		margin:4px;
 	}
 }
 
