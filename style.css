@@ -111,7 +111,8 @@ a {
 }
 
 .topleft {
-	float:left;
+	float:left;	
+	margin-left: 8px;
 }
 
 .top-dark {	
@@ -132,7 +133,6 @@ a {
 	color: #fff;
 	position: fixed;
 	z-index: 101;
-	margin-left: 8px;
 }
 
 .top-light:active {
