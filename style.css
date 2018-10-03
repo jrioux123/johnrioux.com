@@ -167,6 +167,18 @@ a {
     z-index: 112;
 }
 
+.menu a {
+    padding-left: 24px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.menu a:hover {
+	background-color: #e1e1e1;
+}
+
 .searchcontainer {
     padding-left: 4px;
     padding-right: 4px;
