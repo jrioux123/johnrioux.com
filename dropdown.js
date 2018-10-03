@@ -29,10 +29,12 @@ function shadeCreate() {
 function shadeKill() {
     var x = document.getElementById('shadeID');    
     var y = document.getElementById('dialogID'); 
-    var z = document.getElementById('searchID');     
+    var z = document.getElementById('searchID'); 
+    var w = document.getElementById('menuID');
     x.style.display = 'none';    
     y.style.display = 'none';
     z.style.display = 'none';
+    w.style.display = "none';
 }
 
 function dialogCreate() {
@@ -43,4 +45,9 @@ function dialogCreate() {
 function searchCreate() {
     var z = document.getElementById('searchID')
     z.style.display = 'block';
+}
+
+function menuCreate() {
+    var w = document.getElementById('menuID')
+    w.style.display = 'block';
 }
