@@ -21,6 +21,11 @@ window.onclick = function(event) {
 
 // Dialog and shade:
 
+function menuCreate() {
+    var w = document.getElementById('menuID')
+    w.style.display = 'block';
+}
+
 function shadeCreate() {
     var x = document.getElementById('shadeID');
     x.style.display = 'block';
@@ -36,18 +41,13 @@ function searchCreate() {
     z.style.display = 'block';
 }
 
-function menuCreate() {
-    var w = document.getElementById('menuID')
-    w.style.display = 'block';
-}
-
 function shadeKill() {
     var x = document.getElementById('shadeID');    
     var y = document.getElementById('dialogID'); 
     var z = document.getElementById('searchID'); 
     var w = document.getElementById('menuID');
+    w.style.display = "none';
     x.style.display = 'none';    
     y.style.display = 'none';
     z.style.display = 'none';
-    w.style.display = "none';
 }
