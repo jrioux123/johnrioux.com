@@ -23,7 +23,7 @@ window.onclick = function(event) {
 
 function menuCreate() {
     var w = document.getElementById('menuID')
-    menu.style.display = 'block';
+    w.style.display = 'block';
 }
 
 function shadeCreate() {
