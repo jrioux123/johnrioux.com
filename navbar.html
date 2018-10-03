@@ -24,15 +24,15 @@
  
    <!-- Menu button -->
    <div class="dropdown noSelect">
-     <button onclick="shadeCreate();dialogCreate();" class="top-icons topleft top-dark material-icons">menu
-        <span class="tooltip">Follow Me</span>
+     <button onclick="shadeCreate();menuCreate();" class="top-icons topleft top-dark material-icons">menu
+        <span class="tooltip">Menu</span>
      </button>
   </div>
   <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
-  <div id="dialogID" class="dropdown-content sharedialogue-content">
+  <div id="menuID" class="sharedialogue-content">
        <div class="title">Follow me on</div>
        <a href="https://www.johnrioux.net">
-         <div style="material-icons">home</div>
+         <div class="material-icons">home</div>
          <div style="padding-top:10px;">Home</div>
        </a>
   </div>
@@ -45,7 +45,7 @@
     <button onclick="myFunction()" class="dropbtn top-icons topright top-dark material-icons">more_vert
        <span class="tooltip">More</span>
     </button>
-    <div id="myDropdown" class="dropdown-content moremenu-content">
+    <div id="myDropdown" class="moremenu-content">
        <a href="movies.html">About me</a>
        <a href="https://johnrcomics.blogspot.com/">My old site</a>
     </div>
