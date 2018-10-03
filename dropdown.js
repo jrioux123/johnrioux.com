@@ -26,17 +26,6 @@ function shadeCreate() {
     x.style.display = 'block';
 }
 
-function shadeKill() {
-    var x = document.getElementById('shadeID');    
-    var y = document.getElementById('dialogID'); 
-    var z = document.getElementById('searchID'); 
-    var w = document.getElementById('menuID');
-    x.style.display = 'none';    
-    y.style.display = 'none';
-    z.style.display = 'none';
-    w.style.display = "none';
-}
-
 function dialogCreate() {
     var y = document.getElementById('dialogID')
     y.style.display = 'block';
@@ -50,4 +39,15 @@ function searchCreate() {
 function menuCreate() {
     var w = document.getElementById('menuID')
     w.style.display = 'block';
+}
+
+function shadeKill() {
+    var x = document.getElementById('shadeID');    
+    var y = document.getElementById('dialogID'); 
+    var z = document.getElementById('searchID'); 
+    var w = document.getElementById('menuID');
+    x.style.display = 'none';    
+    y.style.display = 'none';
+    z.style.display = 'none';
+    w.style.display = "none';
 }
