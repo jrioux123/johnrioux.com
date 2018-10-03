@@ -21,7 +21,24 @@
 <div class="navbar">
 
 <div class="titlebar">
+ 
+   <!-- Menu button -->
+   <div class="dropdown noSelect">
+     <button onclick="shadeCreate();dialogCreate();" class="top-icons topleft top-dark material-icons">menu
+        <span class="tooltip">Follow Me</span>
+     </button>
+  </div>
+  <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
+  <div id="dialogID" class="dropdown-content sharedialogue-content">
+       <div class="title">Follow me on</div>
+       <a href="https://www.johnrioux.net">
+         <div style="material-icons">home</div>
+         <div style="padding-top:10px;">Home</div>
+       </a>
+  </div>
+ 
   <img class="jrcircle" src="John_Rioux_Circle.png">
+ 
   <div class="title" style="float:left;">John Rioux</div>
  
   <!-- More button --> <div class="dropdown noSelect">
