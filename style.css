@@ -157,6 +157,12 @@ a {
     top: 44px;
 }
 
+.menu {
+	height: 100%;
+	width: 256px;
+	position: fixed;
+}
+
 .searchcontainer {
     padding-left: 4px;
     padding-right: 4px;
