@@ -22,7 +22,7 @@ window.onclick = function(event) {
 // Dialog and shade:
 
 function menuCreate() {
-    var menu = document.getElementById('menuID')
+    var w = document.getElementById('menuID')
     menu.style.display = 'block';
 }
 
@@ -42,11 +42,11 @@ function searchCreate() {
 }
 
 function shadeKill() {
-    var menu = document.getElementById('menuID');
+    var w = document.getElementById('menuID');
     var x = document.getElementById('shadeID');    
     var y = document.getElementById('dialogID'); 
     var z = document.getElementById('searchID'); 
-    menu.style.display = "none';
+    w.style.display = 'none';
     x.style.display = 'none';    
     y.style.display = 'none';
     z.style.display = 'none';
