@@ -90,6 +90,7 @@ a {
 	color:#616161;
 	line-height: 16px;
 }
+
 .textcolumn {
 	float: left;
 	width: 348px;
@@ -101,33 +102,45 @@ a {
   margin: 8px 8px 8px 0px;
 }
 
+.top-icons {	
+	position: relative;
+}
+
 .topright {
-  float:right;
-  color: #000;
-  opacity: 0.7;
-  position: relative;
+	float: right;
 }
 
-.topright img {
-	display: block;
-	padding: 8px;
-        margin: 8px;
+.topleft {
+	float:left;
 }
 
-.topright:hover {
-  opacity: 1;
+.top-dark {	
+	color: #000;
+	opacity: 0.7;
 }
 
-.topright:active {
+.top-dark:hover {
+	opacity: 1;
+}
+
+.top-dark:active {
 	border-radius: 100%;
 	background-color: #e1e1e1;
 }
 
-.topright {
-    position: relative;
+.top-light {
+	color: #fff;
+	position: fixed;
+	z-index: 101;
+	margin-left: 8px;
 }
 
-.topright .tooltip {
+.top-light:active {
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.22);
+}
+
+.top-icons .tooltip {
     visibility: hidden;
     position: absolute;
     font-family: roboto;
@@ -142,19 +155,6 @@ a {
     margin-left: -12px;
     transform: translateX(-50%);
     top: 44px;
-}
-
-.topleft {
-  float:left;
-  color: #fff;
-  position: fixed;
-  z-index: 101;
-  margin-left: 8px;
-}
-
-.topleft:active {
-	border-radius: 100%;
-	background-color: rgba(255,255,255,0.22);
 }
 
 .searchcontainer {
