@@ -166,12 +166,17 @@ a {
 	background-color: white;
 	z-index: 112;
 	margin: -4px;
+	padding-top: 18px;
 }
 
 .menu a {
-	padding: 4px;
 	height: 48px;
 	line-height: 48px;
+	display: block;
+}
+
+.menu material-icons {
+	margin: 12px 16px 12px 16px;
 }
 
 .menu a:hover {
