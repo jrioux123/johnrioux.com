@@ -2,13 +2,13 @@
 @media only screen and (min-width: 800px) {
 	
 .titlebar {
-	padding: 8px;
+	padding: 4px 4px 4px 8px;
 }	
 .navbar-content-pusher {
-	padding: 8px;
+	padding: 4px;
 }
 .searchbar {
-	margin: 8px;
+	margin: 4px;
 }
 	
 .top-icons:hover .tooltip {
@@ -16,7 +16,7 @@
 }
 	
 .gsc-results-wrapper-overlay {
-	margin-top: 12px;
+	margin-top: 8px;
 }
 	
 } /* End of Desktop Mode */
