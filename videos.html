@@ -21,13 +21,10 @@
 <script src="googlecustomsearch.js"></script>
 <script src="onload.js"></script>
 
- <!-- Style the menu button -->	
-<script>document.getElementById("homebutton").classList.add("menu-selected");</script>
-
 </head>
 
 <style>
-.moviestab {
+.blogtab {
   opacity: 1 !important;
   border-bottom: 2px solid;
   color: #db4437 !important;
@@ -38,7 +35,14 @@
 //*Style the menu button above*//
 </style>
 
-<body onload="onloadJS()">
+<body onload="onloadJS() menuButton()">
+
+<!-- Style the menu button -->	
+<script>
+function menuButton() {
+    document.getElementById("homebutton").classList.add("menu-selected");
+}
+</script>
 
 <div w3-include-html="navbar.html"></div> 
 
