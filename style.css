@@ -20,14 +20,14 @@
 }
 	
 .menu {
-	display: block;
+	display: block !important;
 	width: 256px;
 	box-shadow: none;
 	border: 1px solid black;
 }
 	
 .menubutton {
-	display: none;
+	display: none  !important;
 }
 	
 } /* End of Desktop Mode */
