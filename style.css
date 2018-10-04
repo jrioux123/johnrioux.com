@@ -39,6 +39,10 @@ body {
 	background-color: #f0f0f0 !important;
 }
 	
+.menu a {
+	background-color: #e0e0e0;
+}
+	
 .menubutton {
 	display: none  !important;
 }
