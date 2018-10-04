@@ -32,6 +32,9 @@ body {
 	background-color: #f0f0f0 !important;
 }
 	
+.menutitle {
+	padding: 4px 0px 0px 4px;
+	
 .menu a {
 	padding-left: 4px;
 }
