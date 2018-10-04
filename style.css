@@ -94,10 +94,12 @@ a {
 .title {
   font-size: 20px;
   padding-top: 16px;
+  height: 26px;
+  line-height: 26px;
   color: #000;
   font-weight: 500;
   padding-left: 16px;
-  padding-right:16px;
+  padding-right: 16px;
 }
 
 .subtitle {
