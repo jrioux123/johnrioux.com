@@ -30,9 +30,6 @@
 
   gtag('config', 'UA-126827549-1');
 </script>
- 
-<!-- Style the menu button -->	
-<script>document.getElementById("homebutton").classList.add("menu-selected");</script>
 
 </head>
 
@@ -48,7 +45,14 @@
 //*Style the menu button above*//
 </style>
 
-<body onload="onloadJS()">
+<body onload="onloadJS() menuButton()">
+
+<!-- Style the menu button -->	
+<script>
+function menuButton() {
+    document.getElementById("homebutton").classList.add("menu-selected");
+}
+</script>
 
 <div w3-include-html="navbar.html"></div> 
 
