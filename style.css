@@ -4,6 +4,10 @@
 .titlebar {
 	padding: 4px 4px 4px 8px;
 }	
+	
+.navbar {
+	margin-left: 256px;
+	
 .navbar-content-pusher {
 	padding: 4px;
 }
@@ -21,8 +25,8 @@
 	
 .menu {
 	display: block !important;
-	width: 256px;
-	box-shadow: none;
+	width: 256px !important;
+	box-shadow: none !important;
 	border: 1px solid black;
 }
 	
