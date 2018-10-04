@@ -2,7 +2,7 @@
 @media only screen and (min-width: 800px) {
 
 .navbar {
-	width: calc(100% - 256px);
+	width: calc(100% - 256px) !important;
 }
 	
 .titlebar {
@@ -190,7 +190,7 @@ a {
 	display: none;
 	height: 100%;
 	width: calc(100% - 56px);
-	max-width: 356px;
+	max-width: 320px;
 	position: fixed;	
 	box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 	background-color: white;
