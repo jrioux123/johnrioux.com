@@ -711,7 +711,7 @@ p {
         animation-timing-function: ease-in-out;
  }
 
-@keyframes menu-enter {
+@keyframes shade-enter {
     from {opacity: 0;}
     to {opacity: 1;}
 }
