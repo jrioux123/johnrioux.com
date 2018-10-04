@@ -179,7 +179,7 @@ a {
 	z-index: 112;
 	margin: -8px;
 	padding-top: 18px;
-	animation: menu-enter .5s 1;
+	animation: menu-enter .25s 1;
         animation-timing-function: ease-in-out;
 }
 
@@ -706,8 +706,15 @@ p {
      top: 0;
      width: 100%; /* Full width */
      height: calc(100% + 56px);
-     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */	
+	animation: shade-enter .25s 1;
+        animation-timing-function: ease-in-out;
  }
+
+@keyframes menu-enter {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
  
 .shadehidden {
      display: none;
