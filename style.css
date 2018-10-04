@@ -12,6 +12,7 @@ body {
 .navbar-content-pusher {
 	padding: 4px;
 }
+	
 .searchbar {
 	margin: 4px;
 }
@@ -30,8 +31,8 @@ body {
 	box-shadow: none !important;
 	border-right: 1px solid #e0e0e0;
 	left: 0px;
-	animation: none;
-	background-color: #f0f0f0;
+	animation: none !important;
+	background-color: #f0f0f0 !important;
 }
 	
 .menubutton {
@@ -185,7 +186,6 @@ a {
 	box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 	background-color: white;
 	z-index: 112;
-	margin: -8px;
 	padding-top: 18px;
 	animation: menu-enter .25s 1;
         animation-timing-function: ease-in-out;
