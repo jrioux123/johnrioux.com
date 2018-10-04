@@ -6,7 +6,7 @@
 }	
 	
 .body {
-	margin-left: 256px;
+	margin-left: 256px !important;
 }
 	
 .navbar-content-pusher {
@@ -28,7 +28,8 @@
 	display: block !important;
 	width: 256px !important;
 	box-shadow: none !important;
-	border: 1px solid black;
+	border-right: 1px solid #e0e0e0;
+	left: 0px;
 }
 	
 .menubutton {
