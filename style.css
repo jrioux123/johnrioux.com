@@ -1,32 +1,24 @@
 /* Desktop Mode */
 @media only screen and (min-width: 800px) {
 
+body {
+	margin-left: 256px !important;
+}	
+	
 .navbar {
 	width: calc(100% - 256px) !important;
 }
 	
 .titlebar {
 	padding: 4px 4px 4px 8px;
-}	
-	
-body {
-	margin-left: 256px !important;
 }
-	
-.navbar-content-pusher {
-	padding: 4px;
-}
-	
-.searchbar {
-	margin: 4px;
-}
-	
+
 .top-icons:hover .tooltip {
     visibility: visible;
 }
 	
-.gsc-results-wrapper-overlay {
-	margin-top: 8px;
+.menubutton {
+	display: none  !important;
 }
 	
 .menu {
@@ -42,10 +34,22 @@ body {
 	
 .menu a:hover {
 	background-color: #e0e0e0 !important;
+}	
+	
+.jrcircle {
+	display: none;
 }
 	
-.menubutton {
-	display: none  !important;
+.searchbar {
+	margin: 4px;
+}
+	
+.gsc-results-wrapper-overlay {
+	margin-top: 8px;
+}
+	
+.navbar-content-pusher {
+	padding: 4px;
 }
 	
 } /* End of Desktop Mode */
