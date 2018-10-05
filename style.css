@@ -1,12 +1,13 @@
 /* Desktop Mode */
 @media only screen and (min-width: 800px) {
 
-body {
-	margin-left: 256px !important;
-}	
-	
 .navbar {
+	margin-left: 256px !important;
 	width: calc(100% - 256px) !important;
+}
+
+.content-wrapper {
+	margin-left: 256px !important;
 }
 	
 .titlebar {
@@ -24,12 +25,10 @@ body {
 .menu {
 	display: block !important;
 	width: 256px !important;
-	box-shadow: none !important;
-	border-right: 1px solid #e0e0e0;
 	left: 0px;
 	top: 0px;
 	animation: none !important;
-	background-color: #f0f0f0 !important;
+	z-index: 100;
 }
 	
 .menutitle {
@@ -38,18 +37,6 @@ body {
 	
 .menu a {
 	padding-left: 4px;
-}
-	
-.menu a:hover {
-	background-color: #e0e0e0 !important;
-}	
-	
-.menu-selected {
-	background-color: #e0e0e0 !important;
-}
-	
-.menudivider {
-	background-color: #e0e0e0 !important;
 }
 	
 .jr2 {
@@ -241,7 +228,7 @@ a {
 	
 .menu-selected {
   color: #db4437;
-  background-color: #f5f5f5;
+  background-color: #fbe8e7 !important;
 }
 	
 .menu-selected .material-icons {
