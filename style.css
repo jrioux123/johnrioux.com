@@ -6,7 +6,7 @@
 	width: calc(100% - 256px) !important;
 }
 
-.contentwrapper {
+.contentwrapper, .imagelistwrapper {
 	margin-left: 256px !important;
 }
 	
