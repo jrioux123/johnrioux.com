@@ -210,6 +210,11 @@ a {
         animation-timing-function: ease-in-out;
 }
 
+.menulist {
+	padding: 8px 0px 8px 0px;
+	border-top: 1px solid rgba(0, 0, 0, .12);
+}
+
 .menu a {
 	height: 48px;
 	line-height: 48px;
@@ -236,13 +241,6 @@ a {
 .menu-selected .material-icons {
   color: #db4437 !important;
  }
-
-.menudivider {
-	height:1px;
-	width:100%;
-	margin:8px 0px 8px 0px;
-	background-color:rgba(0, 0, 0, .12);
-}
 	
 @keyframes menu-enter {
     from {left: -256px;}
