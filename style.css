@@ -46,7 +46,7 @@
 }
 	
 .desktopsearch {
-	display: block;
+	display: block !important;
 }
 	
 .searchcontainer {
