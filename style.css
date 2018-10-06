@@ -42,7 +42,7 @@
 }
 	
 .jr2, .mobiletitle, .mobilesearch {
-	display: none;
+	display: none !important;
 }
 	
 .desktopsearch {
