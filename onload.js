@@ -3,7 +3,7 @@ function onloadJS() {
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;   
     document.querySelector('input').onblur="this.focus()";
-    document.getElementByName('search').onblur = function (event) { 
+    document.getElementById('gsc-i-id1').onblur = function (event) { 
         var blurEl = this; 
         setTimeout(function() {
             blurEl.focus()
