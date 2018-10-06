@@ -47,9 +47,11 @@
 	
 .searchcontainer {
 	width: calc(100% - 264px) !important;
+	top: 4px;
 }
 	
 .searchbar {
+	width: calc(100% - 8px);
 	margin: 4px;
 }
 	
@@ -264,7 +266,6 @@ a {
 .searchbar {
 	height: 48px;
 	background-color: white;
-	width: calc(100% - 8px);
 	border-radius: 2px;
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
 	max-width: 720px;
