@@ -63,9 +63,15 @@
  
  <!-- Search button -->
   <div class="dropdown noSelect">
-     <button onclick="shadeCreate();searchCreate();" class="top-icons topright top-dark material-icons">search
+     <button onclick="shadeCreate();searchCreate();" class="mobilesearch top-icons topright top-dark material-icons">search
         <span class="tooltip">Search</span>
      </button>
+     <button onclick="shadeCreate();searchCreate();" class="desktopsearch searchcontainer" style="display: block;">
+    	<div class="searchbar" style="box-shadow: none;background-color: #f7f7f7;cursor: text;">
+        	<div class="material-icons exitsearch" style="cursor: default;">search</div>
+			<div style="font-size: 16px;float: left;line-height: 48px;opacity: .54;">Search johnrioux.net</div>
+    	</div>
+	 </button>
   </div>
   <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
   <div id="searchID" class="searchcontainer">
