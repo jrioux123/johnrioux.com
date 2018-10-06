@@ -41,13 +41,15 @@
 	padding-left: 4px;
 }
 	
-.jr2 {
+.jr2, .mobiletitle {
 	display: none;
 }
 	
+.searchcontainer {
+	width: calc(100% - 264px);
+	
 .searchbar {
 	margin: 4px;
-	width: calc(100% - 256px);
 }
 	
 .gsc-results-wrapper-overlay {
