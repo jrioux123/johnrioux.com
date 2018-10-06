@@ -443,6 +443,10 @@ a {
 	text-decoration: none;
 }
 
+input#gsc-i-id1::placeholder {
+	font-size: 16px;
+}
+
 
 button {
   cursor: pointer;
