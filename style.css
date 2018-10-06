@@ -41,8 +41,12 @@
 	padding-left: 4px;
 }
 	
-.jr2, .mobiletitle {
+.jr2, .mobiletitle, .mobilesearch {
 	display: none;
+}
+	
+.desktopsearch {
+	display: block;
 }
 	
 .searchcontainer {
