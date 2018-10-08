@@ -63,9 +63,14 @@
  
  <!-- Search button -->
   <div class="dropdown noSelect">
-     <button onclick="shadeCreate();searchCreate();" class="mobilesearch top-icons topright top-dark material-icons">search
+     <button onclick="shadeCreate();searchCreate();searchbarFocus();" class="mobilesearch top-icons topright top-dark material-icons">search
         <span class="tooltip">Search</span>
      </button>
+     <script>
+	searchbarFocus = function getFocus() {           
+  	document.getElementById("gsc-i-id1").focus();
+     }
+     </script>    
      <div class="desktopsearch searchcontainer">
     	<div onclick="shadeCreate();searchCreate();" class="searchbar" style="box-shadow:none;background-color:#f7f7f7;cursor:text;">
         	<div class="material-icons exitsearch" style="cursor:pointer;">search</div>
