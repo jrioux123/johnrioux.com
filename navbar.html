@@ -12,7 +12,13 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
- rel="stylesheet" /> 
+ rel="stylesheet" />
+	
+<script>
+	searchbarFocus = function getFocus() {           
+  	document.getElementById("gsc-i-id1").focus();
+     }
+</script>  
 
 </head>
 
@@ -65,14 +71,9 @@
   <div class="dropdown noSelect">
      <button onclick="shadeCreate();searchCreate();searchbarFocus();" class="mobilesearch top-icons topright top-dark material-icons">search
         <span class="tooltip">Search</span>
-     </button>
-     <script>
-	searchbarFocus = function getFocus() {           
-  	document.getElementById("gsc-i-id1").focus();
-     }
-     </script>    
+     </button>  
      <div class="desktopsearch searchcontainer">
-    	<div onclick="shadeCreate();searchCreate();" class="searchbar" style="box-shadow:none;background-color:#f7f7f7;cursor:text;">
+    	<div onclick="shadeCreate();searchCreate();searchbarFocus()" class="searchbar" style="box-shadow:none;background-color:#f7f7f7;cursor:text;">
         	<div class="material-icons exitsearch" style="cursor:pointer;">search</div>
 			<div style="font-size:16px;float:left;line-height:48px;opacity:.54;">Search johnrioux.net</div>
     		</div>
