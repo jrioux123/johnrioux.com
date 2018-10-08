@@ -51,3 +51,7 @@ function shadeKill() {
     y.style.display = 'none';
     z.style.display = 'none';
 }
+
+searchbarFocus = function getFocus() {           
+  	document.getElementById("gsc-i-id1").focus();
+}
