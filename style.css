@@ -646,12 +646,12 @@ a {
 	margin: auto;
 	min-width: 280px;
 	max-width: 530px;
-	padding-left: 16px;
+	padding-left: 20px;
 }
 
 .imagelist {
 	width: 160px;
-	margin: 16px 8px 20px 0px;
+	margin: 16px 8px 20px -4px;
 	font-weight:500;
 	color: black;
 	font-size: 16px;
