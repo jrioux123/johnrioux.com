@@ -645,8 +645,9 @@ a {
 	white-space: nowrap;
 	margin: auto;
 	min-width: 280px;
-	max-width: 530px;
+	max-width: 528px;
 	padding-left: 20px;
+	box-sizing: border-box;
 }
 
 .imagelist {
