@@ -113,7 +113,7 @@ a {
 .title {
   font-size: 20px;
   padding-top: 16px;
-  height: 26px;
+  height: auto;
   line-height: 26px;
   color: #000;
   font-weight: 500;
