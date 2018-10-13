@@ -209,7 +209,7 @@ a {
 
 .menu {
 	display: none;
-	height: 100%;
+	height: calc(100% + 48px);
 	width: calc(100% - 56px);
 	max-width: 320px;
 	position: fixed;	
@@ -417,6 +417,9 @@ a {
 .gs-result .gs-title,
 .gs-result .gs-title * {
 	text-decoration: none !important;
+	color: black;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .gsc-webResult .gsc-result {
@@ -427,6 +430,7 @@ a {
 .gs-visibleUrl {
 	line-height: 24px;
 	padding-top: 2px;
+	color: #616161;
 }
 
 .aa {
