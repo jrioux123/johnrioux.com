@@ -415,8 +415,12 @@ a {
 	background-color: #efefef;
 }
 
-.gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
+.gsc-table-result, .gsc-thumbnail-inside {
 	padding: 0px;
+}
+
+.gsc-url-top {
+	padding: 20px 0px 0px 0px;
 }
 
 .gs-snippet {
@@ -444,11 +448,15 @@ a {
 	margin-top: -24px;
 	padding-left: 16px;
 	margin-left: -16px;
-	padding-bottom: 60px;
+	padding-bottom: 92px;
 }
 
 .gs-result .gs-title:hover {
 	background-color: rgba(0, 0, 0, .045);
+}
+
+.gs-title b {
+	position: initial;
 }
 
 .gsc-results {
@@ -459,6 +467,8 @@ a {
 	border: 0px;
 	border-bottom: 1px solid #e9e9e9 !important;
 	padding: 20px 16px 16px 16px;
+	height: 140px;
+	box-sizing: border-box;
 }
 
 .gsc-webResult.gsc-result:hover {
