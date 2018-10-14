@@ -415,6 +415,11 @@ a {
 	background-color: #efefef;
 }
 
+.gsc-adBlock {
+	padding: 14px 14px 0px;
+	margin-bottom: 0px;
+}
+
 .gsc-table-result, .gsc-thumbnail-inside {
 	padding: 0px;
 }
@@ -456,7 +461,7 @@ a {
 }
 
 .gs-title b {
-	position: initial;
+	position: initial !important;
 }
 
 .gsc-results {
