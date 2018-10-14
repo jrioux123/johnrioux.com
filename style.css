@@ -437,15 +437,18 @@ a {
 	font-size: 20px !important;
 	font-weight: 500;
 	background-color: rgba(0, 0, 0, 0);
-	padding-bottom: 60px;
-	padding-top: 20px;
 	width: 100%;
 	position: fixed;
 	background-blend-mode: multiply;
+	padding-top: 24px;
+	margin-top: -24px;
+	padding-left: 16px;
+	margin-left: -16px;
+	padding-bottom: 60px;
 }
 
 .gs-result .gs-title:hover {
-	background-color: rgba(0, 0, 0, .14);
+	background-color: rgba(0, 0, 0, .045);
 }
 
 .gsc-results {
@@ -456,6 +459,11 @@ a {
 	border: 0px;
 	border-bottom: 1px solid #e9e9e9 !important;
 	padding: 20px 16px 16px 16px;
+}
+
+.gsc-webResult.gsc-result:hover {
+	border: none;
+	background-color: none;
 }
 
 .gs-visibleUrl {
