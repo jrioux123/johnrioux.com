@@ -420,6 +420,16 @@ a {
 	color: black;
 	font-size: 20px !important;
 	font-weight: 500;
+	background-color: rgba(0, 0, 0, 0);
+	padding-bottom: 60px;
+	padding-top: 20px;
+	width: 100%;
+	position: fixed;
+	background-blend-mode: multiply;
+}
+
+.gs-result .gs-title:hover {
+	background-color: rgba(0, 0, 0, .14);
 }
 
 .gsc-webResult .gsc-result {
