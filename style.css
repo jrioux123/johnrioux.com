@@ -425,7 +425,7 @@ a {
 }
 
 .gsc-url-top {
-	padding: 20px 0px 0px 0px;
+	padding: 0px;
 }
 
 .gs-snippet {
@@ -455,8 +455,8 @@ a {
 	display: block;
 }
 
-.gs-title a {	
-	background-color: rgba(0, 0, 0, .09);
+.gs-title a:hover {	
+	background-color: rgba(0, 0, 0, .09) !important;
 }
 
 .gs-title b {
