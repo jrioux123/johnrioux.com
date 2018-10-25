@@ -452,12 +452,13 @@ a {
 	margin-top: -24px;
 	padding-left: 16px;
 	margin-left: -16px;
-	display: block;
 }
 
+/*make this work
 .gs-title a:hover {	
 	background-color: rgba(0, 0, 0, .09) !important;
 }
+*/
 
 .gs-title b {
 	position: initial !important;
