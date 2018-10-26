@@ -61,7 +61,7 @@
 	
 .gsc-results-wrapper-overlay {
 	margin-top: 8px;
-	max-height: calc(100vh - 108px);
+	max-height: calc(100vh - 108px) !important;
 }
 	
 .navbar-content-pusher {
