@@ -41,6 +41,7 @@
             <img class="jrcircle jr2" style="width:32px" src="John_Rioux_Circle.png">
             <div class="title mobiletitle" style="float:left;">John Rioux</div>
             <!-- Search button -->
+            <script src="googlecustomsearch.js"></script>
             <div class="dropdown noSelect">
                 <button onclick="shadeCreate();searchCreate();searchbarFocus();" class="mobilesearch top-icons topright top-dark material-icons">search
                     <span class="tooltip">Search</span>
@@ -55,20 +56,21 @@
             <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
             <div id="searchID" class="searchcontainer">
                 <div class="searchbar">
-                <button id="shadeID" onclick="shadeKill();" class="material-icons exitsearch">arrow_back</button>       
-                <div style="margin-left: 48px;">
-                    <script>
-                    (function() {
-                    var cx = '016891107299133920326:wwaszvag6gw';
-                    var gcse = document.createElement('script');
-                    gcse.type = 'text/javascript';
-                    gcse.async = true;
-                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(gcse, s);
-                    })();
-                    </script>
-                    <gcse:search></gcse:search></div>
+                    <button id="shadeID" onclick="shadeKill();" class="material-icons exitsearch">arrow_back</button>       
+                    <div style="margin-left: 48px;">
+                        <script>
+                            (function() {
+                            var cx = '016891107299133920326:wwaszvag6gw';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </div>
                 </div>
             </div>
         </div> <!-- end of the titlebar div -->
@@ -83,7 +85,6 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
-    <script src="googlecustomsearch.js"></script>
     <script src="onload.js"></script>
     <script src="https://www.johnrioux.net/dropdown.js"></script>
 </body>
