@@ -46,8 +46,8 @@ function shadeKill() {
     var x = document.getElementById('shadeID');    
     var y = document.getElementById('dialogID'); 
     var z = document.getElementById('searchID'); 
-    w.style.cssText = "animation: menu-exit .25s 1; animation-timing-function: ease-in-out;";
-    x.style.cssText = "animation: shade-exit .25s 1; animation-timing-function: ease-in-out;";
+    w.style.cssText = "animation: menu-exit .25s 1; animation-timing-function: ease-in-out; left: -256px;";
+    x.style.cssText = "animation: shade-exit .25s 1; animation-timing-function: ease-in-out; opacity: 0;";
     y.style.display = 'none';
     z.style.display = 'none';
 }
