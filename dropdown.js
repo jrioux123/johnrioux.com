@@ -53,9 +53,9 @@ function shadeKill() {
 
 function menushadeKill() { 
     w.style.cssText = "animation: menu-exit .25s 1; animation-timing-function: ease-in-out; left: -360px;";
-    setTimeout(menuHide(){w.style.display='none';}, 250);
+    setTimeout(function(){w.style.display='none';}, 250);
     w2.style.cssText = "animation: shade-exit .25s 1; animation-timing-function: ease-in-out; opacity: 0;";
-    setTimeout(menushadeHide(){w2.style.display='none';}, 250);
+    setTimeout(function(){w2.style.display='none';}, 250);
 }
 
 searchbarFocus = function getFocus() {           
