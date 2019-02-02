@@ -33,6 +33,7 @@ function menuCreate() {
 }
 
 function shadeCreate() {
+    x.style.display='block';
     x.style.cssText = "display: block; animation: shade-enter .25s 1; animation-timing-function: ease-in-out; opacity: 1;";
 }
 
