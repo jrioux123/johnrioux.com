@@ -57,9 +57,9 @@ function menushadeKill() {
     var w = document.getElementById('menuID');
     var w2 = document.getElementById('menushadeID');   
     w.style.cssText = "animation: menu-exit .25s 1; animation-timing-function: ease-in-out; left: -360px;";
-    setTimeout(menuHide(){w.style.display='none';}, 250);
+    setTimeout(menuHide(){var w = document.getElementById('menuID');w.style.display='none';}, 250);
     w2.style.cssText = "animation: shade-exit .25s 1; animation-timing-function: ease-in-out; opacity: 0;";
-    setTimeout(menushadeHide(){x.style.display='none';}, 250);
+    setTimeout(menushadeHide(){var w2 = document.getElementById('menushadeID');w2.style.display='none';}, 250);
 }
 
 searchbarFocus = function getFocus() {           
