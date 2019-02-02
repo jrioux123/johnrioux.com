@@ -41,8 +41,26 @@
             <img class="jrcircle jr2" style="width:32px" src="John_Rioux_Circle.png">
             <div class="title mobiletitle" style="float:left;">John Rioux</div>
             <!-- Search button -->
+            <div class="dropdown noSelect">
+                <button onclick="shadeCreate();searchCreate();searchbarFocus();" class="mobilesearch top-icons topright top-dark material-icons">search
+                    <span class="tooltip">Search</span>
+                </button>  
+                <div class="desktopsearch searchcontainer">
+                    <div onclick="shadeCreate();searchCreate();searchbarFocus()" class="searchbar" style="box-shadow:none;background-color:#f7f7f7;cursor:text;">
+                        <div class="material-icons exitsearch" style="cursor:pointer;">search</div>
+                        <div style="font-size:16px;float:left;line-height:48px;opacity:.54;">Search johnrioux.net</div>
+                        </div>
+                </div>
+            </div>
             <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
-            <div w3-include-html="searchbar.html"></div> 
+            <div id="searchID" class="searchcontainer">
+                <div class="searchbar">
+                    <button id="shadeID" onclick="shadeKill();" class="material-icons exitsearch">arrow_back</button>       
+                    <div style="margin-left: 48px;">
+                        <div w3-include-html="searchbar.html"></div> 
+                    </div>
+                </div>
+            </div>
         </div> <!-- end of the titlebar div -->
         <!-- Tabs -->
         <div class="tabsbar">
