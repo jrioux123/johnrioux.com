@@ -23,7 +23,8 @@
 }
 	
 .menu {
-	left: 0px; !important;
+	display: block !important;
+	left: 0px !important;
 	width: 256px !important;
 	box-shadow: none !important;
 	border-right: 1px solid rgba(0, 0, 0, .12) !important;
