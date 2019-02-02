@@ -209,7 +209,7 @@ a {
 }
 
 .menu {
-	display: none;
+	left: -320px;
 	height: calc(100% + 48px);
 	width: calc(100% - 56px);
 	max-width: 320px;
