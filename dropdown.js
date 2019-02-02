@@ -28,13 +28,12 @@ var y = document.getElementById('dialogID');
 var z = document.getElementById('searchID');
 
 function menuCreate() {
-    w.style.cssText = "display: block; animation: menu-enter .25s 1; animation-timing-function: ease-in-out; left: 0px;";
-    w2.style.cssText = "display: block; animation: shade-enter .25s 1; animation-timing-function: ease-in-out; opacity: 1;";
+    w.style.display='block';
+    w2.style.display='block';
 }
 
 function shadeCreate() {
     x.style.display='block';
-    x.style.cssText = "display: block; animation: shade-enter .25s 1; animation-timing-function: ease-in-out; opacity: 1;";
 }
 
 function dialogCreate() {
