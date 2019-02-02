@@ -23,12 +23,12 @@ window.onclick = function(event) {
 
 function menuCreate() {
     var w = document.getElementById('menuID')
-    w.style.display = 'block';
+    w.style.cssText = "animation: menu-enter .25s 1; animation-timing-function: ease-in-out; left: 0px;";
 }
 
 function shadeCreate() {
     var x = document.getElementById('shadeID');
-    x.style.display = 'block';
+    x.style.cssText = "animation: shade-enter .25s 1; animation-timing-function: ease-in-out; opacity: 1;";
 }
 
 function dialogCreate() {
