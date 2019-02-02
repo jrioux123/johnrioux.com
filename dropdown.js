@@ -47,7 +47,7 @@ function shadeKill() {
     var y = document.getElementById('dialogID'); 
     var z = document.getElementById('searchID'); 
     w.style.display = 'none';
-    x.style.display = 'none';    
+    x.style.cssText = "animation: shade-enter .25s 1 reverse;animation-timing-function: ease-in-out;";
     y.style.display = 'none';
     z.style.display = 'none';
 }
