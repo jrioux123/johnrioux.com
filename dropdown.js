@@ -50,7 +50,6 @@ function searchCreate() {
 function shadeKill() {
     x.style.cssText = "animation: shade-exit .25s 1; animation-timing-function: ease-in-out; opacity: 0;";
     setTimeout(function(){x.style.display='none';}, 250);
-    y.style.display = 'none';
     z.style.display = 'none';
 }
 
