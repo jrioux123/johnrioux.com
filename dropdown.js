@@ -23,7 +23,9 @@ window.onclick = function(event) {
 
 function menuCreate() {
     var w = document.getElementById('menuID')
+    var w2 = document.getElementById('menushade')
     w.style.cssText = "display: block; animation: menu-enter .25s 1; animation-timing-function: ease-in-out; left: 0px;";
+    w2.style.cssText = "display: block; animation: shade-enter .25s 1; animation-timing-function: ease-in-out; opacity: 1;";
 }
 
 function shadeCreate() {
