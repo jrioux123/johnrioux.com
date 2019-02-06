@@ -20,13 +20,15 @@
             position: fixed;
             background-color: white;
             z-index: 1;
-            box-shadow: 0px 1px 8px rgba(0, 0, 0, .3);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, .3);
         }
         .topbar {
             width: 100%;
-            max-width: 612px; /* 500, the length of the logo, + 112, the length of both icons */ 
+            max-width: 800px; /* Max content width */ 
             margin: auto;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .topbar .material-icons {
             font-size: 24px;
@@ -37,7 +39,7 @@
         .topbar img {
             width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
             max-width: 460px;
-            margin: 20px 20px 0px 20px;
+            margin: 20px;
         }
         .tabsbar {
             max-width: 546px; /* This needs to be the exact sum of the tab widths, rounded up */
@@ -77,7 +79,7 @@
     <div class="navbar">
         <div class="topbar">
             <a href="#menu" style="float:left;" class="material-icons">menu</a>
-            <a href="#home"><img src="temporary-logo-2.png"></a>
+            <img src="temporary-logo-2.png">
             <a href="#menu" style="float:right;" class="material-icons">search</a>
         </div>
         <div class="tabsbar">
