@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>johnrioux.net</title>
+    <link rel="icon" type="image/png" href="John_Rioux_Circle.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel="stylesheet" type="text/css"> <!-- Roboto -->
     <link href="https://fonts.googleapis.com/icon?family=Josefin+Sans|Material+Icons" rel="stylesheet"> <!-- Font for the icons -->
     <meta content='width=device-width, initial-scale=1' name='viewport'/> <!-- Allows site to resize for mobile -->
@@ -17,10 +18,9 @@
         }
         .navbar {
             width: 100%;
-            position: fixed;
             background-color: white;
             z-index: 1;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, .3);
+            position: fixed;
         }
         .topbar {
             width: 100%;
@@ -76,14 +76,14 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="topbar">
             <a href="#menu" style="float:left;" class="material-icons">menu</a>
             <img src="temporary-logo-2.png">
             <a href="#menu" style="float:right;" class="material-icons">search</a>
         </div>
         <div class="tabsbar">
-            <a class="tab" href="#blog" style="opacity: 1; color: #db4437;">BLOG</a>
+            <a class="tab" href="#blog" style="opacity: 1; color: #db4437;">NEWS</a>
             <a class="tab" href="#videos">VIDEOS</a>
             <a class="tab" href="#design">COMEDY</a>
             <a class="tab" href="#design">MUSIC</a>
@@ -92,6 +92,38 @@
             <div class="tabstroke"></div>
         </div>
     </div>
+    <div class="topbar" style="padding-bottom:48px;"> <!-- Pushes content below navbar -->
+        <img src="temporary-logo-2.png">
+    </div>
+
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
+    <p>Blah blah bah blah blah bah bah bah</p>
+
+    <script>
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 8px;";
+            } else {
+                document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0) 0px 1px 8px;";
+            }
+        }
+
+    </script>
 
 </body>
 
