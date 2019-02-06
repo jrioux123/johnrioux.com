@@ -1,84 +1,99 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <title>John Rioux</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="John_Rioux_Circle.png" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet" />
+    <title>johnrioux.net</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel="stylesheet" type="text/css"> <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/icon?family=Josefin+Sans|Material+Icons" rel="stylesheet"> <!-- Font for the icons -->
+    <meta content='width=device-width, initial-scale=1' name='viewport'/> <!-- Allows site to resize for mobile -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
+
+    <style>
+        body {
+            margin: auto;
+            font-family: "Roboto";
+        }
+        body * {            
+            text-decoration: none;
+        }
+        .navbar {
+            width: 100%;
+            position: fixed;
+            background-color: white;
+            z-index: 1;
+            box-shadow: 0px 1px 8px rgba(0, 0, 0, .3);
+        }
+        .topbar {
+            width: 100%;
+            max-width: 676px; /* 500, the length of the logo, + 176, the length of both icons */ 
+            margin: auto;
+            text-align: center;
+        }
+        .topbar .material-icons {
+            font-size: 24px;
+            color: black;
+            padding: 8px;
+            margin: 8px;
+        }
+        .topbar img {
+            width: calc(100% - 192px);
+            max-width: 460px;
+            margin: 20px 20px 0px 20px;
+        }
+        .tabsbar {
+            max-width: 546px; /* This needs to be the exact sum of the tab widths, rounded up */
+            height: 48px;
+            white-space: nowrap;
+            overflow: auto;
+            margin: auto;
+        }
+        .tab {
+            padding: 0px 20px 0px 20px;            
+            min-width: 90px;
+            height: 48px;
+            line-height: 48px;
+            opacity: 0.7;
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            box-sizing: border-box;
+            text-align: center;
+            display: inline-block;
+            margin-left:-4px; /* inline-blocks all have that weird 4px margin */
+            position: relative;
+            top: -48px;
+        }
+        .tab:hover {
+            opacity: 1;
+        }
+        .tabstroke {
+            margin-top: 46px;
+            margin-left: -2px;
+            width: 90px; /* This will change */
+            height: 2px;
+            background-color: #db4437;
+        }
+    </style>
+
 </head>
-<body onload="onloadJS();">
+
+<body>
     <div class="navbar">
-        <div class="titlebar"> 
-            <!-- Menu button -->
-            <div class="menubutton">
-                <button onclick="menuCreate();" class="top-icons topleft top-dark material-icons">menu
-                    <span class="tooltip">Menu</span>
-                </button>
-            </div>
-            <button id="menushadeID" onclick="menushadeKill();" class="shade shadehidden"></button>        
-            <!-- Menu -->
-            <div id="menuID" class="menu">
-                <div class="menutitle" style="height:104px;">
-                    <img class="jrcircle" src="John_Rioux_Circle.png">
-                    <div style="height:100%;float: left;">
-                        <div class="title" style="float:left;">John Rioux</div>
-                        <div class="subtitle">Writer, filmmaker</div>
-                    </div>
-                </div>
-                <div class="menulist">
-                    <a class="homebutton" id="homebutton" href="https://www.johnrioux.net"><div class="material-icons">home</div>Home</a>
-                    <a class="aboutbutton" id="aboutbutton"  href="#about"><div class="material-icons">info</div>About</a>
-                    <a class="contactbutton" id="contactbutton"  href="#contact"><div class="material-icons">message</div>Contact</a>   
-                </div>
-                <div class="menulist">
-                    <a class="oldsitebutton" id="oldsitebutton"  href="https://johnrcomics.blogspot.com/"><div class="material-icons">exit_to_app</div>My old site</a>
-                </div>
-            </div>
-            <!-- Logo -->
-            <img class="jrcircle jr2" style="width:32px" src="John_Rioux_Circle.png">
-            <div class="title mobiletitle" style="float:left;">John Rioux</div>
-            <!-- Search button -->
-            <div class="dropdown noSelect">
-                <button onclick="shadeCreate();searchCreate();searchbarFocus();" class="mobilesearch top-icons topright top-dark material-icons">search
-                    <span class="tooltip">Search</span>
-                </button>  
-                <div class="desktopsearch searchcontainer">
-                    <div onclick="shadeCreate();searchCreate();searchbarFocus()" class="searchbar" style="box-shadow:none;background-color:#f7f7f7;cursor:text;">
-                        <div class="material-icons exitsearch" style="cursor:pointer;">search</div>
-                        <div style="font-size:16px;float:left;line-height:48px;opacity:.54;">Search johnrioux.net</div>
-                        </div>
-                </div>
-            </div>
-            <button id="shadeID" onclick="shadeKill();" class="shade shadehidden"></button>
-            <div id="searchID" class="searchcontainer">
-                <div class="searchbar">
-                    <button id="shadeID" onclick="shadeKill();" class="material-icons exitsearch">arrow_back</button>       
-                    <div style="margin-left: 48px;">
-                        <div w3-include-html="searchbar.html"></div> 
-                    </div>
-                </div>
-            </div>
-        </div> <!-- end of the titlebar div -->
-        <!-- Tabs -->
+        <div class="topbar">
+            <a href="#menu" style="float:left;" class="material-icons">menu</a>
+            <a href="#home"><img src="temporary-logo.png"></a>
+            <a href="#menu" style="float:right;" class="material-icons">search</a>
+        </div>
         <div class="tabsbar">
-            <a class="menuitem blogtab" href="https://www.johnrioux.net" style="margin-left:52px;">BLOG</a>
-            <a class="menuitem moviestab" href="videos.html">VIDEOS</a>
-            <a class="menuitem designtab" href="#design">COMEDY</a>
-            <a class="menuitem designtab" href="#design">MUSIC</a>
-            <a class="menuitem designtab" href="#design">DESIGN</a>
-            <a class="menuitem designtab" href="#design">COMICS</a>
+            <div class="tabstroke"></div>
+            <a class="tab" href="#blog" style="opacity: 1; color: #db4437;">BLOG</a>
+            <a class="tab" href="#videos">VIDEOS</a>
+            <a class="tab" href="#design">COMEDY</a>
+            <a class="tab" href="#design">MUSIC</a>
+            <a class="tab" href="#design">DESIGN</a>
+            <a class="tab" href="#design">COMICS</a>
         </div>
     </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
-    <script src="https://www.johnrioux.net/dropdown.js"></script>
-    <script src="googlecustomsearch.js"></script>   
-    <script src="onload.js"></script>    
-    <script src="w3data.js"></script>
-    <script>w3IncludeHTML();</script>
-    
+
 </body>
+
 </html>
