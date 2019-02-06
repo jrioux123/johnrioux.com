@@ -12,9 +12,9 @@
         body {
             margin: auto;
             font-family: "Roboto";
-            padding-bottom: 104px; /* This adds safety space for when the navbar resizes. You could replace this with a footer. */
+            padding-bottom: 232px; /* This adds safety space for when the navbar resizes. You could replace this with a footer. */
         }
-        body * {            
+        a {            
             text-decoration: none;
         }
         .navbar {
@@ -74,6 +74,52 @@
             height: 2px;
             background-color: #db4437;
         }
+
+        .card {
+            font-size: 14px;
+            margin: auto;
+            min-width: 280px;
+            max-width: 528px;
+            background-color: white;
+            word-wrap: break-word;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+        .card:hover {
+            animation: card-hover .1s ease-in 1;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+            transform:scale(1.01);
+
+        }
+        @keyframes card-hover {
+            from {box-shadow: 0 0px 0px rgba(0,0,0,0); transform:scale(1);}
+            to {box-shadow: 0 6px 14px rgba(0,0,0,0.3); transform:scale(1.01);}
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            font-size: 20px;            
+            font-weight: 500;
+            padding: 16px 16px 0px 16px;
+            height: auto;
+            line-height: 26px;
+            color: #000;
+        }
+        .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: #616161;
+            line-height: 24px;
+            padding: 0px 16px;
+        }
+        p {
+            padding: 16px;
+            margin: 0px;
+            color:black;
+        }
+
     </style>
 
 </head>
@@ -99,34 +145,14 @@
         <img id="hiddenlogo" src="temporary-logo-2.png">
     </div>
 
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
-    <p>Temporary paragraph! Yadda yadda yadda yadda yadda yadda yadda yadaa!</p>
-    <p>Blah blah bah blah blah bah bah bah</p>
+    <div class="card">
+        <a href="https://www.johnrioux.net/blog/noheader.html">
+            <img src="https://www.johnrioux.net/images/placeholder.jpg">
+            <div class="title">Welcome to johnrioux.net</div>
+            <div class="subtitle">October 2, 2018</div>
+            <p>The only place to consume content created by John Rioux. Except YouTube. And a few other places. This is a brand new website full of cool things.</p>
+        </a>
+    </div>
 
     <script>
         
