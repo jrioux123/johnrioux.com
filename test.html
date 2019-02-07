@@ -12,12 +12,18 @@
         body {
             margin: auto;
             font-family: "Roboto";
-            background-color: #fafafa;
             padding-bottom: 232px; /* This adds safety space for when the navbar resizes. You could replace this with a footer. */
         }
         a {            
             text-decoration: none;
         }
+        .material-icons {
+            font-size: 24px;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        /* Navbar */
         .navbar {
             width: 100%;
             background-color: white;
@@ -35,11 +41,24 @@
             align-items: flex-end;
         }
         .topbar .material-icons {
-            font-size: 24px;
             color: black;
-            padding: 8px;
-            margin: 8px;
-            transition: 0.4s;
+            opacity: 0.7;
+            transition: 0.4s;            
+            border-radius: 100%;
+        }
+        .topbar .material-icons:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+        .topbar .material-icons:active {
+            background-color: #e1e1e1;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+        }
+        button:focus {
+            outline: none;
         }
         .topbar img {
             width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
@@ -78,10 +97,81 @@
             background-color: #db4437;
         }
 
+        /* Menu */
+        .menu {
+            display: none;
+            height: calc(100% + 48px);
+            width: calc(100% - 56px);
+            max-width: 320px;
+            position: fixed;	
+            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+            background-color: white;
+            z-index: 3;
+            animation: menu-enter .25s 1;
+            animation-timing-function: ease-in-out;
+            top: 0;
+        }
+        .menulist {
+            padding: 8px 0px 8px 0px;
+            border-top: 1px solid rgba(0, 0, 0, .12);
+        }
+        .menu a {
+            height: 48px;
+            line-height: 48px;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;            
+            color: black;
+        }
+        .menu .material-icons {
+            margin: 4px 16px 4px 8px;
+            color: #616161;
+            vertical-align: middle;
+        }
+        .menu a:hover {
+            background-color: #f5f5f5;
+        }            
+        .menu-selected {
+            color: #db4437 !important;
+            background-color: #fbe8e7 !important;
+        }            
+        .menu-selected .material-icons {
+            color: #db4437 !important;
+        }            
+        @keyframes menu-enter {
+            from {left: -320px;}
+            to {left: 0px;}
+        }
+        @keyframes menu-exit {
+            from {left: 0px;}
+            to {left: -320px;}
+        }
+        .shade {
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: calc(100% + 56px);
+            background-color: rgba(0,0,0,0.4);	
+            animation: shade-enter .25s 1;
+            animation-timing-function: ease-in-out;
+            display: none;
+        }
+        @keyframes shade-enter {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes shade-exit {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+
+        /* Page Content */
         .pagecontent {
             margin: auto;
             max-width: 800px;
-            padding-top: 8px;
+            padding: 8px 0px 0px 8px;
         }
         .card {
             font-size: 14px;
@@ -91,6 +181,11 @@
             word-wrap: break-word;
             float: left;
             box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
+            transition: .1s ease-in;
+        }        
+        .card:hover {
+            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+            transform:scale(1.01);
         }
         .big {
             height: 336px;
@@ -100,24 +195,15 @@
             height: 160px;
             box-sizing: border-box;
         }
-        .card:hover {
-            animation: card-hover .1s ease-in 1;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-            transform:scale(1.01);
-
-        }
-        @keyframes card-hover {
-            from {box-shadow: 0 0px 0px rgba(0,0,0,0); transform:scale(1);}
-            to {box-shadow: 0 6px 14px rgba(0,0,0,0.3); transform:scale(1.01);}
-        }
         .big img {
             width: 100%;
             height: calc(100% - 114px);
             object-fit: cover;
         }
         .small img {
-            width: 160px;
-            height: 100%;
+            width: 144px;
+            height: 160px;
+            padding: 16px 0px 16px 16px;
             float: left;
             object-fit: cover;
             box-sizing: border-box;
@@ -135,7 +221,7 @@
         }
         .small .cardtext {
             box-sizing: border-box;
-            width: 216px;
+            width: 232px;
             float: left;
         }
         .title {
@@ -157,16 +243,35 @@
             color:black;
         }
 
-        /* Widescreen Mode 
-        @media only screen and (min-width: 1080px) {
-            (Show the menu)
+        /* Widescreen Mode */
+        @media only screen and (min-width: 1312px) {
+            .menu {
+                display: block;
+                padding-top: 232px;
+                width: 256px;
+                top: -1px;
+                float: left;
+                animation: none;
+                z-index: 0;
+                background-color: transparent;
+                box-shadow: none;
+                transition: .4s;
+            }            
+            .menutitle {
+                display: none;
+            }            
+            .menu a {
+                padding-left: 4px;
+            }            
+            .jr2, .mobiletitle, .mobilesearch {
+                display: none;
+            }
         }
-        */
         
         /* Mobile Mode */
         @media only screen and (max-width: 800px) {
             .pagecontent {
-                padding-top: 0px;
+                padding: 0px;
             }
             .card {
                 width: 100%;
@@ -181,15 +286,14 @@
             }
         }
     </style>
-
 </head>
-
 <body>
+    <!-- Navbar -->    
     <div class="navbar" id="navbar">
         <div class="topbar" id="topbar">
-            <a href="#menu" id="menubutton" style="float:left;" class="material-icons">menu</a>
+            <button id="menubutton" onclick="menuOpen()" style="float:left;" class="material-icons">menu</button>
             <img id="logo" src="temporary-logo-2.png">
-            <a href="#search" id="searchbutton" style="float:right;" class="material-icons">search</a>
+            <button id="searchbutton" style="float:right;" class="material-icons">search</button>
         </div>
         <div class="tabsbar">
             <a class="tab" href="#blog" style="opacity: 1; color: #db4437;">NEWS</a>
@@ -204,6 +308,30 @@
     <div class="topbar" id="hiddentopbar" style="padding-bottom:48px;"> <!-- Pushes content below navbar -->
         <img id="hiddenlogo" src="temporary-logo-2.png">
     </div>
+
+    <!-- Menu -->
+    <div id="menuID" class="menu">
+        <div class="menutitle" style="height:104px;">
+            <!-- Insert Logo Here -->
+        </div>
+        <div class="menulist">
+            <!-- Note: when you decide which method to use for coloring the selected one, delete the other. -->
+            <a class="menu-selected" href="#home"><div class="material-icons">home</div>Home</a>
+            <a href="#about"><div class="material-icons">info</div>About</a>
+            <a href="#contact"><div class="material-icons">message</div>Contact</a>   
+        </div>
+        <div class="menulist">
+            <a href="#twitter"><div class="material-icons">update</div>Twitter</a>
+            <a href="#instagram"><div class="material-icons">camera</div>Instagram</a>
+            <a href="#youtube"><div class="material-icons">play_arrow</div>YouTube</a>            
+            <a href="#youtube"><div class="material-icons">people</div>LinkedIn</a>
+        </div>
+        <div class="menulist">
+            <a class="oldsitebutton" id="oldsitebutton"  href="https://johnrcomics.blogspot.com/"><div class="material-icons">exit_to_app</div>My old site</a>
+        </div>
+    </div>    
+    <div id="menushade" onclick="menuClose()" class="shade"></div>
+   
 
     <div class="pagecontent">
         <!-- Placeholder content below -->
@@ -282,8 +410,29 @@
                 document.getElementById("topbar").style.cssText = "height:184px;";
                 document.getElementById("hiddentopbar").style.cssText = "height:184px; padding-bottom:48px;";
                 document.getElementById("logo").style.cssText = "width:calc(100% - 152px);";
-                document.getElementById("hiddenlogo").style.cssText = "width:calc(100% - 152px);";
+                document.getElementById("hiddenlogo").style.cssText = "width:calc(100% - 152px);";                
             }
+            if (document.documentElement.clientWidth > 1312) {
+                if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {   
+                    document.getElementById("menuID").style.cssText = "padding-top:104px;";
+                } else {
+                    document.getElementById("menuID").style.cssText = "padding-top:232px;";
+                }
+            }
+        }
+
+        function menuOpen() {
+            document.getElementById("menuID").style.cssText = "display:block;";
+            document.getElementById("menushade").style.cssText = "display:block;";
+        }
+
+        function menuClose() {
+            document.getElementById("menuID").style.cssText = "left: -320px; transition: .25s;";
+            document.getElementById("menushade").style.cssText = "opacity: 0; transition: .25s;";
+            setTimeout(function(){
+                document.getElementById("menuID").style.cssText = "display:none;";
+                document.getElementById("menushade").style.cssText = "display:none;";
+            }, 250);
         }
 
     </script>
