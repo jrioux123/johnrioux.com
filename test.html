@@ -22,6 +22,7 @@
             background-color: white;
             z-index: 1;
             position: fixed;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
         }
         .topbar {
             width: 100%;
@@ -75,15 +76,26 @@
             background-color: #db4437;
         }
 
+        .pagecontent {
+            margin: auto;
+            max-width: 992px; /* Make it SMALLER */
+        }
         .card {
             font-size: 14px;
-            margin: auto;
-            min-width: 280px;
-            max-width: 528px;
+            margin: 8px;
+            width: 472px; /* Make it SMALLER */
             background-color: white;
             word-wrap: break-word;
-            margin-top: 16px;
-            margin-bottom: 0px;
+            float: left;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
+        }
+        .big {
+            max-height: 396px; /* Make it SMALLER */
+        }
+        .small {
+            height: 190px; /* Make it SMALLER */
+            padding: 16px;
+            box-sizing: border-box;
         }
         .card:hover {
             animation: card-hover .1s ease-in 1;
@@ -95,14 +107,31 @@
             from {box-shadow: 0 0px 0px rgba(0,0,0,0); transform:scale(1);}
             to {box-shadow: 0 6px 14px rgba(0,0,0,0.3); transform:scale(1.01);}
         }
-        .card img {
+        .big img {
             width: 100%;
             height: auto;
+        }
+        .small img {
+            width: 40%;
+            height: 100%;
+            float: left;
+            object-fit: cover;
+            box-sizing: border-box;
+            padding-left: 16px;
+        }
+        .big .cardtext {
+            position: relative;
+            bottom: 0;
+            padding: 16px;
+        }
+        .small .cardtext {
+            box-sizing: border-box;
+            width: 60%;
+            float: left;
         }
         .title {
             font-size: 20px;            
             font-weight: 500;
-            padding: 16px 16px 0px 16px;
             height: auto;
             line-height: 26px;
             color: #000;
@@ -112,14 +141,21 @@
             font-weight: 400;
             color: #616161;
             line-height: 24px;
-            padding: 0px 16px;
         }
         p {
-            padding: 16px;
+            padding-top: 16px;
             margin: 0px;
             color:black;
         }
 
+        /* Desktop Mode */
+        @media only screen and (max-width: 800px) {
+            .card {
+                width: auto;
+                max-width: 472px;
+                min-width: 280px;
+            }
+        }
     </style>
 
 </head>
@@ -145,30 +181,39 @@
         <img id="hiddenlogo" src="temporary-logo-2.png">
     </div>
 
-    
-    <div class="card">
+    <div class="pagecontent">
+        <!-- Placeholder content below -->
+        <div class="card big">
             <a href="#nothing">
                 <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/50444198_1042264539289742_4946826297968951296_n.jpg?_nc_cat=109&_nc_ht=scontent-ort2-1.xx&oh=adcef36a250c70809acea4a13ed427ee&oe=5D006A77">
-                <div class="title">Boom town!</div>
-                <div class="subtitle">October 2, 2018</div>
-                <p>There's too much tuna on my tunatini, and his martuna needs more tuna!</p>
+                <div class="cardtext">
+                    <div class="title">Boom town!</div>
+                    <div class="subtitle">October 2, 2018</div>
+                    <p>Once upon a time a man went to Arby's to buy a big ol' pumpkin. He got tired of writing filler content for his wesbite to see how things worked, so he just pumpkin'd up.</p>
+                </div>
             </a>
         </div>
-    <div class="card">
-        <a href="#nothing">
-            <img src="https://occ-0-987-990.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYdTTr8GsFX8KnlbBALciXtmJ-WcNC8lsWe2pTB77YKacAip-dC3GKCVzN5vdEyt97leYKeCNxpYVXDua-wZkv0TK2yoMUFY7QUXjXzZgUphw5uz2ZRhrVfsFy9h3h5rJsjx75gcnw.jpg">
-            <div class="title">Placeholder Card</div>
-            <div class="subtitle">October 2, 2018</div>
-            <p>Wocka wocka thumbs up</p>
-        </a>
-    </div>
-    <div class="card">
-        <a href="https://www.johnrioux.net/blog/noheader.html">
-            <img src="https://www.johnrioux.net/images/placeholder.jpg">
-            <div class="title">Welcome to johnrioux.net</div>
-            <div class="subtitle">October 2, 2018</div>
-            <p>The only place to consume content created by John Rioux. Except YouTube. And a few other places. This is a brand new website full of cool things.</p>
-        </a>
+        <div class="card small">
+            <a href="#nothing">
+                <div class="cardtext">
+                    <div class="title">John Mulaney special! Out now!</div>
+                    <div class="subtitle">May 2, 2018</div>
+                    <p>There's too much tuna on my tunatini, and his martuna needs more tuna!</p>
+                </div>
+                <img src="https://occ-0-987-990.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYdTTr8GsFX8KnlbBALciXtmJ-WcNC8lsWe2pTB77YKacAip-dC3GKCVzN5vdEyt97leYKeCNxpYVXDua-wZkv0TK2yoMUFY7QUXjXzZgUphw5uz2ZRhrVfsFy9h3h5rJsjx75gcnw.jpg">
+            </a>
+        </div>
+        <div class="card small">
+            <a href="https://www.johnrioux.net/blog/noheader.html">
+                <div class="cardtext">
+                    <div class="title">Coming soon to YouTube: The Billion-Dollar Code</div>
+                    <div class="subtitle">October 2, 2018</div>
+                    <p>Wocka wocka thumbs up</p>
+                </div>
+                <img src="https://www.johnrioux.net/images/placeholder.jpg">
+            </a>
+        </div>
+        <!-- Placeholder content above -->
     </div>
 
     <script>
@@ -185,7 +230,7 @@
                 document.getElementById("logo").style.cssText = "width:152px; margin:8px 0px 0px 0px;";
                 document.getElementById("hiddenlogo").style.cssText = "width:152px; margin:8px;";
             } else {
-                document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0) 0px 1px 8px;";
+                document.getElementById("navbar").style.cssText = "box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);";
                 document.getElementById("topbar").style.cssText = "height:184px;";
                 document.getElementById("hiddentopbar").style.cssText = "height:184px; padding-bottom:48px;";
                 document.getElementById("menubutton").style.cssText = "float:left; margin-top:64px;";
