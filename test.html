@@ -12,6 +12,7 @@
         body {
             margin: auto;
             font-family: "Roboto";
+            background-color: #fafafa;
             padding-bottom: 232px; /* This adds safety space for when the navbar resizes. You could replace this with a footer. */
         }
         a {            
@@ -78,23 +79,24 @@
 
         .pagecontent {
             margin: auto;
-            max-width: 992px; /* Make it SMALLER */
+            max-width: 800px;
+            padding-top: 8px;
         }
         .card {
             font-size: 14px;
             margin: 8px;
-            width: 472px; /* Make it SMALLER */
+            width: 376px;
             background-color: white;
             word-wrap: break-word;
             float: left;
             box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
         }
         .big {
-            max-height: 396px; /* Make it SMALLER */
+            height: 336px;
+            position: relative;
         }
         .small {
-            height: 190px; /* Make it SMALLER */
-            padding: 16px;
+            height: 160px;
             box-sizing: border-box;
         }
         .card:hover {
@@ -109,24 +111,30 @@
         }
         .big img {
             width: 100%;
-            height: auto;
+            height: calc(100% - 114px);
+            object-fit: cover;
         }
         .small img {
-            width: 40%;
+            width: 160px;
             height: 100%;
             float: left;
             object-fit: cover;
             box-sizing: border-box;
-            padding-left: 16px;
+        }
+        .cardtext {            
+            padding: 16px;
         }
         .big .cardtext {
-            position: relative;
+            position: absolute;
             bottom: 0;
-            padding: 16px;
+            height: 114px;
+            width: 100%;
+            background-color: white;
+            box-sizing: border-box;
         }
         .small .cardtext {
             box-sizing: border-box;
-            width: 60%;
+            width: 216px;
             float: left;
         }
         .title {
@@ -148,12 +156,30 @@
             color:black;
         }
 
-        /* Desktop Mode */
+        /* Widescreen Mode 
+        @media only screen and (min-width: 1080px) {
+            (Show the menu)
+        }
+        */
+        
+        /* Mobile Mode */
         @media only screen and (max-width: 800px) {
+            .pagecontent {
+                padding-top: 0px;
+            }
             .card {
                 width: auto;
-                max-width: 472px;
-                min-width: 280px;
+                max-width: 800px;
+                margin: 16px 0px 0px 0px;
+            }
+            .big {
+                height: auto;
+            }
+            .small img {
+                width: 42.55%;
+            }
+            .small .cardtext {
+                width: 57.45%;
             }
         }
     </style>
@@ -187,30 +213,56 @@
             <a href="#nothing">
                 <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/50444198_1042264539289742_4946826297968951296_n.jpg?_nc_cat=109&_nc_ht=scontent-ort2-1.xx&oh=adcef36a250c70809acea4a13ed427ee&oe=5D006A77">
                 <div class="cardtext">
-                    <div class="title">Boom town!</div>
+                    <div class="title">Boom time!</div>
                     <div class="subtitle">October 2, 2018</div>
-                    <p>Once upon a time a man went to Arby's to buy a big ol' pumpkin. He got tired of writing filler content for his wesbite to see how things worked, so he just pumpkin'd up.</p>
+                    <p>I can fly.</p>
                 </div>
             </a>
         </div>
         <div class="card small">
             <a href="#nothing">
+                <img src="https://www.johnrioux.net/videos/images/Pointless_thumbnail.png">
                 <div class="cardtext">
-                    <div class="title">John Mulaney special! Out now!</div>
-                    <div class="subtitle">May 2, 2018</div>
-                    <p>There's too much tuna on my tunatini, and his martuna needs more tuna!</p>
+                    <div class="title">I made a movie.</div>
+                    <p>In 2015.</p>
                 </div>
-                <img src="https://occ-0-987-990.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYdTTr8GsFX8KnlbBALciXtmJ-WcNC8lsWe2pTB77YKacAip-dC3GKCVzN5vdEyt97leYKeCNxpYVXDua-wZkv0TK2yoMUFY7QUXjXzZgUphw5uz2ZRhrVfsFy9h3h5rJsjx75gcnw.jpg">
             </a>
         </div>
         <div class="card small">
             <a href="https://www.johnrioux.net/blog/noheader.html">
+                <img src="http://frogboxentertainment.com/images/products_images/aote-product-image.jpg">
+                <div class="cardtext">
+                    <div class="title">Meatsa Pizza</div>
+                    <p>Come check out my cool stuff</p>
+                </div>
+            </a>
+        </div>
+        <div class="card small">
+            <a href="https://www.johnrioux.net/blog/noheader.html">
+                <img src="https://www.johnrioux.net/images/placeholder.jpg">
                 <div class="cardtext">
                     <div class="title">Coming soon to YouTube: The Billion-Dollar Code</div>
-                    <div class="subtitle">October 2, 2018</div>
-                    <p>Wocka wocka thumbs up</p>
+                    <p>Come check out my cool stuff</p>
                 </div>
-                <img src="https://www.johnrioux.net/images/placeholder.jpg">
+            </a>
+        </div>
+        <div class="card small">
+            <a href="#nothing">
+                <img src="https://vignette.wikia.nocookie.net/meme-hell/images/1/1d/Tumblr_nsl7rqvh0o1u5firdo2_500.jpg/revision/latest?cb=20150819044908">
+                <div class="cardtext">
+                    <div class="title">It's the scoob</div>
+                    <div class="subtitle">October 2, 2018</div>
+                    <p>Whoops</p>
+                </div>
+            </a>
+        </div>
+        <div class="card big">
+            <a href="#nothing">
+                <img src="https://occ-0-987-990.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYdTTr8GsFX8KnlbBALciXtmJ-WcNC8lsWe2pTB77YKacAip-dC3GKCVzN5vdEyt97leYKeCNxpYVXDua-wZkv0TK2yoMUFY7QUXjXzZgUphw5uz2ZRhrVfsFy9h3h5rJsjx75gcnw.jpg">
+                <div class="cardtext">
+                    <div class="title">John Mulaney special! Out now!</div>
+                    <p>There's too much tuna on my tunatini, and his martuna needs more tuna!</p>
+                </div>
             </a>
         </div>
         <!-- Placeholder content above -->
