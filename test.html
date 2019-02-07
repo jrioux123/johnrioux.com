@@ -29,21 +29,22 @@
             width: 100%;
             max-width: 800px; /* Max content width */ 
             margin: auto;
-            height: 184px; /*experiment*/
-            text-align: center; /*experiment*/
+            height: 184px;
             transition: 0.4s;
+            display: flex;
+            align-items: flex-end;
         }
         .topbar .material-icons {
             font-size: 24px;
             color: black;
             padding: 8px;
-            margin: 64px 8px 8px 8px; /*experiment*/
+            margin: 8px;
             transition: 0.4s;
         }
         .topbar img {
             width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
             max-width: 460px;
-            margin: 20px;
+            margin: auto;
             transition: 0.4s;
         }
         .tabsbar {
@@ -168,12 +169,9 @@
                 padding-top: 0px;
             }
             .card {
-                width: auto;
+                width: 100%;
                 max-width: 800px;
                 margin: 16px 0px 0px 0px;
-            }
-            .big {
-                height: auto;
             }
             .small img {
                 width: 42.55%;
@@ -277,18 +275,14 @@
                 document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 8px;";
                 document.getElementById("topbar").style.cssText = "height:56px;";
                 document.getElementById("hiddentopbar").style.cssText = "height:56px; padding-bottom:48px;";
-                document.getElementById("menubutton").style.cssText = "float:left; margin-top:8px;";
-                document.getElementById("searchbutton").style.cssText = "float:right; margin-top:8px;";
-                document.getElementById("logo").style.cssText = "width:152px; margin:8px 0px 0px 0px;";
-                document.getElementById("hiddenlogo").style.cssText = "width:152px; margin:8px;";
+                document.getElementById("logo").style.cssText = "width:152px;";
+                document.getElementById("hiddenlogo").style.cssText = "width:152px;";
             } else {
                 document.getElementById("navbar").style.cssText = "box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);";
                 document.getElementById("topbar").style.cssText = "height:184px;";
                 document.getElementById("hiddentopbar").style.cssText = "height:184px; padding-bottom:48px;";
-                document.getElementById("menubutton").style.cssText = "float:left; margin-top:64px;";
-                document.getElementById("searchbutton").style.cssText = "float:right; margin-top:64px;";
-                document.getElementById("logo").style.cssText = "width:calc(100% - 152px); margin:20px;";
-                document.getElementById("hiddenlogo").style.cssText = "width:calc(100% - 152px); margin:20px;";
+                document.getElementById("logo").style.cssText = "width:calc(100% - 152px);";
+                document.getElementById("hiddenlogo").style.cssText = "width:calc(100% - 152px);";
             }
         }
 
