@@ -10,14 +10,14 @@ $(".tabsbar").delegate("button", "click", function() {
     _link = $(this).attr("href");
     _name = $(this).attr("data-name")
     history.pushState(null, null, _link);
-    $('#pagecontent').load(_link + ' #pagecontent');
+    $('#contentloader').load(_link + ' #pagecontent');
     document.title = "John Rioux | " + _name;
     return false;
 });
     
 $(window).bind("popstate", function() {
     _link = location.pathname.replace(/^.*[\\/]/, "");
-    $('#pagecontent').load(_link + ' #pagecontent');
+    $('#contentloader').load(_link + ' #pagecontent');
 });
     
 } // End of function loadRest()
