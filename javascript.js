@@ -19,6 +19,8 @@ $(window).bind("popstate", function() {
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#pagecontent').load(_link + ' #pagecontent');
 });
+    
+} // End of function loadRest()
 
 
 // Animations
@@ -80,5 +82,3 @@ function comicsButton() {
     document.getElementById("videosbutton").style.cssText = "opacity: .7; color: black;";
     document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
 }
-    
-} // End of function loadRest()
