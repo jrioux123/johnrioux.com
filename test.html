@@ -428,8 +428,8 @@
         });
 
         $(window).bind("popstate", function() {
-            link = location.pathname.replace(/^.*[\\/]/, "");
-            loadContent(link);
+            _link = location.pathname.replace(/^.*[\\/]/, "");
+            $("#pagecontent").load(_link);
         });
 
     </script>
