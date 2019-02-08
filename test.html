@@ -134,6 +134,7 @@
             animation: menu-enter .25s 1;
             animation-timing-function: ease-in-out;
             top: 0;
+            transition: .25s;
         }
         .menulist {
             padding: 8px 0px 8px 0px;
@@ -166,10 +167,6 @@
             from {left: -320px;}
             to {left: 0px;}
         }
-        @keyframes menu-exit {
-            from {left: 0px;}
-            to {left: -320px;}
-        }
         .shade {
             position: fixed;
             z-index: 2;
@@ -181,14 +178,11 @@
             animation: shade-enter .25s 1;
             animation-timing-function: ease-in-out;
             display: none;
+            transition: .25s;
         }
         @keyframes shade-enter {
             from {opacity: 0;}
             to {opacity: 1;}
-        }
-        @keyframes shade-exit {
-            from {opacity: 1;}
-            to {opacity: 0;}
         }
 
         /* Page Content */
@@ -459,12 +453,12 @@
         }
 
         function menuOpen() {
-            document.getElementById("menuID").style.cssText = "display:block;";
-            document.getElementById("menushade").style.cssText = "display:block;";
+            document.getElementById("menuID").style.cssText = "display:block; left: 0px;";
+            document.getElementById("menushade").style.cssText = "display:block; opacity: 1";
         }
         function menuClose() {
-            document.getElementById("menuID").style.cssText = "left: -320px; transition: .25s;";
-            document.getElementById("menushade").style.cssText = "opacity: 0; transition: .25s;";
+            document.getElementById("menuID").style.cssText = "display:block; left: -320px;";
+            document.getElementById("menushade").style.cssText = "display:block; opacity: 0;";
             setTimeout(function(){
                 document.getElementById("menuID").style.cssText = "display:none;";
                 document.getElementById("menushade").style.cssText = "display:none;";
