@@ -491,14 +491,14 @@
             _link = $(this).attr("href");
             _name = $(this).attr("data-name")
             history.pushState(null, null, _link);
-            $("#pagecontent").load($(_link).find("#pagecontent"));
+            $('#pagecontent').load(_link + "#pagecontent")
             document.title = "John Rioux | " + _name;
             return false;
         });
 
         $(window).bind("popstate", function() {
             _link = location.pathname.replace(/^.*[\\/]/, "");
-            $("#pagecontent").load($(_link).find("#pagecontent"));
+            $('#pagecontent').load(_link + "#pagecontent")
         });
 
     </script>
