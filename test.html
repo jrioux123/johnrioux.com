@@ -487,10 +487,13 @@
             document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
         }
 
-        $(document).ready(getAJAX);
-        function getAJAX(){
-        $("pagecontent").load("navbar.html");
-        }
+        $.ajax({
+            url: "navbar.html",
+            context: document.body,
+            success: function(){
+                $(this).style.cssText = "color: blue;";
+            }
+        });
     </script>
 
 </body>
