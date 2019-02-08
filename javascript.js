@@ -2,16 +2,22 @@
 
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
-        _link = $(this).attr("href");
-        _name = $(this).attr("data-name")
-        history.pushState(null, null, _link);
-        $('#contentloader').load(_link + ' #pagecontent');
-        document.title = "John Rioux | " + _name;
-        return false;
+        document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
+        setTimeout(function(){
+            _link = $(this).attr("href");
+            _name = $(this).attr("data-name")
+            history.pushState(null, null, _link);
+            $('#contentloader').load(_link + ' #pagecontent');
+            document.title = "John Rioux | " + _name;
+            return false;
+        }, 250);
     });
     $(window).bind("popstate", function() {
+        document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = location.pathname.replace(/^.*[\\/]/, "");
-        $('#contentloader').load(_link + ' #pagecontent');
+        setTimeout(function(){
+            $('#contentloader').load(_link + ' #pagecontent');
+        }, 250);
     });
 });
 
