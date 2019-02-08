@@ -1,0 +1,43 @@
+<!-- Navbar -->    
+<div class="navbar" id="navbar">
+    <div class="topbar" id="topbar">
+        <button id="menubutton" onclick="menuOpen()" style="float:left;" class="material-icons">menu</button>
+        <img id="logo" src="temporary-logo-2.png">
+        <button id="searchbutton" style="float:right;" class="material-icons">search</button>
+    </div>
+    <div class="tabsbar">
+        <button id="newsbutton" onclick="newsButton()" href="test.html" data-name="News" class="tab" style="opacity: 1; color: #db4437;">NEWS</button>
+        <button id="videosbutton" onclick="videosButton()" href="test2.html" data-name="Videos" class="tab">VIDEOS</button>
+        <a class="tab" href="#design">COMEDY</a>
+        <a class="tab" href="#design">MUSIC</a>
+        <a class="tab" href="#design">DESIGN</a>
+        <button id="comicsbutton" onclick="comicsButton()" href="#comics" class="tab">COMICS</button>
+        <div id="tabstroke" class="tabstroke"></div>
+    </div>
+</div>
+<div class="topbar" id="hiddentopbar" style="padding-bottom:48px;"> <!-- Pushes content below navbar -->
+    <img id="hiddenlogo" src="temporary-logo-2.png">
+</div>
+
+<!-- Menu -->
+<div id="menuID" class="menu">
+    <div class="menutitle" style="height:104px;">
+        <!-- Insert Logo Here -->
+    </div>
+    <div class="menulist">
+        <!-- Note: when you decide which method to use for coloring the selected one, delete the other. -->
+        <a class="menu-selected" href="#home"><div class="material-icons">home</div>Home</a>
+        <a href="#about"><div class="material-icons">info</div>About</a>
+        <a href="#contact"><div class="material-icons">message</div>Contact</a>   
+    </div>
+    <div class="menulist">
+        <a href="#twitter"><div class="material-icons">update</div>Twitter</a>
+        <a href="#instagram"><div class="material-icons">camera</div>Instagram</a>
+        <a href="#youtube"><div class="material-icons">play_arrow</div>YouTube</a>            
+        <a href="#youtube"><div class="material-icons">people</div>LinkedIn</a>
+    </div>
+    <div class="menulist">
+        <a class="oldsitebutton" id="oldsitebutton"  href="https://johnrcomics.blogspot.com/"><div class="material-icons">exit_to_app</div>My old site</a>
+    </div>
+</div>    
+<div id="menushade" onclick="menuClose()" class="shade"></div>
