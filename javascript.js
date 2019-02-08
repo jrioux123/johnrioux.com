@@ -1,7 +1,5 @@
 // Ajax
 
-$('#navigation').load('navigation.html');
-
 $("#navigation").load(function(){
     $.ajax({url: "navigation.html", success: function() {
         $(".tabsbar").delegate("button", "click", function() {
