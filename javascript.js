@@ -2,6 +2,10 @@
 
 $('#navigation').load('navigation.html');
 
+window.onload = loadRest;
+
+function loadRest() { // Loads everything that refers to elements from navigation.html
+    
 $(".tabsbar").delegate("button", "click", function() {
     _link = $(this).attr("href");
     _name = $(this).attr("data-name")
@@ -10,7 +14,7 @@ $(".tabsbar").delegate("button", "click", function() {
     document.title = "John Rioux | " + _name;
     return false;
 });
-
+    
 $(window).bind("popstate", function() {
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#pagecontent').load(_link + ' #pagecontent');
@@ -76,3 +80,5 @@ function comicsButton() {
     document.getElementById("videosbutton").style.cssText = "opacity: .7; color: black;";
     document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
 }
+    
+} // End of function loadRest()
