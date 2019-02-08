@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>johnrioux.net</title>
+    <title>John Rioux</title>
     <link rel="icon" type="image/png" href="John_Rioux_Circle.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel="stylesheet" type="text/css"> <!-- Roboto -->
     <link href="https://fonts.googleapis.com/icon?family=Josefin+Sans|Material+Icons" rel="stylesheet"> <!-- Font for the icons -->
@@ -500,6 +500,23 @@
                     // Update text with data variables, whatever that means
                     $("#pagecontent").load(url);
                     // Now change the page title
+                    function requestContent(file) {
+                        $('.tabsbar').load(file + '.tabsbar');
+                    }
+
+                    window.addEventListener('popstate', function(e) {
+                        var pagename = e.state;
+
+                        if  (pagename == null) {
+                            removeCurrentClass();
+                            document.title = defaultTitle;
+                        } else {
+                            updateText(pagename);
+                            requestContent(pagename + ".html");
+                            addCurrentClass(pagename);
+                            document.title = "John Rioux | " + pagename;
+                        }
+                    });
             }
             e.stopPropation();
         }, false);
