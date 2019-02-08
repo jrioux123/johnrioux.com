@@ -427,6 +427,11 @@
             document.title = "John Rioux | " + _name;
         });
 
+        $(window).bind("popstate", function() {
+            link = location.pathname.replace(/^.*[\\/]/, "");
+            loadContent(link);
+        });
+
     </script>
 
 </body>
