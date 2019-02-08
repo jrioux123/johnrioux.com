@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel="stylesheet" type="text/css"> <!-- Roboto -->
     <link href="https://fonts.googleapis.com/icon?family=Josefin+Sans|Material+Icons" rel="stylesheet"> <!-- Font for the icons -->
     <meta content='width=device-width, initial-scale=1' name='viewport'/> <!-- Allows site to resize for mobile -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
 
     <style>
         body {
@@ -203,7 +202,7 @@
         }        
         .card:hover {
             box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-            transform:scale(1.01);
+            transform:scale(1.02);
             cursor: pointer;
         }
         .big {
@@ -355,7 +354,7 @@
     <div id="menushade" onclick="menuClose()" class="shade"></div>
    
 
-    <div class="pagecontent">
+    <div id="pagecontent" class="pagecontent">
         <!-- Placeholder content below -->
         <div class="card big">
             <a href="#nothing">
@@ -426,6 +425,8 @@
         <!-- Placeholder content above -->
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
     <script>
         
         window.onscroll = function() {scrollFunction()};
@@ -485,6 +486,11 @@
             document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
         }
 
+        $(document).ready(function(){
+            $("videosbutton").click(function(){
+                $("pagecontent").load("navbar.html");
+            });
+        });
     </script>
 
 </body>
