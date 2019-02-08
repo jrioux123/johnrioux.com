@@ -317,7 +317,7 @@
             <button id="searchbutton" style="float:right;" class="material-icons">search</button>
         </div>
         <div class="tabsbar">
-            <button id="newsbutton" onclick="newsButton()" data-name="" class="tab" style="opacity: 1; color: #db4437;">NEWS</button>
+            <button id="newsbutton" onclick="newsButton()" data-name="test" class="tab" style="opacity: 1; color: #db4437;">NEWS</button>
             <button id="videosbutton" onclick="videosButton()" data-name="test2" class="tab">VIDEOS</button>
             <a class="tab" href="#design">COMEDY</a>
             <a class="tab" href="#design">MUSIC</a>
@@ -495,7 +495,7 @@
                 // e.target is the button we just clicked.
                 var data = e.target.getAttribute('data-name'),
                     url = data + ".html"; // Once you get this working, try and see if this still works WITHOUT '.html'
-                    history.pushState(data, null, url);
+                    history.pushState(data, null, data);
                     // Fix any classes
                     // Update text with data variables, whatever that means
                     $("#pagecontent").load(url);
