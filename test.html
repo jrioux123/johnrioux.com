@@ -317,12 +317,12 @@
             <button id="searchbutton" style="float:right;" class="material-icons">search</button>
         </div>
         <div class="tabsbar">
-            <button id="newsbutton" onclick="newsButton()" class="tab" style="opacity: 1; color: #db4437;">NEWS</button>
-            <button id="videosbutton" onclick="videosButton()" class="tab">VIDEOS</button>
+            <button id="newsbutton" onclick="newsButton()" data-name="" class="tab" style="opacity: 1; color: #db4437;">NEWS</button>
+            <button id="videosbutton" onclick="videosButton()" data-name="videos" class="tab">VIDEOS</button>
             <a class="tab" href="#design">COMEDY</a>
             <a class="tab" href="#design">MUSIC</a>
             <a class="tab" href="#design">DESIGN</a>
-            <button id="comicsbutton" onclick="comicsButton()" class="tab" href="#design">COMICS</button>
+            <button id="comicsbutton" onclick="comicsButton()" data-name="comics" class="tab">COMICS</button>
             <div id="tabstroke" class="tabstroke"></div>
         </div>
     </div>
@@ -474,7 +474,6 @@
             document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
         }
         function videosButton() {
-            history.pushState(null, null, 'videos');
             document.getElementById("tabstroke").style.cssText = "margin-left:90px; width:90px;";            
             document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
             document.getElementById("videosbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
@@ -488,11 +487,23 @@
             document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
         }
 
-        $(document).ready(function(){
-            $("#videosbutton").click(function(){
-                $("#pagecontent").load("test2.html");
-            });
-        });
+        var container = document.querySelector('#pagecontent');
+
+        container.addEventListener('click', function(e) {
+            if (e.target != e.currentTarget) {
+                e.preventDefault();
+                // e.target is the button we just clicked.
+                var data = e.target.getAttribute('data-name'),
+                    url = data + ".html"; // Once you get this working, try and see if this still works WITHOUT '.html'
+                    history.pushState(data, null, url);
+                    // Fix any classes
+                    // Update text with data variables, whatever that means
+                    $("#pagecontent").load("data");
+                    // Now change the page title
+            }
+            e.stopPropation();
+        }, false);
+        
     </script>
 
 </body>
