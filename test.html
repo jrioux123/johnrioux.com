@@ -427,6 +427,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
+    <script src="https://raw.github.com/defunkt/jquery-pjax/master/jquery.pjax.js"></script> <!-- PJAX -->
     <script>
         
         window.onscroll = function() {scrollFunction()};
@@ -467,6 +468,8 @@
             }, 250);
         }
 
+        $(document).pjax('a', 'pagecontent')
+
         function newsButton() {
             document.getElementById("tabstroke").style.cssText = "margin-left:0px; width:90px;";            
             document.getElementById("newsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
@@ -478,6 +481,7 @@
             document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
             document.getElementById("videosbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
             document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
+            
         }
         function comicsButton() {
             document.getElementById("tabstroke").style.cssText = "margin-left:453.39px; width:92.61px;";            
@@ -486,13 +490,10 @@
             document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
         }
 
-        $(document).ready(function(){
-            $("button").click(function(){
-                $.ajax({url: "videos.html", success: function(result){
-                    $("pagecontent").html(result);
-                }});
-            });
-        });
+        $(document).ready(getAJAX);
+        function getAJAX(){
+        $("pagecontent").load("navbar.html");
+        }
     </script>
 
 </body>
