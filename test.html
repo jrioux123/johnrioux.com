@@ -498,7 +498,7 @@
 
         $(window).bind("popstate", function() {
             _link = location.pathname.replace(/^.*[\\/]/, "");
-            loadContent(_link + "#pagecontent");
+            $("#pagecontent").load(_link + "#pagecontent");
         });
 
     </script>
