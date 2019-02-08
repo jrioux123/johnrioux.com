@@ -1,3 +1,22 @@
+// Ajax
+
+$('#navigation').load('navigation.html');
+
+$(".tabsbar").delegate("button", "click", function() {
+    _link = $(this).attr("href");
+    _name = $(this).attr("data-name")
+    history.pushState(null, null, _link);
+    $('#pagecontent').load(_link + ' #pagecontent');
+    document.title = "John Rioux | " + _name;
+    return false;
+});
+
+$(window).bind("popstate", function() {
+    _link = location.pathname.replace(/^.*[\\/]/, "");
+    $('#pagecontent').load(_link + ' #pagecontent');
+});
+
+
 // Animations
 
 window.onscroll = function() {scrollFunction()};
@@ -57,22 +76,3 @@ function comicsButton() {
     document.getElementById("videosbutton").style.cssText = "opacity: .7; color: black;";
     document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
 }
-
-
-// Ajax
-
-$('#navigation').load('navigation.html');
-
-$(".tabsbar").delegate("button", "click", function() {
-    _link = $(this).attr("href");
-    _name = $(this).attr("data-name")
-    history.pushState(null, null, _link);
-    $('#pagecontent').load(_link + ' #pagecontent');
-    document.title = "John Rioux | " + _name;
-    return false;
-});
-
-$(window).bind("popstate", function() {
-    _link = location.pathname.replace(/^.*[\\/]/, "");
-    $('#pagecontent').load(_link + ' #pagecontent');
-});
