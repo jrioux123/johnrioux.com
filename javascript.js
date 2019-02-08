@@ -3,10 +3,10 @@
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
+        _link = $(this).attr("href");
+        _name = $(this).attr("data-name")
+        history.pushState(null, null, _link);
         setTimeout(function(){
-            _link = $(this).attr("href");
-            _name = $(this).attr("data-name")
-            history.pushState(null, null, _link);
             $('#contentloader').load(_link + ' #pagecontent');
             document.title = "John Rioux | " + _name;
             return false;
