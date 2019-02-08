@@ -10,14 +10,14 @@ $("#navigation").load("navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent');
             document.title = "John Rioux | " + _name;
             return false;
-        }, 250);
+        }, 125);
     });
     $(window).bind("popstate", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
-        }, 250);
+        }, 125);
     });
 });
 
