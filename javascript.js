@@ -1,6 +1,6 @@
 // Ajax
 
-$("#navigation").load("navigation.html);
+$("#navigation").load("navigation.html");
 
 
 // Animations
