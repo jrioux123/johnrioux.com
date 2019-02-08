@@ -2,25 +2,22 @@
 
 $('#navigation').load('navigation.html');
 
-window.onload = loadRest;
-
-function loadRest() { // Loads everything that refers to elements from navigation.html
-    
-$(".tabsbar").delegate("button", "click", function() {
-    _link = $(this).attr("href");
-    _name = $(this).attr("data-name")
-    history.pushState(null, null, _link);
-    $('#contentloader').load(_link + ' #pagecontent');
-    document.title = "John Rioux | " + _name;
-    return false;
+$("#navigation").load(function(){
+    $.ajax({url: "navigation.html", success: function(result){
+        $(".tabsbar").delegate("button", "click", function() {
+            _link = $(this).attr("href");
+            _name = $(this).attr("data-name")
+            history.pushState(null, null, _link);
+            $('#contentloader').load(_link + ' #pagecontent');
+            document.title = "John Rioux | " + _name;
+            return false;
+        });
+        $(window).bind("popstate", function() {
+            _link = location.pathname.replace(/^.*[\\/]/, "");
+            $('#contentloader').load(_link + ' #pagecontent');
+        });
+    }});
 });
-    
-$(window).bind("popstate", function() {
-    _link = location.pathname.replace(/^.*[\\/]/, "");
-    $('#contentloader').load(_link + ' #pagecontent');
-});
-    
-} // End of function loadRest()
 
 
 // Animations
