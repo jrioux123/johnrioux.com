@@ -498,7 +498,7 @@
                     history.pushState(data, null, url);
                     // Fix any classes
                     // Update text with data variables, whatever that means
-                    $("#pagecontent").load(data);
+                    $("#pagecontent").load(url);
                     // Now change the page title
             }
             e.stopPropation();
