@@ -487,8 +487,10 @@
         }
 
         $(document).ready(function(){
-            $("videosbutton").click(function(){
-                $("pagecontent").load("navbar.html");
+            $("button").click(function(){
+                $.ajax({url: "videos.html", success: function(result){
+                    $("pagecontent").html(result);
+                }});
             });
         });
     </script>
