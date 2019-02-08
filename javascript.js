@@ -3,7 +3,7 @@
 $('#navigation').load('navigation.html');
 
 $("#navigation").load(function(){
-    $.ajax({url: "navigation.html", success: function(result){
+    $.ajax({url: "navigation.html", success: function() {
         $(".tabsbar").delegate("button", "click", function() {
             _link = $(this).attr("href");
             _name = $(this).attr("data-name")
