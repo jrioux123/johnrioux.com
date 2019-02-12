@@ -30,10 +30,9 @@ a {
     width: 100%;
     max-width: 800px; /* Max content width */ 
     margin: auto;
-    height: 184px;
+    margin-top: 128px;
+    height: 56px;
     transition: 0.4s;
-    display: flex;
-    align-items: flex-end;
 }
 .topbar .material-icons {
     color: black;
