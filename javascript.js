@@ -17,12 +17,9 @@ $("#navigation").load("navigation.html", function() {
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
+            tabAnimation();
         }, 125);
     });
-});
-
-$( document ).ajaxComplete(function() {
-  tabAnimation();
 });
 
 
