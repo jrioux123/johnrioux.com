@@ -53,7 +53,7 @@ a {
     width: 100%;
     max-width: 800px; /* Max content width */ 
     margin: auto;
-    margin-top: 128px;
+    padding-top: 128px;
     height: 56px;
     transition: 0.4s;
 }
