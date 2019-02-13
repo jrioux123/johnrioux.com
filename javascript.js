@@ -7,7 +7,7 @@ $("#navigation").load("navigation.html", function() {
         _name = $(this).attr("data-name");
         this.style.cssText = "animation: tab-click .25s ease-in-out;";
         _buttonname = "button" + _name;
-        $('selector')[_buttonname]();
+        $(this)[_buttonname]();
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
