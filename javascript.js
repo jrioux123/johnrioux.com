@@ -8,7 +8,7 @@ $("#navigation").load("navigation.html", function() {
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
-            document.title = _name + "John Rioux | ";
+            document.title = _name + " | John Rioux";
             return false;
         }, 125);
     });
