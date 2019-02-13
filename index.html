@@ -18,9 +18,9 @@
     <div id="navigation"></div>   
 
     <div id="contentloader">    
-        <div id="pagecontent" class="pagecontent" onload="tabAnimation()">
+        <div id="pagecontent" class="pagecontent">
             <!-- Placeholder shit below -->
-            <script>
+            <script onload="tabAnimation()">
                 function tabAnimation() {
                     document.getElementById("tabstroke").style.cssText = "margin-left:90px; width:90px;";            
                     document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
@@ -91,12 +91,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
     <script src="javascript.js"></script>
-    <script>
-        function loadingAnimation() {
-            document.getElementById("loading").style.cssText = "height:0px;";
-            document.getElementById("logo").style.cssText = "margin-top:0px; transform:none;"
-        }
-    </script>
 
 </body>
 
