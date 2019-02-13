@@ -21,6 +21,7 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
+
 // Animations
 
 function loadingAnimation() {
