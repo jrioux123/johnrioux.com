@@ -8,7 +8,7 @@ $("#navigation").load("navigation.html", function() {
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
-            document.title = "John Rioux | " + _name;
+            document.title = _name + "John Rioux | ";
             return false;
         }, 125);
     });
@@ -22,6 +22,11 @@ $("#navigation").load("navigation.html", function() {
 });
 
 // Animations
+
+function loadingAnimation() {
+            document.getElementById("loading").style.cssText = "height:0px;";
+            document.getElementById("logo").style.cssText = "margin-top:0px; transform:none;"
+        }
 
 window.onscroll = function() {scrollFunction()};
 
