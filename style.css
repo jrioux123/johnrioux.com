@@ -34,6 +34,8 @@ a {
     justify-content: center;
     align-items: flex-end;
     margin: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
 }
 .logo img {
     max-height: 100%;
