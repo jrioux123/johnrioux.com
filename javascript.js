@@ -4,7 +4,9 @@ $("#navigation").load("navigation.html", function() {
     $(".tabsbar").delegate("button", "click", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = $(this).attr("href");
-        _name = $(this).attr("data-name")
+        _name = $(this).attr("data-name");
+        $(this).style.cssText = "animation: tab-click .25s ease-out 1;";
+        "button" + _name + "()";
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
@@ -17,7 +19,6 @@ $("#navigation").load("navigation.html", function() {
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
-            tabAnimation();
         }, 125);
     });
 });
@@ -66,22 +67,22 @@ function menuClose() {
     }, 250);
 }
 
-function newsButton() {
+function buttonNews() {
     document.getElementById("tabstroke").style.cssText = "margin-left:0px; width:90px;";            
-    document.getElementById("newsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
+    document.getElementById("newsbutton").style.cssText = "opacity: 1; color: #db4437;";
     document.getElementById("videosbutton").style.cssText = "opacity: 7; color: black;";
     document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
 }
-function videosButton() {
+function buttonVideos() {
     document.getElementById("tabstroke").style.cssText = "margin-left:90px; width:90px;";            
     document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
-    document.getElementById("videosbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
+    document.getElementById("videosbutton").style.cssText = "opacity: 1; color: #db4437;";
     document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
 
 }
-function comicsButton() {
+function buttonComics() {
     document.getElementById("tabstroke").style.cssText = "margin-left:453.39px; width:92.61px;";            
     document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
     document.getElementById("videosbutton").style.cssText = "opacity: .7; color: black;";
-    document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
+    document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437;";
 }
