@@ -48,6 +48,7 @@ a {
     position: fixed;
     top: 0;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
+    background-color: blue;
 }
 .topbar {
     width: 100%;
@@ -56,6 +57,7 @@ a {
     padding-top: 128px;
     height: 56px;
     transition: 0.4s;
+    background-color: white;
 }
 .topbar .material-icons {
     color: black;
@@ -96,6 +98,7 @@ button:focus {
     overflow: auto;
     margin: auto;
     position: relative;
+    background-color: white;
 }
 .tab {
     font-family: Roboto;
