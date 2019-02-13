@@ -5,7 +5,7 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
-        jQuery("selector")["button" + _name + "()"];
+        jQuery("selector")["button" + _name];
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
