@@ -5,7 +5,7 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
-        $('button[data-name=_name]').style.cssText = "animation: tab-click .25s ease-out 1;";
+        $(this).style.cssText = "animation: tab-click .25s ease-out 1;";
         "button" + _name + "()";
         history.pushState(null, null, _link);
         setTimeout(function(){
