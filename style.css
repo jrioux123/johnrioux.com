@@ -29,7 +29,12 @@ a {
     transition: .4s;
 }
 .logo {
-    height: 184px;
+    height: 184px;    
+    transition: .4s;
+}
+.logo img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /* Navbar */
