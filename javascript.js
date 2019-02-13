@@ -30,12 +30,12 @@ function scrollFunction() {
         document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 8px;";
         document.getElementById("topbar").style.cssText = "padding-top:0px;";
         document.getElementById("hiddentopbar").style.cssText = "padding-top:0px; padding-bottom:48px;";
-        document.getElementById("logo").style.cssText = "height:56px;";
+        document.getElementById("logo").style.cssText = "height:56px; margin-top:0px; transform:none;";
     } else {
         document.getElementById("navbar").style.cssText = "box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);";
         document.getElementById("topbar").style.cssText = "padding-top:128px;";
         document.getElementById("hiddentopbar").style.cssText = "padding-top:128px; padding-bottom:48px;";
-        document.getElementById("logo").style.cssText = "height:184px;";
+        document.getElementById("logo").style.cssText = "height:184px; margin-top:0px; transform:none;";
     }
     if (document.documentElement.clientWidth > 1312) {
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {   
