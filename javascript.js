@@ -5,7 +5,7 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
-        this.style.cssText = "animation: tab-click .25 ease-in-out;";
+        this.style.cssText = "animation: tab-click .25s ease-in-out;";
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
