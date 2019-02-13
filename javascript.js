@@ -21,6 +21,10 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
+$( document ).ajaxComplete(function() {
+  tabAnimation();
+});
+
 
 // Animations
 
