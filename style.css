@@ -29,18 +29,15 @@ a {
 .logo {
     height: 184px;
     max-width: calc(100% - 112px);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     transition: .4s;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: auto;
 }
 .logo img {
     max-height: 100%;
     max-width: 100%;
-    margin: auto;
 }
 
 /* Navbar */
