@@ -29,7 +29,10 @@ a {
     transition: .4s;
 }
 .logo {
-    height: 184px;    
+    max-width: calc(100% - 112px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     transition: .4s;
 }
 .logo img {
