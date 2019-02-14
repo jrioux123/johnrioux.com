@@ -9,7 +9,7 @@ $("#navigation").load("navigation.html", function() {
         _name = $(this).attr("data-name");
         history.pushState(null, null, _link);
         $(".tabsbar").children().removeClass("tabselected");
-        $(_current).addClass("tabselected");
+        document.getElementById(_current).classList.add("tabselected");
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
             document.title = _name + " | John Rioux";
@@ -21,7 +21,7 @@ $("#navigation").load("navigation.html", function() {
         _link = location.pathname.replace(/^.*[\\/]/, "");
         _current = _previous
         $(".tabsbar").children().removeClass("tabselected");        
-        $(_current).addClass("tabselected");
+        document.getElementById(_current).classList.add("tabselected");
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
         }, 125);
