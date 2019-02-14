@@ -130,7 +130,7 @@ button:focus {
     width: 90px; /* This will change */
     height: 2px;
     background-color: #db4437;
-    transition: .25s;
+    transition: .125s;
     position: absolute;
     bottom: 0;
 }
