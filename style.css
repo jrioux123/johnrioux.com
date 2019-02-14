@@ -28,7 +28,8 @@ a {
 }
 .logo {
     height: 184px;
-    max-width: calc(100% - 112px);
+    width: calc(100% - 112px);
+    max-width: 516px;
     transition: .4s;
     display: flex;
     justify-content: center;
