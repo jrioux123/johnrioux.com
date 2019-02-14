@@ -23,7 +23,7 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
-$("pagecontent").delegate("a", "click", function() {
+$("pagecontent").delegate("button", "click", function() {
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
