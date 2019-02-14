@@ -20,12 +20,10 @@
     <div id="contentloader">
         <div id="pagecontent" class="pagecontent">
             <!-- Placeholder shit below -->
-            <script onload="tabAnimation()">
-                function tabAnimation() {
-                    document.getElementById("tabstroke").style.cssText = "margin-left:90px; width:90px;";            
-                    document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
-                    document.getElementById("videosbutton").style.cssText = "opacity: 1; color: #db4437; animation: tab-click .25s ease-out 1;";
-                    document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
+            <script>
+                function tabStyle() {
+                    $(".tabsbar").children().removeClass("tabselected");
+                    $("#newsbutton").addClass("tabselected");
                 }
             </script>
             <div class="card big">
