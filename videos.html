@@ -20,12 +20,17 @@
     <div id="contentloader">
         <div id="pagecontent" class="pagecontent">
             <!-- Placeholder shit below -->
-            <script>
-                function tabStyle() {
-                    $(".tabsbar").children().removeClass("tabselected");
-                    $("#videosbutton").addClass("tabselected");
+            <style>
+                .videostab {
+                    opacity: 1;
+                    color: #db4437;
+                    animation: tab-click .25s ease-in-out;
                 }
-            </script>
+                .tabstroke {
+                    margin-left: 90px;
+                    width: 90px; /* This will change */
+                }
+            </style>
             <div class="card big">
                 <a href="#nothing">
                     <img src="https://i.ytimg.com/vi/bWu5X4jcvv8/maxresdefault.jpg">
