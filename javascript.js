@@ -23,6 +23,23 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
+$("pagecontent").delegate("a", "click", function() {
+    _link = $(this).attr("href");
+    _name = $(this).attr("data-name");
+    history.pushState(null, null, _link);
+    setTimeout(function(){
+        $(this).parent().load(_link);
+        document.title = _name + " | John Rioux";
+        return false;
+    }, 125);
+});
+$(window).bind("popstate", function() {
+    _link = location.pathname.replace(/^.*[\\/]/, "");
+    setTimeout(function(){
+        $('#contentloader').load(_link);
+    }, 125);
+});
+
 
 // Animations
 
