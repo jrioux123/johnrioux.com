@@ -214,9 +214,10 @@ button:focus {
 }
 .card {
     font-size: 14px;
-    font-family: Roboto;
-    text-align: left;
+    font-family: Roboto; /* To override button style */
+    text-align: left; /* To override button style */
     margin: 8px;
+    padding: 0px; /* To override button style */
     width: 376px;
     background-color: white;
     word-wrap: break-word;
