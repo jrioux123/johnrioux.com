@@ -3,11 +3,15 @@
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
+        _previous = _current
+        _current = $(this).attr("id");
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
         history.pushState(null, null, _link);
+        $(".tabsbar").children().removeClass("tabselected");
+        $(_current).addClass("tabselected");
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent'), tabStyle();
+            $('#contentloader').load(_link + ' #pagecontent');
             document.title = _name + " | John Rioux";
             return false;
         }, 125);
@@ -15,8 +19,11 @@ $("#navigation").load("navigation.html", function() {
     $(window).bind("popstate", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = location.pathname.replace(/^.*[\\/]/, "");
+        _current = _previous
+        $(".tabsbar").children().removeClass("tabselected");        
+        $(_current).addClass("tabselected");
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent'), tabStyle();
+            $('#contentloader').load(_link + ' #pagecontent');
         }, 125);
     });
 });
