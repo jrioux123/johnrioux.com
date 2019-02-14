@@ -6,7 +6,7 @@ $("#navigation").load("navigation.html", function() {
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
         $(".tabsbar").children().removeClass("tabselected");
-        this.addClass("tabselected");
+        $(this).addClass("tabselected");
         history.pushState(null, null, _link);
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
