@@ -120,11 +120,6 @@ button:focus {
 .tab:hover {
     opacity: 1;
 }
-.tabselected {
-    opacity: 1;
-    color: #db4437;
-    animation: tab-click .25s ease-in-out;
-}
 @keyframes tab-click {
     0% {background-color: transparent; border-radius:100%;}
     50% {background-color: #fbe8e7; border-radius:0;}
