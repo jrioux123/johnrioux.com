@@ -3,6 +3,7 @@
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
         this.style.cssText = "animation: tab-click .25s ease-in-out;";
+        $(".tabsbar").children().css("animation","");
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
