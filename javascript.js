@@ -5,11 +5,9 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
-        $(".tabsbar").children().removeClass("tabselected");
-        $(this).addClass("tabselected");
         history.pushState(null, null, _link);
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
+            $('#contentloader').load(_link + ' #pagecontent'), tabStyle();
             document.title = _name + " | John Rioux";
             return false;
         }, 125);
@@ -18,7 +16,7 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
+            $('#contentloader').load(_link + ' #pagecontent'), tabStyle();
         }, 125);
     });
 });
@@ -65,24 +63,4 @@ function menuClose() {
         document.getElementById("menuID").style.cssText = "display:none;";
         document.getElementById("menushade").style.cssText = "display:none;";
     }, 250);
-}
-
-function buttonNews() {
-    document.getElementById("tabstroke").style.cssText = "margin-left:0px; width:90px;";            
-    document.getElementById("newsbutton").style.cssText = "opacity: 1; color: #db4437;";
-    document.getElementById("videosbutton").style.cssText = "opacity: 7; color: black;";
-    document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
-}
-function buttonVideos() {
-    document.getElementById("tabstroke").style.cssText = "margin-left:90px; width:90px;";            
-    document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
-    document.getElementById("videosbutton").style.cssText = "opacity: 1; color: #db4437;";
-    document.getElementById("comicsbutton").style.cssText = "opacity: .7; color: black;";
-
-}
-function buttonComics() {
-    document.getElementById("tabstroke").style.cssText = "margin-left:453.39px; width:92.61px;";            
-    document.getElementById("newsbutton").style.cssText = "opacity: .7; color: black;";
-    document.getElementById("videosbutton").style.cssText = "opacity: .7; color: black;";
-    document.getElementById("comicsbutton").style.cssText = "opacity: 1; color: #db4437;";
 }
