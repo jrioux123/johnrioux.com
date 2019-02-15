@@ -274,13 +274,17 @@ button:focus {
     width: 100%;
     max-width: 800px;
     margin: 0px;
-    position: static;
-    
+    position: static;    
+    box-shadow: none;
 }
 .card-open:hover {
-    box-shadow: none;
     transform: none;
     cursor: default;
+}
+.card-open img {
+    width: 100%;
+    height: calc(100% - 114px);
+    object-fit: cover;
 }
 .title {
     font-size: 20px;            
