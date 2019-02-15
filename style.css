@@ -1,7 +1,6 @@
 body {
     margin: auto;
     font-family: "Roboto";
-    padding-bottom: 232px; /* This adds safety space for when the navbar resizes. You could replace this with a footer. */
 }
 a {            
     text-decoration: none;
@@ -279,11 +278,12 @@ button:focus {
 }
 .card-open:hover {
     transform: none;
-    cursor: default;
+    cursor: default;  
+    box-shadow: none;
 }
 .card-open img {
     width: 100%;
-    height: calc(100% - 114px);
+    max-height: 450px;
     object-fit: cover;
 }
 .title {
