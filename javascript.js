@@ -23,7 +23,8 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
-$("pagecontent").delegate("button", "click", function() {
+$("#pagecontent").delegate("button", "click", function() {
+    this.style.cssText = "animation: tab-click .25s ease-in-out;";
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
