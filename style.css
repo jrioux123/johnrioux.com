@@ -230,6 +230,11 @@ button:focus {
     transform:scale(1.02);
     cursor: pointer;
 }
+.card-open {
+    width: 100%;
+    max-width: 800px;
+    margin: 16px 0px 0px 0px;
+}
 .big {
     height: 336px;
     position: relative;
@@ -241,7 +246,10 @@ button:focus {
 .big img {
     width: 100%;
     height: calc(100% - 114px);
-    object-fit: cover;
+    object-fit: cover;    
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .small img {
     width: 144px;
