@@ -28,7 +28,7 @@ $("#pagecontent").delegate("button", "click", function() {
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
-    $(this).parent().load(_link + ' #pagecontent');
+    $(this).load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
     return false;
 });
