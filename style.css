@@ -295,10 +295,6 @@ button:focus {
     max-height: 450px;
     object-fit: cover;
 }
-.card-open .cardtext {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 .title {
     font-size: 20px;            
     font-weight: 500;
