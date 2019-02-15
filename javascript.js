@@ -27,14 +27,14 @@ $("#pagecontent").delegate("button", "click", function() {
     $(this).addClass("card-open");
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
-    history.pushState(null, null, _link);
+    history.pushState(null, null, _link + #pagecontent);
     $(this).parent().load(_link);
     document.title = _name + " | John Rioux";
     return false;
 });
 $(window).bind("popstate", function() {
     _link = location.pathname.replace(/^.*[\\/]/, "");
-    $('#contentloader').load(_link);
+    $('#contentloader').load(_link + #pagecontent);
 });
 
 
