@@ -24,15 +24,16 @@ $("#navigation").load("navigation.html", function() {
 });
 
 $("#pagecontent").delegate("button", "click", function() {
-    $(this).addClass("card-open");
+    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
-    $(this).load(_link + ' #pagecontent');
+    $('#contentloader').load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
     return false;
 });
 $(window).bind("popstate", function() {
+    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
 });
