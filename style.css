@@ -85,6 +85,15 @@ button {
 button:focus {
     outline: none;
 }
+.menubutton {
+    float: left;
+}
+.backbutton {
+    float: left;
+}
+.searchbutton {
+    float: right;
+}
 .topbar img {
     width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
     max-width: 460px;
