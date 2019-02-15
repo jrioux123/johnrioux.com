@@ -282,7 +282,6 @@ button:focus {
 .card-open {
     width: 100%;
     max-width: 800px;
-    margin: 0px;
     position: static;    
     box-shadow: none;
 }
@@ -295,6 +294,10 @@ button:focus {
     width: 100%;
     max-height: 450px;
     object-fit: cover;
+}
+.card-open .cardtext {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .title {
     font-size: 20px;            
