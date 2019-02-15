@@ -4,7 +4,7 @@ $("#navigation").load("navigation.html", function() {
     $(".tabsbar").delegate("button", "click", function() {
         $(".tabsbar").children().css("animation","");        
         this.style.cssText = "animation: tab-click .25s ease-in-out;";
-        document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
+        document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
         _link = $(this).attr("href");
         _name = $(this).attr("data-name");
         history.pushState(null, null, _link);
@@ -15,7 +15,7 @@ $("#navigation").load("navigation.html", function() {
         }, 125);
     });
     $(window).bind("popstate", function() {
-        document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;";
+        document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent');
@@ -24,7 +24,7 @@ $("#navigation").load("navigation.html", function() {
 });
 
 $("#pagecontent").delegate("button", "click", function() {
-    this.style.cssText = "animation: tab-click .25s ease-in-out;";
+    $(this).addClass("card-open");
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
