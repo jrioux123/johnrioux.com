@@ -273,7 +273,7 @@ button:focus {
 .card-open {
     width: 100%;
     max-width: 800px;
-    margin: 16px 0px 0px 0px;
+    margin: 0px;
     position: static;
     
 }
