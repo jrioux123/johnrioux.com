@@ -202,7 +202,8 @@ button:focus {
 .pagecontent {
     margin: auto;
     max-width: 800px;
-    padding: 8px 0px 0px 8px;
+    padding: 8px 0px 232px 8px;
+    overflow: auto;
     animation: content-enter .125s 1;
     animation-timing-function: ease-in-out;
     transition: .125s;
