@@ -230,11 +230,6 @@ button:focus {
     transform:scale(1.02);
     cursor: pointer;
 }
-.card-open {
-    width: 100%;
-    max-width: 800px;
-    margin: 16px 0px 0px 0px;
-}
 .big {
     height: 336px;
     position: relative;
@@ -274,6 +269,18 @@ button:focus {
     box-sizing: border-box;
     width: 232px;
     float: left;
+}
+.card-open {
+    width: 100%;
+    max-width: 800px;
+    margin: 16px 0px 0px 0px;
+    position: static;
+    
+}
+.card-open:hover {
+    box-shadow: none;
+    transform: none;
+    cursor: default;
 }
 .title {
     font-size: 20px;            
