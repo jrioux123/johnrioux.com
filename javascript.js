@@ -25,6 +25,8 @@ $("#navigation").load("navigation.html", function() {
 
 $("#pagecontent").delegate("button", "click", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+    document.getElementById("menubutton").style.cssText = "display: none;";
+    document.getElementById("backbutton").style.cssText = "display: block;";
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
@@ -32,7 +34,7 @@ $("#pagecontent").delegate("button", "click", function() {
     document.title = _name + " | John Rioux";
     return false;
 });
-$(window).bind("popstate", function() {
+$(window).bind("popstate", function goBack() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
