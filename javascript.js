@@ -3,7 +3,8 @@ function goBack() {
 }
 
 // Ajax
-function openCard() {
+$("#pagecontent").delegate("button", "click", function() {
+    function openCard() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
     document.getElementById("backbutton").style.cssText = "display: block;";
@@ -13,19 +14,15 @@ function openCard() {
     $('#contentloader').load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
     return false;
-}
+});
 
-function backHome() {
+$(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     document.getElementById("backbutton").style.cssText = "display: none;";
     document.getElementById("menubutton").style.cssText = "display: block;";
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
-}
-
-$("#pagecontent").delegate("button", "click", openCard());
-
-$(window).bind("popstate", backHome());
+});
 
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
