@@ -32,7 +32,7 @@ $("#navigation").load("navigation.html", function() {
         _name = $(this).attr("data-name");
         history.pushState(null, null, _link);
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent', openCard());
+            $('#contentloader').load(_link + ' #pagecontent');
             document.title = _name + " | John Rioux";
             return false;
         }, 125);
