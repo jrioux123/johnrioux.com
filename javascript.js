@@ -1,4 +1,4 @@
-function goBack {
+function goBack() {
     history.back()
 }
 
