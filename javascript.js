@@ -3,6 +3,29 @@ function goBack() {
 }
 
 // Ajax
+function openCard() {
+    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+    document.getElementById("menubutton").style.cssText = "display: none;";
+    document.getElementById("backbutton").style.cssText = "display: block;";
+    _link = $(this).attr("href");
+    _name = $(this).attr("data-name");
+    history.pushState(null, null, _link);
+    $('#contentloader').load(_link + ' #pagecontent');
+    document.title = _name + " | John Rioux";
+    return false;
+}
+
+function backHome() {
+    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+    document.getElementById("backbutton").style.cssText = "display: none;";
+    document.getElementById("menubutton").style.cssText = "display: block;";
+    _link = location.pathname.replace(/^.*[\\/]/, "");
+    $('#contentloader').load(_link + ' #pagecontent');
+}
+
+$("#pagecontent").delegate("button", "click", openCard());
+
+$(window).bind("popstate", backHome());
 
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
@@ -13,7 +36,7 @@ $("#navigation").load("navigation.html", function() {
         _name = $(this).attr("data-name");
         history.pushState(null, null, _link);
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
+            $('#contentloader').load(_link + ' #pagecontent', openCard());
             document.title = _name + " | John Rioux";
             return false;
         }, 125);
@@ -22,29 +45,11 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
+            $('#contentloader').load(_link + ' #pagecontent', backHome());
         }, 125);
     });
 });
 
-$("#pagecontent").delegate("button", "click", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
-    document.getElementById("menubutton").style.cssText = "display: none;";
-    document.getElementById("backbutton").style.cssText = "display: block;";
-    _link = $(this).attr("href");
-    _name = $(this).attr("data-name");
-    history.pushState(null, null, _link);
-    $('#contentloader').load(_link + ' #pagecontent');
-    document.title = _name + " | John Rioux";
-    return false;
-});
-$(window).bind("popstate", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
-    document.getElementById("backbutton").style.cssText = "display: none;";
-    document.getElementById("menubutton").style.cssText = "display: block;";
-    _link = location.pathname.replace(/^.*[\\/]/, "");
-    $('#contentloader').load(_link + ' #pagecontent');
-});
 
 // Animations
 
