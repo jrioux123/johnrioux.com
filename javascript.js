@@ -1,3 +1,7 @@
+function goBack {
+    history.back()
+}
+
 // Ajax
 
 $("#navigation").load("navigation.html", function() {        
