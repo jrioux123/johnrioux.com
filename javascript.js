@@ -4,7 +4,7 @@ function goBack() {
 
 // Ajax
 $("#pagecontent").delegate("button", "click", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+    document.getElementById("pagecontent").style.cssText = "margin-top: -56px; opacity: 0;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
     document.getElementById("backbutton").style.cssText = "display: block;";
     _link = $(this).attr("href");
@@ -41,7 +41,7 @@ $("#navigation").load("navigation.html", function() {
         document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
         _link = location.pathname.replace(/^.*[\\/]/, "");
         setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent', backHome());
+            $('#contentloader').load(_link + ' #pagecontent');
         }, 125);
     });
 });
