@@ -79,7 +79,7 @@ $("#navigation").load("navigation.html", function() {
                     _link = location.pathname.replace(/^.*[\\/]/, "");
                     $('#contentloader').load(_link + ' #pagecontent');
                 });
-            }););
+            });
         }, 125);
     });
 });
