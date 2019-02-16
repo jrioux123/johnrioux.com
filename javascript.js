@@ -4,7 +4,6 @@ function goBack() {
 
 // Ajax
 $("#pagecontent").delegate("button", "click", function() {
-    function openCard() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
     document.getElementById("backbutton").style.cssText = "display: block;";
