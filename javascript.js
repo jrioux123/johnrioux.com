@@ -14,7 +14,6 @@ $("#pagecontent").delegate("button", "click", function() {
     document.title = _name + " | John Rioux";
     return false;
 });
-
 $(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     document.getElementById("backbutton").style.cssText = "display: none;";
@@ -96,27 +95,27 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 8px;";
-        document.getElementById("topbar").style.cssText = "margin-top:0px;";
-        document.getElementById("hiddentopbar").style.cssText = "margin-top:0px; padding-bottom:48px;";
-        document.getElementById("logo").style.cssText = "height:56px; margin-top:0px; transform:none;";
-        document.getElementById("menuID").style.cssText = "padding-top:104px;";
+        document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px .0625rem .5rem;";
+        document.getElementById("topbar").style.cssText = "margin-top:0;";
+        document.getElementById("hiddentopbar").style.cssText = "margin-top:0; padding-bottom:3rem;";
+        document.getElementById("logo").style.cssText = "height:3.5rem; margin-top:0; transform:none;";
+        document.getElementById("menuID").style.cssText = "padding-top:6.5rem;";
         
     } else {
-        document.getElementById("navbar").style.cssText = "box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);";
-        document.getElementById("topbar").style.cssText = "margin-top:128px;";
-        document.getElementById("hiddentopbar").style.cssText = "margin-top:128px; padding-bottom:48px;";
-        document.getElementById("logo").style.cssText = "height:184px; margin-top:0px; transform:none;";
-        document.getElementById("menuID").style.cssText = "padding-top:232px;";
+        document.getElementById("navbar").style.cssText = "box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .14);";
+        document.getElementById("topbar").style.cssText = "margin-top:8rem;";
+        document.getElementById("hiddentopbar").style.cssText = "margin-top:8rem; padding-bottom:3rem;";
+        document.getElementById("logo").style.cssText = "height:11.5rem; margin-top:0; transform:none;";
+        document.getElementById("menuID").style.cssText = "padding-top:14.5rem;";
     }
 }
 
 function menuOpen() {
-    document.getElementById("menuID").style.cssText = "display:block; left: 0px;";
-    document.getElementById("menushade").style.cssText = "display:block; opacity: 1";
+    document.getElementById("menuID").style.cssText = "display:block; left:0;";
+    document.getElementById("menushade").style.cssText = "display:block; opacity:1";
 }
 function menuClose() {
-    document.getElementById("menuID").style.cssText = "display:block; left: -320px;";
+    document.getElementById("menuID").style.cssText = "display:block; left:-20rem;";
     document.getElementById("menushade").style.cssText = "display:block; opacity: 0;";
     setTimeout(function(){
         document.getElementById("menuID").style.cssText = "display:none;";
