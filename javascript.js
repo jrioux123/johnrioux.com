@@ -1,5 +1,5 @@
 function goBack() {
-    history.back()
+    history.back();
 }
 
 // Ajax
