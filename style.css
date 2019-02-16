@@ -300,7 +300,7 @@ p {
 }
 
 /* Widescreen Mode */
-@media only screen and (min-width: 1312rem) {
+@media only screen and (min-width: 82rem) {
     .menubutton {
         display: none;
     }
