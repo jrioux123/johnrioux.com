@@ -301,7 +301,7 @@ p {
 
 /* Widescreen Mode */
 @media only screen and (min-width: 1312px) {
-    .topbar .material-icons {
+    .menubutton {
         display: none;
     }
     .menu {
