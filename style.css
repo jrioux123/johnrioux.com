@@ -26,8 +26,8 @@ a {
     transition: .4s;
 }
 .logo {
-    height: 184px;
-    width: calc(100% - 112px);
+    height: 11.5rem;
+    width: calc(100% - 7rem);
     max-width: 32.25rem;
     transition: .4s;
     display: flex;
