@@ -34,12 +34,13 @@ $("#pagecontent").delegate("button", "click", function() {
     document.title = _name + " | John Rioux";
     return false;
 });
-$(window).bind("popstate", function goBack() {
+$(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+    document.getElementById("backbutton").style.cssText = "display: none;";
+    document.getElementById("menubutton").style.cssText = "display: block;";
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
 });
-
 
 // Animations
 
