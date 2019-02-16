@@ -4,7 +4,7 @@ function goBack() {
 
 // Ajax
 $("#pagecontent").delegate("button", "click", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: -56px; opacity: 0;"; // Transition animation
+    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
     document.getElementById("backbutton").style.cssText = "display: block;";
     _link = $(this).attr("href");
@@ -15,7 +15,7 @@ $("#pagecontent").delegate("button", "click", function() {
     return false;
 });
 $(window).bind("popstate", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+    document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
     document.getElementById("backbutton").style.cssText = "display: none;";
     document.getElementById("menubutton").style.cssText = "display: block;";
     _link = location.pathname.replace(/^.*[\\/]/, "");
@@ -33,7 +33,7 @@ $("#navigation").load("navigation.html", function() {
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent', function() {
                 $("#pagecontent").delegate("button", "click", function() {
-                    document.getElementById("pagecontent").style.cssText = "margin-top: -56px; opacity: 0;"; // Transition animation
+                    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
                     document.getElementById("menubutton").style.cssText = "display: none;";
                     document.getElementById("backbutton").style.cssText = "display: block;";
                     _link = $(this).attr("href");
@@ -44,7 +44,7 @@ $("#navigation").load("navigation.html", function() {
                     return false;
                 });
                 $(window).bind("popstate", function() {
-                    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+                    document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
                     document.getElementById("backbutton").style.cssText = "display: none;";
                     document.getElementById("menubutton").style.cssText = "display: block;";
                     _link = location.pathname.replace(/^.*[\\/]/, "");
@@ -61,7 +61,7 @@ $("#navigation").load("navigation.html", function() {
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent', function() {
                 $("#pagecontent").delegate("button", "click", function() {
-                    document.getElementById("pagecontent").style.cssText = "margin-top: -56px; opacity: 0;"; // Transition animation
+                    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
                     document.getElementById("menubutton").style.cssText = "display: none;";
                     document.getElementById("backbutton").style.cssText = "display: block;";
                     _link = $(this).attr("href");
@@ -72,7 +72,7 @@ $("#navigation").load("navigation.html", function() {
                     return false;
                 });
                 $(window).bind("popstate", function() {
-                    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
+                    document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
                     document.getElementById("backbutton").style.cssText = "display: none;";
                     document.getElementById("menubutton").style.cssText = "display: block;";
                     _link = location.pathname.replace(/^.*[\\/]/, "");
