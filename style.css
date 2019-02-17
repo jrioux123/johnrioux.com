@@ -105,6 +105,7 @@ button:focus {
 .tabsbar {
     max-width: 34.125rem; /* This needs to be the exact sum of the tab widths, rounded up */
     height: 3rem;
+    transition: .25s;
     white-space: nowrap;
     overflow: auto;
     margin: auto;
