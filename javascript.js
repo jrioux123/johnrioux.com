@@ -4,12 +4,12 @@ function goBack() {
 
 // Ajax
 $("#pagecontent").delegate("button", "click", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
     document.getElementById("backbutton").style.cssText = "display: block;";
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
+    $(this).addClass('cardopen');
     $(this).load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
     return false;
