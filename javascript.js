@@ -10,6 +10,7 @@ $("#pagecontent").delegate("button", "click", function() {
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
     $(this).addClass('cardopen');
+    $(this).removeClass('small', 'big');
     $(this).load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
     return false;
