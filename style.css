@@ -299,6 +299,23 @@ p {
     margin: 0;
     color: black;
 }
+.cardopen {
+    width: 100%;    
+    max-width: 50rem;
+    position: static;    
+    box-shadow: none;
+    margin: 0;
+}
+.cardopen:hover {
+    transform: none;
+    cursor: auto;  
+    box-shadow: none;
+}
+.cardopen img {
+    width: 100%;
+    max-height: 28.125rem;
+    object-fit: cover;
+}
 
 /* Widescreen Mode */
 @media only screen and (min-width: 82rem) {
