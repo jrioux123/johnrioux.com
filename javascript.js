@@ -94,14 +94,18 @@ function loadingAnimation() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 128 || document.documentElement.scrollTop > 128) {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px .0625rem .5rem;";
+        
+    } else {
+        document.getElementById("navbar").style.cssText = "box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .14);";
+    }
+    if (document.body.scrollTop > 128 || document.documentElement.scrollTop > 128) {
         document.getElementById("topbar").style.cssText = "margin-top:0;";
         document.getElementById("logo").style.cssText = "height:3.5rem; margin-top:0; transform:none;";
         document.getElementById("menuID").style.cssText = "padding-top:6.5rem;";
         
     } else {
-        document.getElementById("navbar").style.cssText = "box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .14);";
         document.getElementById("topbar").style.cssText = "margin-top:8rem;";
         document.getElementById("logo").style.cssText = "height:11.5rem; margin-top:0; transform:none;";
         document.getElementById("menuID").style.cssText = "padding-top:14.5rem;";
