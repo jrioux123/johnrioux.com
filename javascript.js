@@ -94,7 +94,7 @@ function loadingAnimation() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 232 || document.documentElement.scrollTop > 232) {
+    if (document.body.scrollTop > 128 || document.documentElement.scrollTop > 128) {
         document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px .0625rem .5rem;";
         document.getElementById("topbar").style.cssText = "margin-top:0;";
         document.getElementById("logo").style.cssText = "height:3.5rem; margin-top:0; transform:none;";
