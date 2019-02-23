@@ -39,7 +39,7 @@ a {
 }
 .logo img {
     max-height: calc(100% - 3rem);
-    min-height: calc(100% - 1rem);
+    min-height: 2.5rem;
     max-width: 100%;
     padding-bottom: .5rem;
 }
