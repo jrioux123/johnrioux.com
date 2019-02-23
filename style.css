@@ -281,7 +281,7 @@ button:focus {
 .cardtext {            
     padding: 1rem;
 }
-.feature cardtext {
+.feature .cardtext {
     position: absolute;
     top: 0;
     width: 21rem;
