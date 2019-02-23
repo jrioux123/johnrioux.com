@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    font-family: "Poiret One";
+    font-family: "Josefin Sans";
 }
 a {            
     text-decoration: none;
@@ -114,7 +114,6 @@ button:focus {
     position: relative;
 }
 .tab {
-    font-family: Roboto;
     font-size: 0.875rem;
     font-weight: 500;
     padding: 0rem 1.25rem 0rem 1.25rem;            
@@ -226,7 +225,7 @@ button:focus {
 }
 .card {
     font-size: .875rem;
-    font-family: Roboto; /* To override button style */
+    font-family: 'Poiret One'; /* To override button style */
     text-align: left; /* To override button style */
     margin: .5rem;
     padding: 0px; /* To override button style */
