@@ -38,7 +38,8 @@ a {
     transform: translateY(-50%);
 }
 .logo img {
-    max-height: calc(100% - 1rem);
+    max-height: calc(100% - 3rem);
+    min-height: calc(100% - 1rem);
     max-width: 100%;
     padding-bottom: .5rem;
 }
