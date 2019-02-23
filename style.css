@@ -225,7 +225,7 @@ button:focus {
 }
 .card {
     font-size: .875rem;
-    font-family: 'Poiret One'; /* To override button style */
+    font-family: 'Josefin Sans'; /* To override button style */
     text-align: left; /* To override button style */
     margin: .5rem;
     padding: 0px; /* To override button style */
