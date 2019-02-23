@@ -326,6 +326,7 @@ p {
     position: static;    
     box-shadow: none;
     margin: 0;
+    float: left;
 }
 .cardopen:hover {
     transform: none;
