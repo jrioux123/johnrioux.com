@@ -247,7 +247,7 @@ button:focus {
     position: relative;
 }
 .small {
-    height: 10rem;
+    height: auto;
     box-sizing: border-box;
 }
 .big img {
