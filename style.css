@@ -106,7 +106,7 @@ button:focus {
     transition: 0.4s;
 }
 .tabsbar {
-    max-width: 34.125rem; /* This needs to be the exact sum of the tab widths, rounded up */
+    max-width: fit-content;
     height: 3rem;
     transition: .25s;
     white-space: nowrap;
