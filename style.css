@@ -278,9 +278,6 @@ button:focus {
     float: left;
     object-fit: cover;
 }
-.cardtext {            
-    padding: 1rem;
-}
 .feature .cardtext {
     position: absolute;
     top: 0;
@@ -308,16 +305,19 @@ button:focus {
     font-weight: 600;
     height: auto;
     line-height: 1.625rem;
+    padding: 1rem 1rem 0 1rem;
 }
 .subtitle {
     font-size: .875rem;
     font-weight: 400;
     opacity: .7;
     line-height: 1.5rem;
+    padding: 0rem 1rem;
 }
 p {
     padding-top: 1rem;
     margin: 0;
+    padding: 0rem 1rem;
 }
 .cardopen {
     width: 100%;   
