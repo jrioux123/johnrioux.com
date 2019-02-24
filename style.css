@@ -117,7 +117,7 @@ button:focus {
 }
 .tab {
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0rem 1.25rem 0rem 1.25rem;            
     min-width: 5.626rem;
     height: 3rem;
