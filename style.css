@@ -308,12 +308,12 @@ button:focus {
     line-height: 1.625rem;
     font-weight: 500;
     height: auto;
-    padding: 0 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 .subtitle {    
     opacity: .7;    
     line-height: 1.5rem;
-    padding: .5rem 1rem 0 1rem;
+    padding: 0 1rem;
 }
 p {
     margin: 0; /* Overrides automatic styles */
