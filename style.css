@@ -244,7 +244,7 @@ button:focus {
     cursor: pointer;
 }
 .feature {
-    height: 10rem;
+    height: 13.875remrem;
     width: calc(100% - 2rem);
 }
 .big {
