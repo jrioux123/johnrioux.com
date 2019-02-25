@@ -246,6 +246,11 @@ button:focus {
 .feature {
     min-height: 13.875rem;
     width: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+}
+.feature::after {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #000 100%);
 }
 .big {
     height: 21rem;
@@ -282,13 +287,12 @@ button:focus {
     padding-bottom: 1rem;
 }
 .feature .cardtext {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 13.875rem;
     height: 100%;
     box-sizing: border-box;
     color: white;
-    background-image: linear-gradient(to right, rgba(0, 0, 0,.8), rgba(0,0,0,0));
 }
 .big .cardtext {
     position: absolute;
