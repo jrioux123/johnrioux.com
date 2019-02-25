@@ -288,9 +288,7 @@ button:focus {
 }
 .feature .cardtext {
     position: relative;
-    top: 0;
     width: 13.875rem;
-    height: 100%;
     box-sizing: border-box;
     color: white;
 }
