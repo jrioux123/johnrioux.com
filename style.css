@@ -306,6 +306,7 @@ button:focus {
     float: left;
 }
 .title {
+    font-family: 'Josefin Sans';
     font-size: 1.25rem;
     line-height: 1.625rem;
     font-weight: 500;
