@@ -188,7 +188,7 @@ button:focus {
 }            
 .menu-selected {
     color: #db4437 !important;
-    background-color: #fbe8e7 !important;
+    background-color: #e8eaed !important;
 }            
 .menu-selected .material-icons {
     color: #db4437 !important;
@@ -372,7 +372,7 @@ p {
         animation: none;
         z-index: 0;
         background-color: transparent;
-        box-shadow: none;
+        box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
         transition: .4s;
     }            
     .menutitle {
