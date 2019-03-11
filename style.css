@@ -180,8 +180,8 @@ button:focus {
     vertical-align: middle;
 }
 .externalicon {
-    float: right;
-    margin: .25rem !important;
+    width: 1rem;
+    height: 1rem;
 }
 .menu a:hover {
     background-color: #f5f5f5;
