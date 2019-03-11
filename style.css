@@ -179,7 +179,7 @@ button:focus {
     color: #616161;
     vertical-align: middle;
 }
-.menu .material-icons .externalicon {
+.externalicon {
     float: right;
     margin: .25rem;
 }
