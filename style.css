@@ -90,6 +90,7 @@ button:focus {
     outline: none;
 }
 .menubutton {
+    display: none;
     float: left;
 }
 .backbutton {
@@ -359,9 +360,6 @@ p {
 
 /* Widescreen Mode */
 @media only screen and (min-width: 82rem) {
-    .menubutton {
-        display: none;
-    }     
     .menutitle {
         display: none;
     }            
@@ -375,6 +373,9 @@ p {
 
 /* Mobile Mode */
 @media only screen and (max-width: 800px) {
+    .menubutton {
+        display: block;
+    }
     .menu {
         display: none;    
         width: calc(100% - 56px);
