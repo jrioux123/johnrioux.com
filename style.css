@@ -151,7 +151,7 @@ button:focus {
 /* Menu */
 .menu {
     display: block;    
-    height: calc(100% + 56px);
+    height: calc(100% + 3.5rem);
     padding: 14.5rem 0;
     width: 16rem;    
     position: fixed;
@@ -369,8 +369,8 @@ p {
     }
 }
 
-/* Mobile Mode */
-@media only screen and (max-width: 800px) {
+/* Tablet Mode */
+@media only screen and (max-width: 66rem) {
     .menubutton {
         display: block;
     }
@@ -378,6 +378,7 @@ p {
         display: none;    
         width: calc(100% - 56px);
         max-width: 20rem;
+        padding: 0;
         box-shadow: 0 0.375rem 8.75rem rgba(0,0,0,0.3);
         z-index: 3;
         animation: menu-enter .25s 1;
@@ -391,6 +392,10 @@ p {
     .menu a {
         padding-left: 0;
     }
+}
+
+/* Mobile Mode */
+@media only screen and (max-width: 50rem) {
     .pagecontent {
         padding: 0;
     }
