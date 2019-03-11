@@ -163,6 +163,9 @@ button:focus {
     box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
     transition: .4s;
 }
+.menutitle {
+    display: none;
+}
 .menulist {
     padding: .5rem 0 .5rem 0;
     border-top: 0.0625rem solid rgba(0, 0, 0, .12);
@@ -174,6 +177,7 @@ button:focus {
     font-size: 0.875rem;
     font-weight: 500;            
     color: black;
+    padding-left: .125rem;
 }
 .menu .material-icons {
     margin: 0 1rem 0 .5rem;
@@ -360,14 +364,8 @@ p {
 
 /* Widescreen Mode */
 @media only screen and (min-width: 82rem) {
-    .menutitle {
-        display: none;
-    }            
-    .menu a {
-        padding-left: .125rem;
-    }            
-    .jr2, .mobiletitle, .mobilesearch {
-        display: none;
+    .pagecontent {
+        padding-left: .5rem;
     }
 }
 
@@ -386,6 +384,12 @@ p {
         animation-timing-function: ease-in-out;
         top: 0;
         transition: .25s;
+    }
+    .menutitle {
+        display: block;
+    }            
+    .menu a {
+        padding-left: 0;
     }
     .pagecontent {
         padding: 0;
