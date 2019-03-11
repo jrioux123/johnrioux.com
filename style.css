@@ -186,8 +186,8 @@ button:focus {
     background-color: #f5f5f5;
 }            
 .menu-selected {
-    color: #f5f5f5;
-    background-color: #e8eaed;
+    color: #db4437;
+    background-color: #f5f5f5;
 }            
 .menu-selected .material-icons {
     color: #db4437;
