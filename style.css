@@ -392,6 +392,9 @@ p {
     .menu a {
         padding-left: 0;
     }
+    .pagecontent {
+        padding-left: .5rem;
+    }
 }
 
 /* Mobile Mode */
