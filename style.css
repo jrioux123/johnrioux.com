@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    font-family: 'Roboto';
+    font-family: 'Fira Sans';
 }
 a {            
     text-decoration: none;
@@ -76,7 +76,7 @@ a {
     background-color: #e1e1e1;
 }
 button {    
-    font-family: "Roboto";
+    font-family: "Fira Sans";
     background-color: transparent;
     border: none;
     -webkit-user-select: none;
@@ -306,7 +306,6 @@ button:focus {
     float: left;
 }
 .title {
-    font-family: 'Josefin Sans';
     font-size: 1.25rem;
     line-height: 1.625rem;
     font-weight: 500;
