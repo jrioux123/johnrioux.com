@@ -151,7 +151,7 @@ button:focus {
 .menu {
     display: block;    
     height: calc(100% + 56px);
-    padding: 15.5rem 0 14.5rem 0;
+    padding: 14.5rem 0;
     width: 16rem;    
     position: fixed;
     top: -.0625rem;
@@ -185,7 +185,7 @@ button:focus {
 .menu a:hover {
     background-color: #f5f5f5;
 }            
-.menu-selected {
+.menu-selected a {
     color: #db4437;
     background-color: #f5f5f5;
 }            
