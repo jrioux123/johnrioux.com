@@ -177,7 +177,7 @@ button:focus {
     font-size: 0.875rem;
     font-weight: 500;            
     color: black;
-    padding-left: .125rem;
+    padding-left: .5rem;
 }
 .menu .material-icons {
     margin: 0 1rem 0 .5rem;
