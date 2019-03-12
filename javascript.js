@@ -98,32 +98,32 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById("navbar").style.cssText = "box-shadow: rgba(0, 0, 0, 0.3) 0px .0625rem .5rem;";
+        document.getElementById("navbar").classList.add("scrolled");
         
     } else {
-        document.getElementById("navbar").style.cssText = "box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .14);";
+        document.getElementById("navbar").classList.remove("scrolled");
     }
     if (document.body.scrollTop > 128 || document.documentElement.scrollTop > 128) {
-        document.getElementById("topbar").style.cssText = "margin-top:0;";
-        document.getElementById("logo").style.cssText = "height:3.5rem; margin-top:0; transform:none;";
-        document.getElementById("menuID").style.cssText = "display:block; padding-top:6.5rem;";
+        document.getElementById("topbar").classList.add("scrolled");
+        document.getElementById("logo").classList.add("scrolled");
+        document.getElementById("menuID").classList.add("scrolled");
         
     } else {
-        document.getElementById("topbar").style.cssText = "margin-top:8rem;";
-        document.getElementById("logo").style.cssText = "height:11.5rem; margin-top:0; transform:none;";
-        document.getElementById("menuID").style.cssText = "display:block; padding-top:14.5rem;";
+        document.getElementById("topbar").classList.remove("scrolled");
+        document.getElementById("logo").classList.remove("scrolled");
+        document.getElementById("menuID").classList.remove("scrolled");
     }
 }
 
 function menuOpen() {
-    document.getElementById("menuID").style.cssText = "display:block; left:0;";
-    document.getElementById("menushade").style.cssText = "display:block; opacity:1";
+    document.getElementById("menuID").classList.remove("animate", "hidden");
+    document.getElementById("menushade").classList.remove("animate", "hidden");
 }
 function menuClose() {
-    document.getElementById("menuID").style.cssText = "display:block; left:-20rem;";
-    document.getElementById("menushade").style.cssText = "display:block; opacity: 0;";
+    document.getElementById("menuID").classList.add("animate");
+    document.getElementById("menushade").classList.add("animate");
     setTimeout(function(){
-        document.getElementById("menuID").style.cssText = "display:none;";
-        document.getElementById("menushade").style.cssText = "display:none;";
+        document.getElementById("menuID").classList.add("hidden");
+        document.getElementById("menushade").classList.add("hidden");
     }, 250);
 }
