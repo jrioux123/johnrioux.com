@@ -411,6 +411,9 @@ p {
         left: 0;
         transition: .25s;
     }
+    .menu.scrolled {
+        padding-top: 0;
+    }
     .menu.animate {
         left: -20rem;
     }
