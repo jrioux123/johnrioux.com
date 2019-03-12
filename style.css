@@ -37,6 +37,11 @@ a {
     margin-top: 50vh;
     transform: translateY(-50%);
 }
+.logo.scrolled {
+    height: 3.5rem;
+    margin-top: 0;
+    transform: none;
+}
 .logo img {
     max-height: calc(100% - 3rem);
     min-height: 2.5rem;
@@ -54,6 +59,9 @@ a {
     transition: 0.4s;
     box-shadow: 0rem 0.0625rem 0.25rem rgba(0, 0, 0, .14);
 }
+.navbar.scrolled {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px .0625rem .5rem;
+}
 .topbar {
     width: 100%;
     max-width: 800px; /* Max content width */ 
@@ -61,6 +69,9 @@ a {
     margin-top: 8rem;
     height: 3.5rem;
     transition: 0.4s;
+}
+.topbar.scrolled {
+    margin-top:0;
 }
 .topbar .material-icons {
     color: black;
@@ -163,6 +174,16 @@ button:focus {
     box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
     transition: .4s;
 }
+.menu.scrolled {
+    display: block;
+    padding-top: 6.5rem;
+}
+.menu.animate {
+    left: -20rem;
+}
+.menu.hidden {
+    display: none;
+}
 .menutitle {
     display: none;
 }
@@ -226,6 +247,12 @@ a.menu-selected {
     animation-timing-function: ease-in-out;
     display: none;
     transition: .25s;
+}
+.shade.animate {
+    opacity: 0;
+}
+.shade.hidden {
+    display: none;
 }
 @keyframes shade-enter {
     from {opacity: 0;}
