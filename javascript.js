@@ -3,6 +3,8 @@ function goBack() {
 }
 
 // Ajax
+
+// Open a page
 $("#pagecontent").delegate("button", "click", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
@@ -22,6 +24,7 @@ $(window).bind("popstate", function() {
     $('#contentloader').load(_link + ' #pagecontent');
 });
 
+// Tab-switching
 $("#navigation").load("navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
         $(".tabsbar").children().css("animation","");        
@@ -103,12 +106,12 @@ function scrollFunction() {
     if (document.body.scrollTop > 128 || document.documentElement.scrollTop > 128) {
         document.getElementById("topbar").style.cssText = "margin-top:0;";
         document.getElementById("logo").style.cssText = "height:3.5rem; margin-top:0; transform:none;";
-        document.getElementById("menuID").style.cssText = "padding-top:6.5rem;";
+        document.getElementById("menuID").style.cssText = "display:block; padding-top:6.5rem;";
         
     } else {
         document.getElementById("topbar").style.cssText = "margin-top:8rem;";
         document.getElementById("logo").style.cssText = "height:11.5rem; margin-top:0; transform:none;";
-        document.getElementById("menuID").style.cssText = "padding-top:14.5rem;";
+        document.getElementById("menuID").style.cssText = "display:block; padding-top:14.5rem;";
     }
 }
 
