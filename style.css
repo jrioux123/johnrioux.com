@@ -175,7 +175,6 @@ button:focus {
     transition: .4s;
 }
 .menu.scrolled {
-    display: block;
     padding-top: 6.5rem;
 }
 .menutitle {
