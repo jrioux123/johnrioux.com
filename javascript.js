@@ -90,9 +90,9 @@ $("#navigation").load("navigation.html", function() {
 // Animations
 
 function loadingAnimation() {
-            document.getElementById("loading").style.cssText = "height:0px;";
-            document.getElementById("logo").style.cssText = "margin-top:0px; transform:none;"
-        }
+        document.getElementById("loading").style.cssText = "height:0px;";
+        document.getElementById("logo").style.cssText = "margin-top:0px; transform:none;"
+    }
 
 window.onscroll = function() {scrollFunction()};
 
@@ -113,6 +113,13 @@ function scrollFunction() {
         document.getElementById("logo").classList.remove("scrolled");
         document.getElementById("menuID").classList.remove("scrolled");
     }
+}
+
+function newsTab() {
+    document.getElementById("tabstroke").style.cssText = "margin-left:0px;";    
+}
+function videosTab() {
+    document.getElementById("tabstroke").style.cssText = "margin-left:90px;";
 }
 
 function menuOpen() {
