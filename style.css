@@ -184,8 +184,20 @@ button:focus {
     color: #616161;
     vertical-align: middle;
 }
+.menu-label {
+    font-size: .8125rem;
+    padding: 0 0 .25rem .5rem;
+}
+.socialicon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    padding: .5rem;
+    margin: 0 1rem 0 .5rem;
+    vertical-align: middle;
+}
 .externalicon {
-    font-size: 0.875rem;
+    float: right;
+    color: #80868b;
 }
 .menu a:hover {
     background-color: #f5f5f5;
@@ -196,7 +208,7 @@ a.menu-selected {
 }            
 .menu-selected .material-icons {
     color: #db4437;
-}            
+}
 @keyframes menu-enter {
     from {left: -20rem;}
     to {left: 0;}
@@ -217,13 +229,6 @@ a.menu-selected {
 @keyframes shade-enter {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-.socialicon {
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-    padding: .5rem;
-    margin: 0 1rem 0 .5rem;
-    vertical-align: middle;
 }
 
 /* Page Content */
@@ -390,6 +395,9 @@ p {
         display: block;
     }            
     .menu a {
+        padding-left: 0;
+    }
+    .menu-label {
         padding-left: 0;
     }
     .pagecontent {
