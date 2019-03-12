@@ -1,6 +1,10 @@
 body {
     margin: auto;
     font-family: 'Fira Sans';
+    background-color: #fafafa;
+    background-image: linear-gradient(#fafafa, white);
+    background-size: contain;
+    background-attachment: fixed;
 }
 a {            
     text-decoration: none;
