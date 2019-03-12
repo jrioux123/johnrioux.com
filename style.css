@@ -178,12 +178,6 @@ button:focus {
     display: block;
     padding-top: 6.5rem;
 }
-.menu.animate {
-    left: -20rem;
-}
-.menu.hidden {
-    display: none;
-}
 .menutitle {
     display: none;
 }
@@ -418,6 +412,12 @@ p {
         animation-timing-function: ease-in-out;
         top: 0;
         transition: .25s;
+    }
+    .menu.animate {
+        left: -20rem;
+    }
+    .menu.hidden {
+        display: none;
     }
     .menutitle {
         display: block;
