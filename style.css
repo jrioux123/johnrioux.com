@@ -154,7 +154,7 @@ button:focus {
     width: 5.625rem; /* This will change */
     height: 0.125rem;
     background-color: #db4437;
-    transition: .125s;
+    transition: .25s;
     position: absolute;
     bottom: 0;
 }
