@@ -238,7 +238,6 @@ a.menu-selected {
     background-color: rgba(0,0,0,0.4);	
     animation: shade-enter .25s 1;
     animation-timing-function: ease-in-out;
-    display: none;
     transition: .25s;
 }
 .shade.animate {
@@ -400,8 +399,7 @@ p {
     .menubutton {
         display: block;
     }
-    .menu {
-        display: none;    
+    .menu { 
         width: calc(100% - 56px);
         max-width: 20rem;
         padding: 0;
