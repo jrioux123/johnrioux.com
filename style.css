@@ -204,6 +204,7 @@ button:focus {
 }
 .menu-label {
     font-size: .8125rem;
+    font-weight: 500;
     padding: 0 0 .25rem .5rem;
 }
 .socialicon {
