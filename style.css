@@ -364,7 +364,7 @@ a.menu-selected {
 }
 p {
     margin: 0; /* Overrides automatic styles */
-    padding: 1rem 1rem 0 1rem;
+    padding: .5rem 1rem 0 1rem;
 }
 .cardopen {
     font-size: 1rem;
