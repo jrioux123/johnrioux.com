@@ -398,7 +398,7 @@ p {
     color: #db4437;
     font-weight: 500;
 }
-a:hover {
+.cardopen a:hover {
     border-bottom: 2px solid #db4437;
     transition: .25s;
 }
