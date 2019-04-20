@@ -7,6 +7,8 @@ body {
     background-attachment: fixed;
 }
 a {            
+    color: #db4437;
+    font-weight: 500;
     text-decoration: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -14,6 +16,10 @@ a {
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+    border-bottom: 2px solid #db4437;
+    transition: .25s;
 }
 .material-icons {
     font-size: 1.5rem;
