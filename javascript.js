@@ -14,6 +14,7 @@ $("#pagecontent").delegate("button", "click", function() {
     history.pushState(null, null, _link);
     $('#contentloader').load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
+    window.scrollTop = 0;
     return false;
 });
 $(window).bind("popstate", function() {
