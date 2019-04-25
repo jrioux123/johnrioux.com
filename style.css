@@ -465,6 +465,9 @@ p {
 
 /* Tablet Mode */
 @media only screen and (max-width: 66rem) {
+    .logo {
+        margin-top: 4rem;
+    }
     .menubutton {
         display: block;
     }
