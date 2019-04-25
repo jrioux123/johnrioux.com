@@ -110,12 +110,14 @@ function scrollFunction() {
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
         document.getElementById("searchID").classList.add("scrolled");
+        document.getElementById("searchbutton").classList.add("scrolled");
         
     } else {
         document.getElementById("topbar").classList.remove("scrolled");
         document.getElementById("logo").classList.remove("scrolled");
         document.getElementById("menuID").classList.remove("scrolled");
         document.getElementById("searchID").classList.remove("scrolled");
+        document.getElementById("searchbutton").classList.remove("scrolled");
     }
 }
 
