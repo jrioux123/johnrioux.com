@@ -68,7 +68,7 @@ a {
 }
 .topbar {
     width: 100%;
-    max-width: 800px; /* Max content width */ 
+    max-width: 50rem; /* Max content width */ 
     margin: auto;
     margin-top: 8rem;
     height: 3.5rem;
@@ -259,10 +259,11 @@ a.menu-selected {
 /* Searchbar (note: the Google stuff is stored on searchbar.css) */
 .searchcontainer {
 	position: fixed;	
-	z-index: 112;
+	z-index: 3;
 	box-sizing: border-box;
-    padding: 4px;
+    padding: .25rem;
     margin: auto;
+	top: 0;
     width: 100%;
     animation: search-enter .25s 1;
     animation-timing-function: ease-in-out;
@@ -280,15 +281,14 @@ a.menu-selected {
     to {opacity: 1;}
 }
 .searchbar {
-    height: 48px;
+    height: 3rem;
 	background-color: white;
-	border-radius: 2px;
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, .14);
-	max-width: 720px;
+	box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
+	max-width: 50rem;
 	margin: auto;
 }
 .exitsearch {
-    margin: 4px !important;
+    margin: .25rem;
 	opacity: .54;
 	float: left;
 }
