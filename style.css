@@ -271,7 +271,7 @@ a.menu-selected {
     transition: .25s;
 }
 .searchcontainer.animate {
-    opacity: 0;
+    opacity: 1;
 }
 .searchcontainer.hidden {
     display: block;
@@ -497,7 +497,10 @@ p {
     .searchcontainer {
         position: fixed;
     }
-    .searchcontainer:hidden {
+    .searchcontainer.animate {
+        opacity: 0;
+    }
+    .searchcontainer.hidden {
         display: none;
     }
     .searchcontainer.scrolled {
