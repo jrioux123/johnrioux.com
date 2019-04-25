@@ -274,7 +274,7 @@ a.menu-selected {
     opacity: 0;
 }
 .searchcontainer.hidden {
-    display: none;
+    display: block;
 }
 .searchcontainer.scrolled {
     display: none;
@@ -498,7 +498,7 @@ p {
         position: fixed;
     }
     .searchcontainer:hidden {
-        display: block;
+        display: none;
     }
     .searchcontainer.scrolled {
         display: block;
