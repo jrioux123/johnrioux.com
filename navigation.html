@@ -5,24 +5,26 @@
             <button id="menubutton" onclick="menuOpen()" class="material-icons menubutton">menu</button>
             <button id="backbutton" onclick="goBack()" class="material-icons backbutton">arrow_back</button>
             <button id="searchbutton" onclick="searchOpen();" class="material-icons searchbutton">search</button>
-            <div id="searchID" class="searchcontainer">
-            <div class="searchbar">
-                <button id="shadeID" onclick="shadeKill();" class="material-icons exitsearch">arrow_back</button>       
-                <div style="margin-left: 48px;">
-                    <script>
-                        (function() {
-                          var cx = '016891107299133920326:wwaszvag6gw';
-                          var gcse = document.createElement('script');
-                          gcse.type = 'text/javascript';
-                          gcse.async = true;
-                          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                          var s = document.getElementsByTagName('script')[0];
-                          s.parentNode.insertBefore(gcse, s);
-                        })();
-                    </script>
-                    <gcse:search></gcse:search></div>
+            <div id="searchID" class="searchcontainer animate hidden">
+                <div class="searchbar">
+                    <button id="shadeID" onclick="shadeKill();" class="material-icons exitsearch">arrow_back</button>       
+                    <div style="margin-left: 48px;">
+                        <script>
+                            (function() {
+                              var cx = '016891107299133920326:wwaszvag6gw';
+                              var gcse = document.createElement('script');
+                              gcse.type = 'text/javascript';
+                              gcse.async = true;
+                              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                              var s = document.getElementsByTagName('script')[0];
+                              s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </div>
                 </div>
-             </div>
+            </div>
+            <div id="searchshade" onclick="searchClose()" class="shade animate hidden"></div>
         </div>
         <div class="tabsbar">
             <button href="/" data-name="News" class="tab newstab" onclick="newsTab()">NEWS</button>
