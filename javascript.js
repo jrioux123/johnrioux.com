@@ -140,6 +140,9 @@ function menuClose() {
 function searchOpen() {
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
+    document.getElementsByName("search")[0].value="";
+    document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
+    document.querySelector('input').autofocus = true;
 }
 function searchClose() {
     document.getElementById("searchID").classList.add("animate");
