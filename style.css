@@ -70,7 +70,7 @@ a {
     width: 100%;
     max-width: 50rem; /* Max content width */ 
     margin: auto;
-    margin-top: 8rem;
+    margin-top: 12rem;
     height: 3.5rem;
     transition: 0.4s;
 }
@@ -114,6 +114,7 @@ button:focus {
 }
 .searchbutton {
     float: right;
+    display: none;
 }
 .topbar img {
     width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
@@ -167,7 +168,7 @@ button:focus {
 .menu {
     display: block;    
     height: calc(100% + 3.5rem);
-    padding: 14.5rem 0;
+    padding: 18.5rem 0;
     width: 16rem;    
     position: fixed;
     top: -.0625rem;
@@ -258,7 +259,6 @@ a.menu-selected {
 
 /* Searchbar (note: the Google stuff is stored on searchbar.css) */
 .searchcontainer {
-    position: fixed;	
     z-index: 3;
     box-sizing: border-box;
     padding: .25rem;
@@ -274,6 +274,9 @@ a.menu-selected {
     opacity: 0;
 }
 .searchcontainer.hidden {
+    display: none;
+}
+.searchcontainer.scrolled {
     display: none;
 }
 @keyframes search-enter {
@@ -487,6 +490,18 @@ p {
     }
     .menu-label {
         padding-left: 0;
+    }
+    .searchbutton {
+        display: block;
+    }
+    .searchcontainer {
+        position: fixed;
+    }
+    .searchcontainer:hidden {
+        display: block;
+    }
+    .searchcontainer.scrolled {
+        display: block;
     }
     .pagecontent {
         padding-left: .5rem;
