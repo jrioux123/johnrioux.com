@@ -303,6 +303,9 @@ a.menu-selected {
     background-color: #e1e1e1;
 }
 .searchicon {
+    margin: .25rem;
+    opacity: .54;
+    float: left;
     display: block;
 }
 
