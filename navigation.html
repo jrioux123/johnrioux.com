@@ -6,6 +6,28 @@
         <div class="topbar" id="topbar">
             <button id="menubutton" onclick="menuOpen()" class="material-icons menubutton">menu</button>
             <button id="backbutton" onclick="goBack()" class="material-icons backbutton">arrow_back</button>
+            <!-- Searchbar -->
+            <div id="searchID" class="searchcontainer animate hidden">
+                <div class="searchbar">
+                    <button id="shadeID" onclick="searchClose();" class="material-icons exitsearch">arrow_back</button>       
+                    <div style="margin-left: 48px;">
+                        <script>
+                            (function() {
+                              var cx = '016891107299133920326:wwaszvag6gw';
+                              var gcse = document.createElement('script');
+                              gcse.type = 'text/javascript';
+                              gcse.async = true;
+                              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                              var s = document.getElementsByTagName('script')[0];
+                              s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </div>
+                </div>
+            </div>
+            <div id="searchshade" onclick="searchClose()" class="shade animate hidden"></div>
+            <!-- End searchbar -->
             <button id="searchbutton" onclick="searchOpen();" class="material-icons searchbutton">search</button>
         </div>
         <div class="tabsbar">
@@ -19,11 +41,11 @@
         </div>
     </div>
 </div>
-<div class="topbar" style="padding-bottom:48px;"></div> <!-- Pushes content below navbar -->
+<div class="topbar" style="padding-bottom: 3rem;"></div> <!-- Pushes content below navbar -->
 
 <!-- Menu -->
 <div id="menuID" class="menu animate hidden">
-    <div class="menutitle" style="height:104px;">
+    <div class="menutitle" style="height: 6.5rem;">
         <!-- Insert Logo Here -->
     </div>
     <div class="menulist">
@@ -43,25 +65,3 @@
     </div>
 </div>    
 <div id="menushade" onclick="menuClose()" class="shade animate hidden"></div>
-
-<!-- Searchbar -->
-<div id="searchID" class="searchcontainer animate hidden">
-    <div class="searchbar">
-        <button id="shadeID" onclick="searchClose();" class="material-icons exitsearch">arrow_back</button>       
-        <div style="margin-left: 48px;">
-            <script>
-                (function() {
-                  var cx = '016891107299133920326:wwaszvag6gw';
-                  var gcse = document.createElement('script');
-                  gcse.type = 'text/javascript';
-                  gcse.async = true;
-                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                  var s = document.getElementsByTagName('script')[0];
-                  s.parentNode.insertBefore(gcse, s);
-                })();
-            </script>
-            <gcse:search></gcse:search>
-        </div>
-    </div>
-</div>
-<div id="searchshade" onclick="searchClose()" class="shade animate hidden"></div>
