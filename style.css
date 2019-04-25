@@ -291,7 +291,8 @@ a.menu-selected {
     margin: .25rem;
 	opacity: .54;
 	float: left;
-	cursor: pointer;
+	cursor: pointer;	
+    transition: 0.4s;
 }
 .exitsearch:active {
 	border-radius: 100%;
