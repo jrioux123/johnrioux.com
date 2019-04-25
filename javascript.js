@@ -93,7 +93,7 @@ $("#navigation").load("navigation.html", function() {
 
 function loadingAnimation() {
         document.getElementById("loading").style.cssText = "height:0px;";
-        document.getElementById("logo").style.cssText = "margin-top:56px; transform:none;"
+        document.getElementById("logo").classList.remove("preload");
     }
 
 window.onscroll = function() {scrollFunction()};
