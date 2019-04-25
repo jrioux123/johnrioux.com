@@ -287,7 +287,7 @@ a.menu-selected {
     height: 3rem;
     background-color: white;
     box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
-    max-width: 50rem;
+    max-width: 30rem;
     margin: auto;
 }
 .exitsearch {
