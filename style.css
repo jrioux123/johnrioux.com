@@ -64,7 +64,7 @@ a {
     box-shadow: 0rem 0.0625rem 0.25rem rgba(0, 0, 0, .14);
 }
 .navbar.scrolled {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px .0625rem .5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 .0625rem .5rem;
 }
 .topbar {
     width: 100%;
@@ -296,10 +296,14 @@ a.menu-selected {
     float: left;
     cursor: pointer;	
     transition: 0.4s;
+    display: none;
 }
 .exitsearch:active {
     border-radius: 100%;
     background-color: #e1e1e1;
+}
+.searchicon {
+    display: block;
 }
 
 /* Page Content */
@@ -320,7 +324,7 @@ a.menu-selected {
     font-size: .875rem;
     text-align: left; /* To override button style */
     margin: .5rem;
-    padding: 0px; /* To override button style */
+    padding: 0; /* To override button style */
     width: 23.5rem;
     background-color: white;
     word-wrap: break-word;
@@ -506,6 +510,12 @@ p {
     .searchcontainer.scrolled {
         display: block;
     }
+    .exitsearch {
+        display: block;
+    }
+    .searchicon {
+        display: none;
+     }
     .pagecontent {
         padding-left: .5rem;
     }
