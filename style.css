@@ -306,9 +306,11 @@ a.menu-selected {
 }
 .searchicon {
     margin: .25rem;
-    opacity: .54;
+    opacity: .54 !important;
     float: left;
     display: block;
+    cursor: default !important;
+    background-color: white !important;
 }
 
 /* Page Content */
