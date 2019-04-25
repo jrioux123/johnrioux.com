@@ -1,8 +1,8 @@
+// Ajax
+
 function goBack() {
     history.back();
 }
-
-// Ajax
 
 // Open a card
 $("#pagecontent").delegate("button", "click", function() {
@@ -134,5 +134,18 @@ function menuClose() {
     setTimeout(function(){
         document.getElementById("menuID").classList.add("hidden");
         document.getElementById("menushade").classList.add("hidden");
+    }, 250);
+}
+
+function searchOpen() {
+    document.getElementById("searchID").classList.remove("animate", "hidden");
+    document.getElementById("searchshade").classList.remove("animate", "hidden");
+}
+function searchClose() {
+    document.getElementById("searchID").classList.add("animate");
+    document.getElementById("searchshade").classList.add("animate");
+    setTimeout(function(){
+        document.getElementById("searchID").classList.add("hidden");
+        document.getElementById("searchshade").classList.add("hidden");
     }, 250);
 }
