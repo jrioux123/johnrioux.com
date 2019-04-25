@@ -17,6 +17,7 @@ $("#pagecontent").delegate("button", "click", function() {
     document.body.scrollTop = 0;
     return false;
 });
+// Back button
 $(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
     document.getElementById("backbutton").style.cssText = "display: none;";
