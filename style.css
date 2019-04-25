@@ -118,6 +118,9 @@ button:focus {
     float: right;
     display: none;
 }
+.searchbutton.scrolled {
+    display: block;
+}
 .topbar img {
     width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
     max-width: 460px;
