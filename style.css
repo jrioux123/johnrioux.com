@@ -144,7 +144,7 @@ button:focus {
     width: calc(100% - 3rem);
     cursor: text;
     opacity: .54;
-    text-aiign: left;
+    text-align: left;
 }    
 .tabsbar {
     max-width: fit-content;
