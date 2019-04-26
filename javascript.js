@@ -88,6 +88,8 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
+// Logo
+$("#logoloader").load("logo.html");
 
 // Animations
 
