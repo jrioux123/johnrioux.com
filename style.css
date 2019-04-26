@@ -30,7 +30,7 @@ a {
     transition: .4s;
 }
 .logo {
-    height: 11.5rem;
+    height: 12rem;
     width: calc(100% - 7rem);
     max-width: 32.25rem;
     transition: .4s;
@@ -72,7 +72,6 @@ a {
     width: 100%;
     max-width: 40rem;
     margin: auto;
-    margin-top: 12rem;
     height: 3.5rem;
     transition: 0.4s;
 }
