@@ -92,6 +92,7 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
+
 // Searchbar fix
 
 $( window ).on( "load", function() {
@@ -99,6 +100,10 @@ $( window ).on( "load", function() {
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;
 });
+
+function searchFocus() {    
+    $('#gsc-i-id1').focus();
+};
 
 
 // Animations
@@ -152,8 +157,7 @@ function menuClose() {
 function searchOpen() {    
     document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
-    document.getElementById("searchshade").classList.remove("animate", "hidden");    
-    document.querySelector('input').focus();
+    document.getElementById("searchshade").classList.remove("animate", "hidden");
 }
 function searchClose() {
     document.getElementById("logo").classList.remove("hidden");
