@@ -113,7 +113,7 @@ button:focus {
 }
 .searchbutton {
     float: right;
-    display: block;
+    display: none;
 }
 .searchbutton.scrolled {
     display: block;
@@ -127,6 +127,9 @@ button:focus {
     padding: 0;
     font-size: 1rem;
     cursor: default;
+}
+.searchbuttonlong.scrolled {
+    display: block;
 }
 .searchbuttonlong .material-icons{
     margin: .25rem;
@@ -527,6 +530,9 @@ p {
     }
     .searchbutton {
         display: block;
+    }
+    .searchbuttonlong {
+        display: none;
     }
     .searchcontainer {
         top: 8rem;
