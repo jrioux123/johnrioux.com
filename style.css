@@ -323,19 +323,10 @@ a.menu-selected {
     float: left;
     cursor: pointer;	
     transition: 0.4s;
-    display: none;
 }
 .exitsearch:active {
     border-radius: 100%;
     background-color: #e1e1e1;
-}
-.searchicon {
-    margin: .25rem;
-    opacity: .54 !important;
-    float: left;
-    display: block;
-    cursor: default !important;
-    background-color: white !important;
 }
 
 /* Page Content */
@@ -545,12 +536,6 @@ p {
     .searchcontainer.hidden {
         display: none;
     }
-    .exitsearch {
-        display: block;
-    }
-    .searchicon {
-        display: none;
-     }
     .pagecontent {
         padding-left: .5rem;
     }
