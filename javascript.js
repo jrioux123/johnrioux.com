@@ -155,7 +155,7 @@ function menuClose() {
 
 function searchOpen() {    
     document.getElementById("loading").classList.add("hidden");
-    document.getElementById("searchID").classList.remove("animate", "hidden");
+    document.getElementById("searchID").classList.remove("animate", "hidden", "scrolled");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
 }
 function searchClose() {
