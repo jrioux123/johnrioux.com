@@ -93,7 +93,7 @@ $("#logoloader").load("logo.html");
 
 // Searchbar fix
 
-document.onload = function() {searchFix()};
+window.onload = function() {searchFix()};
 
 function searchFix() {    
     document.getElementsByName("search")[0].value="";
