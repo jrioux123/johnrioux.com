@@ -9,7 +9,6 @@ $("#pagecontent").delegate("button", "click", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
     document.getElementById("menubutton").style.cssText = "display: none;";
     document.getElementById("backbutton").style.cssText = "display: block;";
-    document.getElementById("searchId").style.cssText = "display: none";
     document.getElementById("searchbutton").style.cssText = "display: block;";
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
@@ -25,7 +24,6 @@ $(window).bind("popstate", function() {
     document.getElementById("backbutton").style.cssText = "display: none;";
     document.getElementById("menubutton").style.cssText = "display: block;";
     document.getElementById("searchbutton").style.cssText = "display: none";
-    document.getElementById("searchId").style.cssText = "display: block;";
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
 });
