@@ -126,12 +126,22 @@ button:focus {
     margin: .25rem;
     padding: 0;
     font-size: 1rem;
-    cursor: 
+    cursor: default;
 }
 .searchbuttonlong .material-icons{
     margin: .25rem;
-    cursor: default;
+    float: left;
+    opacity: .54;
+    background-color: white;
 }
+.searchbuttonlong a {
+    height: 3rem;
+    float: left;
+    line-height: 3rem;
+    width: calc(100% - 3rem);
+    cursor: text;
+    opacity: .54;
+}    
 .tabsbar {
     max-width: fit-content;
     height: 3rem;
