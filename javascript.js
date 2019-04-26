@@ -7,10 +7,6 @@ function goBack() {
 // Open a card
 $("#pagecontent").delegate("button", "click", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
-    document.getElementById("menubutton").classList.add("hidden");
-    document.getElementById("backbutton").classList.remove("hidden");
-    document.getElementById("searchbutton").classList.remove("hidden");
-    document.getElementById("searchbuttonlong").classList.add("hidden");
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
@@ -24,8 +20,6 @@ $(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
     document.getElementById("backbutton").classList.add("hidden");
     document.getElementById("menubutton").classList.remove("hidden");
-    document.getElementById("searchbutton").classList.add("hidden");
-    document.getElementById("searchbuttonlong").classList.remove("hidden");
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
 });
