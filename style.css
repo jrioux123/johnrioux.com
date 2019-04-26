@@ -123,7 +123,7 @@ button:focus {
     background-color: white;
     box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, .14);
     width: 39.5rem;
-    margin: .25rem 0 0 .5rem;
+    margin: .25rem;
     padding: 0;
     font-size: 1rem;
     cursor: default;
