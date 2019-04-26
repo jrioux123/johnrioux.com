@@ -279,9 +279,6 @@ a.menu-selected {
 .searchcontainer.hidden {
     display: none;
 }
-.searchcontainer.scrolled {
-    background-color: red;
-}
 @keyframes search-enter {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -517,9 +514,6 @@ p {
     }
     .searchcontainer.hidden {
         display: none;
-    }
-    .searchcontainer.scrolled {
-        display: block;
     }
     .exitsearch {
         display: block;
