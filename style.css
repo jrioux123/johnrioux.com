@@ -72,11 +72,12 @@ a {
     width: 100%;
     max-width: 40rem;
     margin: auto;
+    margin-top: 12rem;
     height: 3.5rem;
     transition: 0.4s;
 }
 .topbar.scrolled {
-    margin-top:0;
+    margin-top: 0;
 }
 .topbar .material-icons {
     color: black;
