@@ -302,7 +302,7 @@ a.menu-selected {
     top: 12rem;
     left: 50%;
     transform: translatex(-50%);
-    max-width: 39.5rem;
+    max-width: 40rem;
     width: 100%;
     animation: search-enter .25s 1;
     animation-timing-function: ease-in-out;
