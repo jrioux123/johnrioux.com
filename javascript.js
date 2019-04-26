@@ -94,14 +94,12 @@ $("#navigation").load("navigation.html", function() {
 
 // Onload
 
-window.onload = function() {loadEvent()};
-
-function loadEvent() {   
+$( document ).ready( function loadEvent() {   
     // Searchbar Fix
     document.getElementsByName("search")[0].value="";
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;
-}
+});
 
 
 // Animations
