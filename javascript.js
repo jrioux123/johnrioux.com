@@ -92,10 +92,9 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
-// Onload
+// Searchbar fix
 
-$( document ).ready( function loadEvent() {   
-    // Searchbar Fix
+$( document ).ready( function() {
     document.getElementsByName("search")[0].value="";
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;
