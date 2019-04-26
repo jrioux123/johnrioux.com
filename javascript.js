@@ -158,7 +158,7 @@ function menuClose() {
 }
 
 function searchOpen() {    
-    document.getElementById("loading").classList.add("hidden");
+    document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
     if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
@@ -166,7 +166,7 @@ function searchOpen() {
     }
 }
 function searchClose() {
-    document.getElementById("loading").classList.remove("hidden");
+    document.getElementById("logo").classList.remove("hidden");
     document.getElementById("searchID").classList.add("animate");
     document.getElementById("searchshade").classList.add("animate");
     if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
