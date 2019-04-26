@@ -274,7 +274,7 @@ a.menu-selected {
     transition: .25s;
 }
 .searchcontainer.animate {
-    opacity: 1;
+    opacity: 0;
 }
 .searchcontainer.hidden {
     display: none;
