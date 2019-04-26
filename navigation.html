@@ -9,11 +9,11 @@
         <div class="topbar" id="topbar">
             <button id="menubutton" onclick="menuOpen()" class="material-icons menubutton">menu</button>
             <button id="backbutton" onclick="goBack()" class="material-icons backbutton hidden">arrow_back</button>
-            <button id="searchbuttonlong" onclick="searchOpen();" class="searchbuttonlong">
+            <button id="searchbuttonlong" onclick="searchOpen(), searchFocus();" class="searchbuttonlong">
                 <div class="material-icons">search</div>
                 <a>Search johnrioux.net</a>
             </button>
-            <button id="searchbutton" onclick="searchOpen();" class="material-icons searchbutton">search</button>
+            <button id="searchbutton" onclick="searchOpen(), searchFocus();" class="material-icons searchbutton">search</button>
             <!-- End searchbar -->
         </div>
         <div class="tabsbar">
