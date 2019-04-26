@@ -117,13 +117,12 @@ function scrollFunction() {
     } else {
         document.getElementById("navbar").classList.remove("scrolled");
     }
-    if (document.body.scrollTop > 128 || document.documentElement.scrollTop > 184) {
+    if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
         document.getElementById("searchID").classList.add("scrolled");
-        document.getElementById("searchbutton").classList.add("scrolled");
-        
+        document.getElementById("searchbutton").classList.add("scrolled");        
     } else {
         document.getElementById("topbar").classList.remove("scrolled");
         document.getElementById("logo").classList.remove("scrolled");
@@ -155,13 +154,19 @@ function menuClose() {
 
 function searchOpen() {    
     document.getElementById("loading").classList.add("hidden");
-    document.getElementById("searchID").classList.remove("animate", "hidden", "scrolled");
+    document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
+    if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
+        document.getElementById("searchID").classList.remove("scrolled");
+    }
 }
 function searchClose() {
     document.getElementById("loading").classList.remove("hidden");
     document.getElementById("searchID").classList.add("animate");
     document.getElementById("searchshade").classList.add("animate");
+    if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
+        document.getElementById("searchID").classList.add("scrolled");
+    }
     setTimeout(function(){
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
