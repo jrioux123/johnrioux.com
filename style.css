@@ -267,6 +267,7 @@ a.menu-selected {
 
 /* Searchbar (note: the Google stuff is stored on searchbar.css) */
 .searchcontainer {
+    position: relative;
     z-index: 3;
     box-sizing: border-box;
     padding: .25rem;
