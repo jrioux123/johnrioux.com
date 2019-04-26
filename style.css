@@ -107,21 +107,12 @@ button:focus {
     display: none;
     float: left;
 }
-.menubutton.hidden {
-    display: none;
-}
 .backbutton {
     float: left;
     display: block;
 }
-.backbutton.hidden {
-    display: none;
-}
 .searchbutton {
     float: right;
-    display: none;
-}
-.searchbutton.hidden {
     display: none;
 }
 .searchbutton.scrolled {
@@ -136,9 +127,6 @@ button:focus {
     padding: 0;
     font-size: 1rem;
     cursor: default;
-}
-.searchbuttonlong.hidden {
-    display: none;
 }
 .searchbuttonlong.scrolled {
     display: none;
