@@ -70,7 +70,7 @@ a {
 }
 .topbar {
     width: 100%;
-    max-width: 50rem; /* Max content width */ 
+    max-width: 40rem;
     margin: auto;
     margin-top: 12rem;
     height: 3.5rem;
