@@ -18,8 +18,6 @@ $("#pagecontent").delegate("button", "click", function() {
 // Back button
 $(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
-    document.getElementById("backbutton").classList.add("hidden");
-    document.getElementById("menubutton").classList.remove("hidden");
     _link = location.pathname.replace(/^.*[\\/]/, "");
     $('#contentloader').load(_link + ' #pagecontent');
 });
