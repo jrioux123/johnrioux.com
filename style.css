@@ -29,6 +29,9 @@ a {
     background-color: white;
     transition: .4s;
 }
+.loading.scrolled.hidden {
+    display: none;
+}
 .logo {
     height: 11.5rem;
     width: calc(100% - 7rem);
@@ -472,9 +475,6 @@ p {
 
 /* Tablet Mode */
 @media only screen and (max-width: 66rem) {
-    .logo {
-        margin-top: 4rem;
-    }
     .topbar {
         margin-top: 8rem;
     }
