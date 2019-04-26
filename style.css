@@ -260,8 +260,9 @@ a.menu-selected {
     box-sizing: border-box;
     padding: .25rem;
     top: 12rem;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 39.5rem;
     animation: search-enter .25s 1;
     animation-timing-function: ease-in-out;
     opacity: 1;
