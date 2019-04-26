@@ -48,9 +48,6 @@ a {
     margin-top: 0;
     transform: none;
 }
-.logo.scrolled.hidden {
-    display: none;
-}
 .logo img {
     max-height: calc(100% - 3rem);
     min-height: 2.5rem;
@@ -119,7 +116,7 @@ button:focus {
 }
 .searchbutton {
     float: right;
-    display: none;
+    display: block;
 }
 .searchbutton.scrolled {
     display: block;
@@ -283,10 +280,10 @@ a.menu-selected {
     opacity: 1;
 }
 .searchcontainer.hidden {
-    display: block;
+    display: none;
 }
 .searchcontainer.scrolled {
-    display: none;
+    background-color: red;
 }
 @keyframes search-enter {
     from {opacity: 0;}
