@@ -153,11 +153,13 @@ function menuClose() {
     }, 250);
 }
 
-function searchOpen() {
+function searchOpen() {    
+    document.getElementById("loading").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
 }
 function searchClose() {
+    document.getElementById("loading").classList.remove("hidden");
     document.getElementById("searchID").classList.add("animate");
     document.getElementById("searchshade").classList.add("animate");
     setTimeout(function(){
