@@ -10,7 +10,7 @@ a {
     text-decoration: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
-    -moz-user-select: none;
+    -moz-user-select: none;c
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -261,12 +261,12 @@ a.menu-selected {
 
 /* Searchbar (note: the Google stuff is stored on searchbar.css) */
 .searchcontainer {
-    position: relative;
+    position: fixed;
     z-index: 3;
     box-sizing: border-box;
     padding: .25rem;
-    margin: auto;
     top: 0;
+    left: 0;
     width: 100%;
     animation: search-enter .25s 1;
     animation-timing-function: ease-in-out;
@@ -505,9 +505,6 @@ p {
     }
     .searchbutton {
         display: block;
-    }
-    .searchcontainer {
-        position: fixed;
     }
     .searchcontainer.animate {
         opacity: 0;
