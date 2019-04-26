@@ -94,7 +94,7 @@ $("#navigation").load("navigation.html", function() {
 
 // Searchbar fix
 
-$( document ).ready( function() {
+$( window ).on( "load", function() {
     document.getElementsByName("search")[0].value="";
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;
