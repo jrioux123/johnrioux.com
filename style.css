@@ -118,6 +118,20 @@ button:focus {
 .searchbutton.scrolled {
     display: block;
 }
+.searchbuttonlong {
+    height: 3rem;
+    background-color: white;
+    box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, .14);
+    max-width: 39.5rem;
+    margin: .25rem;
+    padding: 0;
+    font-size: 1rem;
+    cursor: 
+}
+.searchbuttonlong .material-icons{
+    margin: .25rem;
+    cursor: default;
+}
 .tabsbar {
     max-width: fit-content;
     height: 3rem;
