@@ -112,7 +112,7 @@ button:focus {
 }
 .backbutton {
     float: left;
-    display: none;
+    display: block;
 }
 .backbutton.hidden {
     display: none;
