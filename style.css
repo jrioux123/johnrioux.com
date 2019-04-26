@@ -284,9 +284,6 @@ a.menu-selected {
 .searchcontainer.hidden {
     display: block;
 }
-.searchcontainer.scrolled {
-    display: none;
-}
 @keyframes search-enter {
     from {opacity: 0;}
     to {opacity: 1;}
