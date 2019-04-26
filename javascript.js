@@ -150,6 +150,7 @@ function menuClose() {
 }
 
 function searchOpen() {    
+    document.querySelector('input').autofocus = true;
     document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
