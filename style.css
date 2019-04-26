@@ -122,8 +122,8 @@ button:focus {
     height: 3rem;
     background-color: white;
     box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, .14);
-    max-width: 39.5rem;
-    margin: .25rem;
+    width: 39.5rem;
+    margin: .25rem 0 0 .5rem;
     padding: 0;
     font-size: 1rem;
     cursor: default;
