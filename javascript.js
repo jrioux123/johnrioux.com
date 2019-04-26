@@ -91,22 +91,23 @@ $("#navigation").load("navigation.html", function() {
 // Logo
 $("#logoloader").load("logo.html");
 
-// Searchbar fix
 
-window.onload = function() {searchFix()};
+// Onload
 
-function searchFix() {    
+window.onload = function() {loadEvent()};
+
+function loadEvent() {   
+    // Searchbar Fix
     document.getElementsByName("search")[0].value="";
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;
+    // Logo animation    
+    document.getElementById("loading").style.cssText = "height:0px;";
+    document.getElementById("logo").classList.remove("preload");
 }
 
-// Animations
 
-function loadingAnimation() {
-        document.getElementById("loading").style.cssText = "height:0px;";
-        document.getElementById("logo").classList.remove("preload");
-    }
+// Animations
 
 window.onscroll = function() {scrollFunction()};
 
