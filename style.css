@@ -141,7 +141,7 @@ button:focus {
     display: none;
 }
 .searchbuttonlong.scrolled {
-    display: block;
+    display: none;
 }
 .searchbuttonlong .material-icons {
     margin: .25rem;
