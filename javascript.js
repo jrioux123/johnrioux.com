@@ -119,13 +119,11 @@ function scrollFunction() {
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
-        document.getElementById("searchID").classList.add("scrolled");
         document.getElementById("searchbutton").classList.add("scrolled");        
     } else {
         document.getElementById("topbar").classList.remove("scrolled");
         document.getElementById("logo").classList.remove("scrolled");
         document.getElementById("menuID").classList.remove("scrolled");
-        document.getElementById("searchID").classList.remove("scrolled");
         document.getElementById("searchbutton").classList.remove("scrolled");
     }
 }
@@ -154,17 +152,11 @@ function searchOpen() {
     document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
-    if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
-        document.getElementById("searchID").classList.remove("scrolled");
-    }
 }
 function searchClose() {
     document.getElementById("logo").classList.remove("hidden");
     document.getElementById("searchID").classList.add("animate");
     document.getElementById("searchshade").classList.add("animate");
-    if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
-        document.getElementById("searchID").classList.add("scrolled");
-    }
     setTimeout(function(){
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
