@@ -475,6 +475,9 @@ p {
     .logo {
         margin-top: 4rem;
     }
+    .topbar {
+        margin-top: 8rem;
+    }
     .menubutton {
         display: block;
     }
