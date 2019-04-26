@@ -92,10 +92,6 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
-// Logo
-$("#logoloader").load("logo.html");
-
-
 // Onload
 
 window.onload = function() {loadEvent()};
@@ -105,9 +101,6 @@ function loadEvent() {
     document.getElementsByName("search")[0].value="";
     document.getElementsByName("search")[0].placeholder="Search johnrioux.net";
     document.querySelector('input').autofocus = true;
-    // Logo animation    
-    document.getElementById("loading").style.cssText = "height:0px;";
-    document.getElementById("logo").classList.remove("preload");
 }
 
 
