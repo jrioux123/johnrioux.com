@@ -118,12 +118,6 @@ button:focus {
 .searchbutton.scrolled {
     display: block;
 }
-.topbar img {
-    width: calc(100% - 152px); /* 112, the length of both icons, + 40, the length of the image's padding */
-    max-width: 460px;
-    margin: auto;
-    transition: 0.4s;
-}
 .tabsbar {
     max-width: fit-content;
     height: 3rem;
