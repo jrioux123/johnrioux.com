@@ -199,6 +199,13 @@
     margin-top: -2px;
 }
 
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait {
+    width: auto;
+    margin-right: 16px;
+    padding: 0;
+    height: auto;
+}
+
 .gs-image {
     height: 34px;
 }
