@@ -1,3 +1,7 @@
+.gsc-overflow-hidden {
+	overflow: scroll;
+}
+
 .gsc-control-cse {
 	padding: 0px;
 	border: 0px;
