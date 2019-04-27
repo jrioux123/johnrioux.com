@@ -151,7 +151,7 @@ function searchOpen() {
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
     if (document.body.scrollTop < 184 || document.documentElement.scrollTop < 184) {
-        window.scrollTo(0, 184)
+        window.scrollTo(0, 184);
     }
 }
 function searchClose() {
