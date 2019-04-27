@@ -119,7 +119,7 @@ button:focus {
     font-size: 1rem;
     cursor: default;
     animation: searchbar-enter .4s 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
     transition: .25s;
 }
 @keyframes searchbar-enter {
