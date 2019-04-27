@@ -154,7 +154,7 @@ function searchOpen() {
         window.scrollTo(0, 128);
     }
     if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
-        window.scrollto(0, 192);
+        window.scrollTo(0, 192);
     }
 }
 function searchClose() {
