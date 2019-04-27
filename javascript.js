@@ -109,7 +109,7 @@ function scrollFunction() {
     } else {
         document.getElementById("navbar").classList.remove("scrolled");
     }
-    if (document.body.scrollTop > 184 || document.documentElement.scrollTop > 184) {
+    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop >= 128 || document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop >= 192) {
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
