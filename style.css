@@ -147,13 +147,12 @@ button:focus {
     text-align: left;
 }    
 .tabsbar {
-    max-width: fit-content;
+    display: table;
     height: 3rem;
     transition: .25s;
     white-space: nowrap;
     overflow: auto;
-    margin-left: 50%;
-    transform: translatex(-50%);
+    margin: auto;
     font-size: 0; /* This gets rid of the ~4px space between inlines */
     position: relative;
 }
