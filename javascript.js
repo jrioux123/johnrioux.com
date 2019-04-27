@@ -150,8 +150,11 @@ function searchOpen() {
     document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
-    if (document.body.scrollTop < 185 || document.documentElement.scrollTop < 185) {
-        window.scrollTo(0, 185);
+    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop > 128) {
+        window.scrollTo(0, 128);
+    }
+    if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
+        window.scrollto(0, 192);
     }
 }
 function searchClose() {
