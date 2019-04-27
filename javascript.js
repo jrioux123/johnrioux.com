@@ -150,6 +150,9 @@ function searchOpen() {
     document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
+    if (document.body.scrollTop < 184 || document.documentElement.scrollTop < 184) {
+        window.scrollTo(0, 184)
+    }
 }
 function searchClose() {
     document.getElementById("logo").classList.remove("hidden");
