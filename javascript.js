@@ -33,8 +33,6 @@ $("#navigation").load("navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent', function() {
                 $("#pagecontent").delegate("button", "click", function() {
                     document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
-                    document.getElementById("menubutton").classList.add("hidden");
-                    document.getElementById("backbutton").classList.remove("hidden");
                     _link = $(this).attr("href");
                     _name = $(this).attr("data-name");
                     history.pushState(null, null, _link);
@@ -44,10 +42,7 @@ $("#navigation").load("navigation.html", function() {
                 });
                 $(window).bind("popstate", function() {
                     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
-                    document.getElementById("backbutton").classList.add("hidden");
-                    document.getElementById("menubutton").classList.remove("hidden");
                     _link = location.pathname.replace(/^.*[\\/]/, "");
-                    $('#contentloader').load(_link + ' #pagecontent');
                 });
             });
             document.title = _name + " | John Rioux";
@@ -61,8 +56,6 @@ $("#navigation").load("navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent', function() {
                 $("#pagecontent").delegate("button", "click", function() {
                     document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
-                    document.getElementById("menubutton").classList.add("hidden");
-                    document.getElementById("backbutton").classList.remove("hidden");
                     _link = $(this).attr("href");
                     _name = $(this).attr("data-name");
                     history.pushState(null, null, _link);
@@ -72,10 +65,7 @@ $("#navigation").load("navigation.html", function() {
                 });
                 $(window).bind("popstate", function() {
                     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
-                    document.getElementById("backbutton").classList.add("hidden");
-                    document.getElementById("menubutton").classList.remove("hidden");
                     _link = location.pathname.replace(/^.*[\\/]/, "");
-                    $('#contentloader').load(_link + ' #pagecontent');
                 });
             });
         }, 125);
