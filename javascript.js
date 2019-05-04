@@ -10,13 +10,15 @@ $("#pagecontent").delegate("button", "click", function() {
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
-    $('#contentloader').load(_link + ' #pagecontent');    
-    document.title = _name + " | John Rioux";
-    return false;
+    setTimeout(function(){
+        $('#contentloader').load(_link + ' #pagecontent');
+        document.title = _name + " | John Rioux";
+        return false;
+    }, 125);
 });
 // Back button
 $(window).bind("popstate", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
+    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
     _link = location.pathname.replace(/^.*[\\/]/, "");
 });
 
@@ -36,9 +38,11 @@ $("#navigation").load("navigation.html", function() {
                     _link = $(this).attr("href");
                     _name = $(this).attr("data-name");
                     history.pushState(null, null, _link);
-                    $('#contentloader').load(_link + ' #pagecontent');
-                    document.title = _name + " | John Rioux";
-                    return false;
+                    setTimeout(function(){
+                        $('#contentloader').load(_link + ' #pagecontent');
+                        document.title = _name + " | John Rioux";
+                        return false;
+                    }, 125);
                 });
                 $(window).bind("popstate", function() {
                     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
@@ -59,9 +63,11 @@ $("#navigation").load("navigation.html", function() {
                     _link = $(this).attr("href");
                     _name = $(this).attr("data-name");
                     history.pushState(null, null, _link);
-                    $('#contentloader').load(_link + ' #pagecontent');
-                    document.title = _name + " | John Rioux";
-                    return false;
+                    setTimeout(function(){
+                        $('#contentloader').load(_link + ' #pagecontent');
+                        document.title = _name + " | John Rioux";
+                        return false;
+                    }, 125);
                 });
                 $(window).bind("popstate", function() {
                     document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
