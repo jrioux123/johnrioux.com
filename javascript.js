@@ -110,7 +110,7 @@ function scrollFunction() {
     } else {
         document.getElementById("navbar").classList.remove("scrolled");
     }
-    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop >= 128 || document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop >= 192) {
+    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop >= 128 || document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop >= 192 || document.body.clientWidth <= 1059 && document.body.scrollTop >= 128 || document.body.clientWidth > 1059 && document.body.scrollTop >= 192) {
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
