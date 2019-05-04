@@ -41,7 +41,6 @@ $("#navigation").load("navigation.html", function() {
                     _name = $(this).attr("data-name");
                     history.pushState(null, null, _link);
                     $('#contentloader').load(_link + ' #pagecontent');
-                    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
                     document.title = _name + " | John Rioux";
                     return false;
                 });
@@ -70,7 +69,6 @@ $("#navigation").load("navigation.html", function() {
                     _name = $(this).attr("data-name");
                     history.pushState(null, null, _link);
                     $('#contentloader').load(_link + ' #pagecontent');
-                    document.getElementById("pagecontent").style.cssText = "margin-top: 56px; opacity: 0;"; // Transition animation
                     document.title = _name + " | John Rioux";
                     return false;
                 });
