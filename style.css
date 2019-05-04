@@ -98,8 +98,14 @@ button:focus {
     display: none;
     float: left;
 }
+.menubutton.hidden {
+    display: none;
+}
 .backbutton {
     float: left;
+    display: none;
+}
+.backbutton.hidden {
     display: none;
 }
 .searchbutton {
@@ -336,6 +342,9 @@ a.menu-selected {
     animation: content-enter .125s 1;
     animation-timing-function: ease-in-out;
     transition: .125s;
+}
+.pagecontent.animate {
+    margin-top: -56px;
 }
 @keyframes content-enter {
     from {opacity: 0; margin-top: 3.5rem;}
