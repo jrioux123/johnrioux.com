@@ -10,9 +10,10 @@ $("#pagecontent").delegate("button", "click", function() {
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     $('#contentloader').load(_link + ' #pagecontent');
     document.title = _name + " | John Rioux";
-    $('html, body').animate({ scrollTop: 0 }, 0);
     return false;
 });
 // Back button
