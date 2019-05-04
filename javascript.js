@@ -24,7 +24,6 @@ $("#pagecontent").delegate("button", "click", function() {
 $(window).bind("popstate", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: 56px;"; // Transition animation
     _link = location.pathname.replace(/^.*[\\/]/, "");
-    return false;
 });
 
 // Tab-switching
