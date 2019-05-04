@@ -450,6 +450,7 @@ h1 {
     margin: 0;
 }
 .youtube {
+    padding-top: 1rem;
     padding-bottom: 56.25%;
     position: relative;
 }
