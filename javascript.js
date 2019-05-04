@@ -6,7 +6,6 @@ function goBack() {
 
 // Open a card
 $("#pagecontent").delegate("button", "click", function() {
-    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
     window.scrollTo(0, 0);
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
@@ -33,7 +32,6 @@ $("#navigation").load("navigation.html", function() {
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent', function() {
                 $("#pagecontent").delegate("button", "click", function() {
-                    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
                     window.scrollTo(0, 0);
                     _link = $(this).attr("href");
                     _name = $(this).attr("data-name");
@@ -57,7 +55,6 @@ $("#navigation").load("navigation.html", function() {
         setTimeout(function(){
             $('#contentloader').load(_link + ' #pagecontent', function() {
                 $("#pagecontent").delegate("button", "click", function() {
-                    document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
                     window.scrollTo(0, 0);
                     _link = $(this).attr("href");
                     _name = $(this).attr("data-name");
