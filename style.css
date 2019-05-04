@@ -451,7 +451,7 @@ h1 {
 }
 .youtube {
     padding-top: 1rem;
-    padding-bottom: 56.25%;
+    padding-bottom: calc(56.25% - 1rem);
     position: relative;
 }
 .youtube iframe {
