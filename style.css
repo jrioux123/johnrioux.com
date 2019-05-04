@@ -441,6 +441,13 @@ p {
     margin: 0; /* Overrides automatic styles */
     padding: .5rem 1rem 0 1rem;
 }
+h1 {    
+    font-weight: 500;
+    height: auto;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    padding: 1rem;
+}
 .cardopen {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -461,11 +468,6 @@ p {
     width: 100%;
     max-height: 28.125rem;
     object-fit: cover;
-}
-.cardopen .title {
-    font-size: 2rem;
-    line-height: 2.75rem;
-    padding: 1rem;
 }
 .cardopen p {
     padding-top: 1rem;
