@@ -453,6 +453,7 @@ h1 {
     padding-top: 1rem;
     padding-bottom: calc(56.25% - 1rem);
     position: relative;
+    overflow: hidden;
 }
 .youtube iframe {
     width: 100%;
