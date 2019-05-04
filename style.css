@@ -98,14 +98,8 @@ button:focus {
     display: none;
     float: left;
 }
-.menubutton.hidden {
-    display: none;
-}
 .backbutton {
     float: left;
-    display: none;
-}
-.backbutton.hidden {
     display: none;
 }
 .searchbutton {
