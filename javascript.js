@@ -7,10 +7,10 @@ function goBack() {
 // Open a card
 $("#pagecontent").delegate("button", "click", function() {
     document.getElementById("pagecontent").style.cssText = "margin-top: -56px;"; // Transition animation
-    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
+    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop > 128) {
         window.scrollTo(0, 128);
     }
-    if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
+    if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop > 192) {
         window.scrollTo(0, 192);
     }
     _link = $(this).attr("href");
