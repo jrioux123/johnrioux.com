@@ -465,6 +465,7 @@ p {
 .cardopen .title {
     font-size: 2rem;
     line-height: 2.75rem;
+    padding: 1rem;
 }
 .cardopen p {
     padding-top: 1rem;
