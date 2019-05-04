@@ -447,6 +447,7 @@ h1 {
     font-size: 2rem;
     line-height: 2.75rem;
     padding: 1rem;
+    margin: 0;
 }
 .youtube {
     padding-bottom: 56.25%;
