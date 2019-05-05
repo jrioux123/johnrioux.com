@@ -492,9 +492,12 @@ h1 {
     height: 100%;
     position: absolute;
 }
+.gallery {
+    padding-left: 1rem;
+}
 .gallery img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     margin: 1rem .75rem 0 0;
     cursor: pointer;
     transition: .4s;
@@ -523,6 +526,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translatex(-50%) translatey(-50%);
+    z-index: 3;
 }
 
 /* Widescreen Mode */
