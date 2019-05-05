@@ -497,7 +497,7 @@ h1 {
 .gallery img {
     width: 9rem;
     height: 9rem;
-    margin: .8rem .8rem 0 0;
+    margin: 0 .8rem .8rem 0;
     cursor: pointer;
     transition: .4s;
     float: left;
