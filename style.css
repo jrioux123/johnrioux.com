@@ -482,8 +482,7 @@ h1 {
     margin: 0;
 }
 .youtube {
-    padding-top: 1rem;
-    padding-bottom: calc(56.25% - 1rem);
+    padding-bottom: calc(56.25%);
     position: relative;
     overflow: hidden;
 }
