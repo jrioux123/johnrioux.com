@@ -5,7 +5,7 @@ function goBack() {
 }
 
 // Open a card
-$("#pagecontent").delegate("button", "click", function() {
+$(document).on("click", ".card", function() {
     document.getElementById("pagecontent").classList.add("exit");
     _link = $(this).attr("href");
     _name = $(this).attr("data-name");
