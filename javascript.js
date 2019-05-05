@@ -1,5 +1,6 @@
 // Ajax
 
+// Back button
 function goBack() {
     history.back();
 }
@@ -17,7 +18,8 @@ $(document).on("click", ".card", function() {
         return false;
     }, 125);
 });
-// Back button
+
+// Back functionality
 $(window).bind("popstate", function() {
     document.getElementById("pagecontent").classList.add("exit");
     _link = location.pathname.replace(/^.*[\\/]/, "");
