@@ -517,6 +517,17 @@ h1 {
 .enlarged.hidden {
     display: none;
 }
+.enlarged .exit {
+    position: fixed;
+    z-index: 3;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,.7), transparent);
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+    left: 0;
+    width: 100%;
+}
 .enlarged img {
     position: relative;
     max-height: 100%;
