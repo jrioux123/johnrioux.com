@@ -97,12 +97,10 @@ function searchFocus() {
 
 // Image gallery
 
-$(document).ready(function(){
-    $("#gallery").delegate("img", "click",function(){
-        _source = $(this).attr("src");
-        document.getElementById('enlargedimage').src = _source;
-        document.getElementById("enlargedwrapper").classList.remove("hidden");
-    });
+$("#gallery").delegate("img", "click",function(){
+    _source = $(this).attr("src");
+    document.getElementById('enlargedimage').src = _source;
+    document.getElementById("enlargedwrapper").classList.remove("hidden");
 });
 
 function enlargedClose() {
