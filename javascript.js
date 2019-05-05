@@ -97,7 +97,7 @@ function searchFocus() {
 
 // Image gallery
 
-$("#gallery").on("img", "click",function(){
+$("#gallery").on("click", "img", function(){
     _source = $(this).attr("src");
     document.getElementById('enlargedimage').src = _source;
     document.getElementById("enlargedwrapper").classList.remove("hidden");
