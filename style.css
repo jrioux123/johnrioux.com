@@ -511,6 +511,9 @@ h1 {
     top: 0;
     left: 0;
 }
+.enlarged.hidden {
+    display: none;
+}
 .enlarged img {
     position: relative;
     max-height: 100%;
