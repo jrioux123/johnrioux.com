@@ -513,6 +513,13 @@ h1 {
     margin: 4rem 1rem 1rem 1rem;
     top: 0;
     left: 0;
+    animation: enlarged-enter .25s 1;
+    animation-timing-function: ease-in-out;
+    transition: .25s;
+}
+@keyframes enlarged-enter {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 .enlarged.hidden {
     display: none;
@@ -540,13 +547,6 @@ h1 {
     transform: translatex(-50%) translatey(-50%);
     z-index: 3;    
     box-shadow: 0 .375rem .875rem rgba(0,0,0,0.3);
-    animation: enlarged-enter .25s 1;
-    animation-timing-function: ease-in-out;
-    transition: .25s;
-}
-@keyframes enlarged-enter {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 /* Widescreen Mode */
