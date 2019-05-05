@@ -633,8 +633,8 @@ h1 {
         margin: 0 .25rem .25rem 0;
     }
     .enlarged {
-        width: calc(100% - 2rem);
-        height: calc(100% - 9rem);
-        margin: 4.5rem 1rem;
+        width: 100%;
+        height: calc(100% - 7rem);
+        margin: 3.5rem 0;
     }
 }
