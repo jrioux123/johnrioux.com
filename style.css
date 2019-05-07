@@ -352,6 +352,7 @@ a.menu-selected {
     font-weight: 500;
     height: auto;
     padding: 1rem 1rem 0 1rem;
+    clear: both;
 }
 .subtitle {    
     opacity: .7;    
@@ -378,7 +379,7 @@ p {
     cursor: auto;  
     box-shadow: none;
 }
-.img {
+img {
     width: 100%;
     max-height: 28.125rem;
     object-fit: cover;
@@ -386,6 +387,7 @@ p {
 .cardopen a {
     color: #db4437;
     font-weight: 500;
+    cursor: pointer;
 }
 .cardopen a:hover {
     border-bottom: 2px solid #db4437;
