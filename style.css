@@ -39,6 +39,7 @@ a {
 .logo img {
     max-height: calc(100% - 3rem);
     min-height: 2.5rem;
+    width: auto;
     max-width: 100%;
     padding-bottom: .5rem;
 }
@@ -468,7 +469,7 @@ h1 {
 .card {
     font-size: .875rem;
     text-align: left; /* To override button style */
-    margin: .5rem;
+    margin: 1rem 0 0 1rem;
     padding: 0; /* To override button style */
     width: 23.5rem;
     background-color: white;
@@ -603,17 +604,14 @@ h1 {
     }
     .searchcontainer.hidden {
         display: none;
-    }
+    }    
     .pagecontent {
-        padding-left: .5rem;
+        padding: 0;
     }
 }
 
 /* Mobile Mode */
 @media only screen and (max-width: 50rem) {
-    .pagecontent {
-        padding: 0;
-    }
     .card {
         width: 100%;
         max-width: 800px;
