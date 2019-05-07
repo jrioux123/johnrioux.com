@@ -402,9 +402,6 @@ a.menu-selected {
     float: left;
     object-fit: cover;
 }
-.cardtext {
-    padding-bottom: 1rem;
-}
 .feature .cardtext {
     position: relative;
     width: 40%;
@@ -419,6 +416,7 @@ a.menu-selected {
     width: 100%;
     background-color: white;
     box-sizing: border-box;
+    padding-bottom: .5rem;
 }
 .small .cardtext {
     box-sizing: border-box;
@@ -435,7 +433,7 @@ a.menu-selected {
 .subtitle {    
     opacity: .7;    
     line-height: 1.5rem;
-    padding: .5rem 1rem;
+    padding: 0 1rem;
 }
 p {
     margin: 0; /* Overrides automatic styles */
