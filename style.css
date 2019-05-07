@@ -435,11 +435,11 @@ a.menu-selected {
 .subtitle {    
     opacity: .7;    
     line-height: 1.5rem;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
 }
 p {
     margin: 0; /* Overrides automatic styles */
-    padding: .5rem 1rem 0 1rem;
+    padding: .5rem 1rem;
 }
 .cardopen {
     font-size: 1rem;
@@ -462,9 +462,6 @@ p {
     max-height: 28.125rem;
     object-fit: cover;
 }
-.cardopen p {
-    padding-top: 1rem;
-}
 .cardopen a {
     color: #db4437;
     font-weight: 500;
@@ -478,7 +475,7 @@ h1 {
     height: auto;
     font-size: 2rem;
     line-height: 2.75rem;
-    padding: 1rem 1rem .25rem 1rem;
+    padding: 1rem 1rem 0 1rem;
     margin: 0;
 }
 .youtube {
