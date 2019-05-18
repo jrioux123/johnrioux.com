@@ -402,13 +402,11 @@ h1 {
     margin: 0;
 }
 .credits p {
-    float: left;
-    width: 23rem;
     font-size: .875rem;
+    padding: .5rem 1rem 0 1rem;
 }
 .credits b {
     font-weight: 500;
-    display: block;
 }
 .youtube {
     padding-bottom: calc(56.25%);
