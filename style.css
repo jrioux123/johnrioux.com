@@ -401,6 +401,10 @@ h1 {
     padding: 1rem 1rem 0 1rem;
     margin: 0;
 }
+.credits p {
+    float: left;
+    width: 23rem;
+}
 .youtube {
     padding-bottom: calc(56.25%);
     position: relative;
