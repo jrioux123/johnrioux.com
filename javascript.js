@@ -14,7 +14,6 @@ $(document).on("click", ".card", function() {
     setTimeout(function(){
         window.scrollTo(0, 0);
         $('#contentloader').load(_link + ' #pagecontent');
-        $("#cardopenstyle").load("cardopenstyle.html");
         document.title = _name + " | John Rioux";
         return false;
     }, 125);
@@ -49,6 +48,11 @@ $("#navigation").load("navigation.html", function() {
         }, 125);
     });
 });
+
+// Open card style
+function cardopenStyle() {
+    $("#cardopenstyle").load("cardopenstyle.html");
+};
 
 
 // Searchbar fix
