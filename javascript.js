@@ -52,7 +52,7 @@ $("#navigation").load("navigation.html", function() {
 // Open card style
 $( window ).on( "load", function() {
     $("#cardopenstyle").load("cardopenstyle.html");
-};
+});
 
 
 // Searchbar fix
