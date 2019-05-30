@@ -406,8 +406,7 @@ h1 {
     font-weight: 500;
     height: auto;
     font-size: 2rem;
-    line-height: 2.75rem;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem .5rem 1rem;
     margin: 0;
 }
 .credits p {
