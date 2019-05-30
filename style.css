@@ -348,7 +348,8 @@ a.menu-selected {
 }
 .label {
     font-weight: 500;
-    margin: 1rem 1rem 0 1rem;
+    margin: 0 1rem; /* To prevent the border-bottom from stretching out in a hyperlink */
+    padding-top: 1rem;
     font-size: .75rem;
     line-height: .75rem;
     letter-spacing: .09rem;
