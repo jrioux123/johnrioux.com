@@ -15,6 +15,11 @@ $(document).on("click", ".card", function() {
         window.scrollTo(0, 0);
         $('#contentloader').load(_link + ' #pagecontent');
         document.title = _name + " | John Rioux";
+        $("head").append($("<link>",{
+           rel: "stylesheet",
+           type: "text/css",
+           href: cardopen.css
+        }));
         return false;
     }, 125);
 });
@@ -47,11 +52,6 @@ $("#navigation").load("navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent');
         }, 125);
     });
-});
-
-// Open card style
-$( window ).on( "load", function() {
-    $("#cardopenstyle").load("cardopenstyle.html");
 });
 
 
