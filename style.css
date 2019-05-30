@@ -346,6 +346,14 @@ a.menu-selected {
     from {opacity: 0; margin-top: 3.5rem;}
     to {opacity: 1; margin-top: 0;}
 }
+.label {
+    font-weight: 500;
+    padding: 0 1rem 0 1rem;
+    font-size: .625rem;
+    letter-spacing: .09rem;
+    color: #db4437;
+    text-transform: uppercase;
+}
 .title {
     font-size: 1.25rem;
     line-height: 1.625rem;
@@ -483,7 +491,9 @@ h1 {
     width: 23.5rem;
     background-color: white;
     word-wrap: break-word;
-    float: left;
+    float: left;    
+    display: flex;
+    align-items: center;
     position: relative;
     box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
     transition: .1s ease-in;
@@ -496,8 +506,6 @@ h1 {
 .feature {
     min-height: 13.25rem;
     width: calc(100% - 2rem);
-    display: flex;
-    align-items: center;
     background-color: black;
 }
 .big {
@@ -552,6 +560,9 @@ h1 {
     box-sizing: border-box;
     width: calc(100% - 9rem);
     float: left;
+}
+.small p {
+    display: none;
 }
 
 /* Widescreen Mode */
