@@ -3,6 +3,7 @@
 // Back button
 function goBack() {
     history.back();
+    $( "head" ).remove( "#cardopenstyle" );
 }
 
 // Open a card
