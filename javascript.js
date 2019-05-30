@@ -49,6 +49,9 @@ $("#navigation").load("navigation.html", function() {
     });
 });
 
+// Cardopen style
+$("#cardopenstyle").load("cardopenstyle.html");
+
 
 // Searchbar fix
 
