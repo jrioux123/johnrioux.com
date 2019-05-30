@@ -349,7 +349,8 @@ a.menu-selected {
 .label {
     font-weight: 500;
     padding: 1rem 1rem 0 1rem;
-    font-size: .625rem;
+    font-size: .75rem;
+    line-height: .75rem;
     letter-spacing: .09rem;
     color: #db4437;
     text-transform: uppercase;
@@ -502,6 +503,10 @@ h1 {
     box-shadow: 0 .375rem .875rem rgba(0,0,0,0.3);
     transform: scale(1.02);
     cursor: pointer;
+}
+.card .label {
+    font-size: .625rem;
+    line-height: .625rem;
 }
 .card .title {
     padding-top: .5rem;
