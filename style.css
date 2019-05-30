@@ -348,7 +348,7 @@ a.menu-selected {
 }
 .label {
     font-weight: 500;
-    padding: 0 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     font-size: .625rem;
     letter-spacing: .09rem;
     color: #db4437;
@@ -503,6 +503,9 @@ h1 {
     transform: scale(1.02);
     cursor: pointer;
 }
+.card .title {
+    padding-top: .5rem;
+}
 .feature {
     min-height: 13.25rem;
     width: calc(100% - 2rem);
@@ -560,6 +563,9 @@ h1 {
     box-sizing: border-box;
     width: calc(100% - 9rem);
     float: left;
+}
+.small .label {
+    padding-top: 0;
 }
 .small p {
     display: none;
