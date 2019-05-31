@@ -22,7 +22,7 @@ $(document).on("click", ".card", function() {
 
 // Back functionality
 $(window).bind("popstate", function() {
-    $( "head" ).remove( "#cardopenstyle" );
+    $("#cardopenstyle").remove();
     document.getElementById("pagecontent").classList.add("exit");
     _link = location.pathname.replace(/^.*[\\/]/, "");
 });
