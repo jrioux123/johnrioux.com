@@ -16,6 +16,8 @@ $(document).on("click", ".card", function() {
         $('#contentloader').load(_link + ' #pagecontent');
         document.title = _name + " | John Rioux";
         $("head").append($("<link>",{id: "cardopenstyle", rel: "stylesheet", type: "text/css", href: "cardopen.css"}));
+        document.getElementById("menubutton").classList.add("hidden");
+        document.getElementById("backbutton").classList.remove("hidden");
         return false;
     }, 125);
 });
@@ -23,6 +25,8 @@ $(document).on("click", ".card", function() {
 // Back functionality
 $(window).bind("popstate", function() {
     $("#cardopenstyle").remove();
+    document.getElementById("menubutton").classList.remove("hidden");
+    document.getElementById("backbutton").classList.add("hidden");
     document.getElementById("pagecontent").classList.add("exit");
     _link = location.pathname.replace(/^.*[\\/]/, "");
 });
