@@ -101,7 +101,6 @@ button:focus {
 }
 .backbutton {
     float: left;
-    display: none;
 }
 .searchbutton {
     float: right;
