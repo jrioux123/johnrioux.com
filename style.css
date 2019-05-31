@@ -274,6 +274,9 @@ a.menu-selected {
 .hidden {
     display: none !important;
 }
+.menu.hidden {
+    display: block !important;
+}
 @keyframes shade-enter {
     from {opacity: 0;}
     to {opacity: 1;}
