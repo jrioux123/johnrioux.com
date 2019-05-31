@@ -383,6 +383,7 @@ p {
     box-shadow: none;
     margin: 0;
     float: left;
+    padding-bottom: 1rem;
 }
 .cardopen:hover {
     transform: none;
