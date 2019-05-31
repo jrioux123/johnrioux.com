@@ -272,7 +272,7 @@ a.menu-selected {
     opacity: 0;
 }
 .hidden {
-    display: none;
+    display: none !important;
 }
 @keyframes shade-enter {
     from {opacity: 0;}
