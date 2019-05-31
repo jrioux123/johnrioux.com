@@ -3,7 +3,6 @@
 // Back button
 function goBack() {
     history.back();
-    $( "head" ).remove( "#cardopenstyle" );
 }
 
 // Open a card
@@ -23,6 +22,7 @@ $(document).on("click", ".card", function() {
 
 // Back functionality
 $(window).bind("popstate", function() {
+    $( "head" ).remove( "#cardopenstyle" );
     document.getElementById("pagecontent").classList.add("exit");
     _link = location.pathname.replace(/^.*[\\/]/, "");
 });
