@@ -605,6 +605,9 @@ h1 {
     }
     .menu.animate {
         left: -20rem;
+    }    
+    .menu.hidden {
+        display: none !important;
     }
     .menutitle {
         display: block;
