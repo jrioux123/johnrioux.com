@@ -5,6 +5,9 @@
     margin-top: 0 !important;
     padding-bottom: 0 !important;
 }
+.menubutton {
+    display: block
+}
 .searchbuttonlong {
     display: none;
 }
