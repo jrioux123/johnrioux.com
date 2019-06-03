@@ -32,7 +32,7 @@ $(window).bind("popstate", function() {
 });
 
 // Tab-switching
-$("#navigation").load("navigation.html", function() {        
+$("#navigation").load("/navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
         $(".tabsbar").children().css("animation","");        
         this.style.cssText = "animation: tab-click .25s ease-in-out;";
