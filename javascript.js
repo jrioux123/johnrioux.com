@@ -15,7 +15,7 @@ $(document).on("click", ".card", function() {
         window.scrollTo(0, 0);
         $('#contentloader').load(_link + ' #pagecontent');
         document.title = _name + " | John Rioux";
-        $("head").append($("<link>",{id: "cardopenstyle", rel: "stylesheet", type: "text/css", href: "cardopen.css"}));
+        $("head").append($("<link>",{id: "cardopenstyle", rel: "stylesheet", type: "text/css", href: "/cardopen.css"}));
         document.getElementById("menubutton").classList.add("hidden");
         document.getElementById("backbutton").classList.remove("hidden");
         return false;
