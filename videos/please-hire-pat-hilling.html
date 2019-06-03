@@ -1,90 +1,59 @@
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-
-<meta name="viewport" content="width=device-width">
-
-<link rel="icon" type="image/png" href="https://www.johnrioux.net/John_Rioux_Circle.png" />
-<meta name="theme-color" content="#FAFAFA">
-
-<title>Please Hire Pat Hilling | John Rioux</title>
-
-<link rel="stylesheet" type="text/css" href="https://www.johnrioux.net/oldstyle.css">
-
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
- rel="stylesheet" />
- 
-<script src="modal.js"></script>
- 
-<style>
-.headerimage {
-   background: url("https://www.johnrioux.net/videos/images/Pat_Hilling_header.png");
-     /* Here's where you put the header image */
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-}
-</style>
-
+    <title>Please Hire Pat Hilling | John Rioux</title>
+    <link rel="icon" type="image/png" href="John_Rioux_Circle.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic" rel="stylesheet" type="text/css"> <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Font for the icons -->
+    <meta content='width=device-width, initial-scale=1' name='viewport'/> <!-- Allows site to resize for mobile -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cardopen.css" id="cardopenstyle">
 </head>
 <body>
+    
+    <div id="navigation"></div>   
 
-<script>
-w3IncludeHTML();
-</script>
+    <div id="contentloader">
+        <div id="pagecontent" class="pagecontent">
+            <div class="cardopen">
+                <div class="youtube">
+                    <iframe src="https://www.youtube-nocookie.com/embed/6OvH3Po6jhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="label">Short film</div>
+                <h1>Please Hire Pat Hilling</h1>
+                <div class="subtitle">May 27, 2016</div>
+                <div class="title">Synopsis</div>
+                <p>An aspring screenwriter struggles to overcome his uncanny inability to write anything original.</p>
+                <div class="title">Cast and crew</div>
+                <div class="credits">
+                    <p><b>Written and Directed by</b> Tom Adams and John Rioux</p>
+                    <p><b>Starring</b> John Rioux, Blair Legere, Dan Wolotsky, and Janet Adams</p>
+                    <p><b>Directory of Photography</b> Jack Warnock</p>
+                    <p><b>Original score by</b> Jake Adams</p>
+                    <p><b>Executive Producer</b> Dan Wolotsky</p>
+                </div>
+                <div class="title">Image gallery</div>
+                <div id="gallery" class="gallery">
+                    <img class="galleryimage" src="videos/images/Pat_Hilling_poster.png">
+                    <img class="galleryimage" src="videos/images/Pat_Hilling_1.png">
+                    <img class="galleryimage" src="videos/images/Pat_Hilling_2.png">
+                    <img class="galleryimage" src="videos/images/Pat_Hilling_3.png">
+                    <img class="galleryimage" src="videos/images/Pat_Hilling_5.png">
+                    <img class="galleryimage" src="videos/images/Pat_Hilling_6.png">
+                </div>
+                <div id="enlargedwrapper" class="enlarged hidden">
+                    <div id="enlargedshade" onclick="enlargedClose();" class="shade"></div>
+                    <div class="material-icons exit" onclick="enlargedClose();">close</div>
+                    <img id="enlargedimage" src="#source">
+                </div>
+            </div>
+            <!-- End of Placeholder -->
+        </div>
+    </div>
 
-
-<div class="titlebar topshadow">
-</div>
- 
-<i class="titlebar topshadow">
- <a href="https://www.johnrioux.net/videos.html" class="top-icons topleft top-light material-icons">arrow_back</a>
-</i>
-
-<div class="headerimage"></div> <!-- Pushes content down -->
- 
-<div class="aboveimage"> <!-- Makes the content below the top image go above the top image. -->
- 
-<div style="padding:0 16px 0 16px;position:relative"> <!-- wrapper creates an 16px minimum margin (for non-card content)-->
-
-<div style="height:144px;" class="normaltext">
-    <img src="http://www.johnrioux.net/videos/images/Pat_Hilling_poster.png" class="thumbnail">
-    <div class="title">Please Hire Pat Hilling</div>
-    <div class="subtitle">May 2016  13 minutes</div>
-</div>
-
-<div style="height:52px;" class="normaltext bottomline">
-    <a href="watch/please-hire-pat-hilling.html" class="button buttonraised">WATCH NOW</a>
-</div>
- 
-<div class="normaltext bottomline">
-   <p>Pat Hilling wants nothing more than to get hired to write for TV. But first, Pat has to conquer an almost supernatural inability to write anything original.</p>
-</div>
- 
-<div class="normaltext" style="overflow:auto;padding:16px 8px 16px 8px">
- <div class="subtitle" style="font-weight:500;">CAST & CREDITS</div>
- <div class="textcolumn">
-  <div class="credittitle">Written and Directed by</div>
-  <div class="creditnames">Tom Adams, John Rioux</div></div>
- <div class="textcolumn">
-  <div class="credittitle">Starring</div>
-  <div class="creditnames">John Rioux, Blair Legere, Dan Wolotsky, Janet Adams</div></div>
- <div class="textcolumn">
-  <div class="credittitle">Director of Photography</div>
-  <div class="creditnames">Jack Warnock</div></div>
- <div class="textcolumn">
-  <div class="credittitle">Original Score by</div>
-  <div class="creditnames">Jake Adams</div></div>
- <div class="textcolumn">
-  <div class="credittitle">Executive Producer</div>
-  <div class="creditnames">Dan Wolotsky</div></div>
-</div>
- 
-</div> <!-- End of the 16px margin wrapper -->
- 
-</div> <!-- End of the z-index wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
+    <script src="javascript.js"></script>
 
 </body>
+
 </html>
