@@ -1,84 +1,58 @@
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-
-<meta name="viewport" content="width=device-width">
-
-<link rel="icon" type="image/png" href="https://www.johnrioux.net/John_Rioux_Circle.png" />
-<meta name="theme-color" content="#FAFAFA">
-
-<title>Pointless | John Rioux</title>
-
-<link rel="stylesheet" type="text/css" href="https://www.johnrioux.net/style.css">
-
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500" rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
- rel="stylesheet" />
- 
-<script src="modal.js"></script>
- 
-<style>
-.headerimage {
-   background: url("https://www.johnrioux.net/videos/images/Pointless_header.png");
-     /* Here's where you put the header image */
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-}
-</style>
-
+    <title>Pointless | John Rioux</title>
+    <link rel="icon" type="image/png" href="/John_Rioux_Circle.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic" rel="stylesheet" type="text/css"> <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Font for the icons -->
+    <meta content='width=device-width, initial-scale=1' name='viewport'/> <!-- Allows site to resize for mobile -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/cardopen.css" id="cardopenstyle">
 </head>
 <body>
+    
+    <div id="navigation"></div>   
 
-<script>
-w3IncludeHTML();
-</script>
+    <div id="contentloader">
+        <div id="pagecontent" class="pagecontent">
+            <div class="cardopen">
+                <div class="youtube">
+                    <iframe src="https://www.youtube.com/embed/8vGqWUdwTVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="label">Short film</div>
+                <h1>Pointless</h1>
+                <div class="subtitle">May 29, 2015</div>
+                <div class="title">Synopsis</div>
+                <p>Michael Smith needs a pencil. Now, Michael could just go out and buy a box of pencils, but who uses money anymore, right? "Pointless" follows Michael's descent into a life of pencil-based organized crime.</p>
+                <div class="title">Cast and crew</div>
+                <div class="credits">
+                    <p><b>Written and Directed by</b> John Rioux</p>
+                    <p><b>Starring</b> Alex Britton, Stefan Joyce, Rand Nohr, Timmy Okeny, and Phil Hobby</p>
+                    <p><b>Casting by</b> Alex Britton</p>
+                    <p><b>Executive Producers</b> Dan Wolotsky and Mark Melnicove</p>
+                </div>
+                <div class="title">Image gallery</div>
+                <div id="gallery" class="gallery">
+                    <img class="galleryimage" src="/videos/images/Pointless_poster.png">
+                    <img class="galleryimage" src="/videos/images/Pat_Hilling_1.png">
+                    <img class="galleryimage" src="/videos/images/Pat_Hilling_2.png">
+                    <img class="galleryimage" src="/videos/images/Pat_Hilling_3.png">
+                    <img class="galleryimage" src="/videos/images/Pat_Hilling_5.png">
+                    <img class="galleryimage" src="/videos/images/Pat_Hilling_6.png">
+                </div>
+                <div id="enlargedwrapper" class="enlarged hidden">
+                    <div id="enlargedshade" onclick="enlargedClose();" class="shade"></div>
+                    <div class="material-icons exit" onclick="enlargedClose();">close</div>
+                    <img id="enlargedimage" src="#source">
+                </div>
+            </div>
+            <!-- End of Placeholder -->
+        </div>
+    </div>
 
-
-<div class="titlebar topshadow">
-</div>
- 
-<i class="titlebar topshadow">
- <a href="https://www.johnrioux.net/videos.html" class="top-icons topleft top-light material-icons">arrow_back</a>
-</i>
-
-<div class="headerimage"></div> <!-- Pushes content down -->
- 
-<div class="aboveimage"> <!-- Makes the content below the top image go above the top image. -->
- 
-<div style="padding:0 16px 0 16px;position:relative"> <!-- wrapper creates an 16px minimum margin (for non-card content)-->
-
-<div style="height:144px;" class="normaltext">
-    <img src="http://www.johnrioux.net/videos/images/Pointless_poster.png" class="thumbnail">
-    <div class="title">Pointless</div>
-    <div class="subtitle">May 2015  15 minutes</div>
-</div>
-
-<div style="height:52px;" class="normaltext bottomline">
-    <a href="watch/pointless.html" class="button buttonraised">WATCH NOW</a>
-</div>
- 
-<div class="normaltext bottomline">
-   <p>Michael Smith needs a pencil. Now, Michael could just go out and buy a box of pencils, but who uses money anymore, right? "Pointless" follows Michael's descent into a life of pencil-based organized crime.</p>
-</div>
- 
-<div class="normaltext" style="overflow:auto;padding:16px 8px 16px 8px">
- <div class="subtitle" style="font-weight:500;">CAST & CREDITS</div>
- <div class="textcolumn">
-  <div class="credittitle">Written and Directed by</div>
-  <div class="creditnames">John Rioux</div></div>
- <div class="textcolumn">
-  <div class="credittitle">Starring</div>
-  <div class="creditnames">Alex Britton, Stefan Joyce, Rand Nohr, Phil Hobby, Timmy Okeny</div></div>
- <div class="textcolumn">
-  <div class="credittitle">Executive Producers</div>
-  <div class="creditnames">Mark Melnicove, Dan Wolotsky</div></div>
-</div>
- 
-</div> <!-- End of the 16px margin wrapper -->
- 
-</div> <!-- End of the z-index wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Adds JQuery -->
+    <script src="/javascript.js"></script>
 
 </body>
+
 </html>
