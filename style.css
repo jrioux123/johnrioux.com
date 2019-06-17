@@ -445,8 +445,13 @@ h1 {
     height: 7.792rem;
     margin: 0 .25rem .25rem 0;
     cursor: pointer;
-    transition: .4s;
     float: left;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .gallery img:hover {
     filter: brightness(70%);
@@ -471,6 +476,9 @@ h1 {
 @keyframes enlarged-enter {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+.enlarged .shade {
+    background-color: rgba(0,0,0,0.9);
 }
 .enlarged .exit {
     position: fixed;
