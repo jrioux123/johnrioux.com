@@ -468,10 +468,10 @@ h1 {
 }
 .enlarged {
     position: fixed;
-    width: calc(100% - 2rem);
-    height: calc(100% - 9rem);
+    height: calc(100% - 8rem);
+    width: auto;
     z-index: 2;
-    margin: 4.5rem 1rem;
+    margin: 3.5rem 0;
     top: 0;
     left: 0;
     animation: enlarged-enter .25s 1;
@@ -676,10 +676,5 @@ h1 {
     .gallery img {
         width: calc((100vw - 2.5rem) / 3);
         height: calc((100vw - 2.5rem) / 3);
-    }
-    .enlarged {
-        width: 100%;
-        height: calc(100% - 7rem);
-        margin: 3.5rem 0;
     }
 }
