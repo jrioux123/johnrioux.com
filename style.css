@@ -573,7 +573,7 @@ h1 {
 .small img {
     width: 8rem;
     height: 8rem;
-    padding: 1rem 0 1rem 1rem;
+    margin: 1rem 0 1rem 1rem;
     float: left;
     object-fit: cover;
 }
