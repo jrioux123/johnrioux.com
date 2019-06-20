@@ -470,7 +470,7 @@ h1 {
 .enlarged {
     position: fixed;
     height: calc(100% - 8rem);
-    width: auto;
+    width: 100%;
     z-index: 2;
     margin: 3.5rem 0;
     top: 0;
