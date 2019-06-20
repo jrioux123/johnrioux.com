@@ -466,6 +466,7 @@ h1 {
     display: table;
     margin: auto;
     white-space: nowrap;
+    padding: 0 .5rem 0 .25rem;
 }
 .enlarged {
     position: fixed;
