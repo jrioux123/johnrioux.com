@@ -229,6 +229,7 @@ button:focus {
     font-size: .8125rem;
     font-weight: 500;
     padding: 0 0 .25rem .5rem;
+    background-color: none;
 }
 .socialicon {
     max-width: 1.5rem;
