@@ -504,12 +504,15 @@ h1 {
 }
 .enlarged .title {
     position: fixed;
-    padding: 1rem 1rem 0 0;
+    padding: 1rem;
+    line-height: 1.5rem;
     z-index: 3;
     color: white;
     top: 0;    
     left: 3.5rem;
-    max-width: calc(100% - 3.5rem);
+    width: calc(100% - 7rem);
+    text-align: center;
+    box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
