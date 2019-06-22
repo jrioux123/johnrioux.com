@@ -502,15 +502,14 @@ h1 {
     top: 0;
     left: 0;
 }
-.enlarged title {
+.enlarged .title {
     position: fixed;
+    padding-top: 1rem;
     z-index: 3;
     color: white;
-    cursor: default;
-    width: 1005;
+    width: 100%;
     box-sizing: border-box;
     top: 0;
-    left: 0;
     text-align: center;
 }
 .enlarged img {
