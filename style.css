@@ -496,13 +496,22 @@ h1 {
     position: fixed;
     z-index: 3;
     color: white;
-    background-image: linear-gradient(rgba(0,0,0,.7), transparent);
     cursor: pointer;
     margin: 0;
     padding: 1rem;
     top: 0;
     left: 0;
-    width: 100%;
+}
+.enlarged title {
+    position: fixed;
+    z-index: 3;
+    color: white;
+    cursor: default;
+    width: 1005;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    text-align: center;
 }
 .enlarged img {
     position: relative;
