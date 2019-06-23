@@ -1,7 +1,8 @@
-https://www.johnrioux.net/navbar.html
-	https://www.johnrioux.net/
-	https://www.johnrioux.net/videos.html
-		https://www.johnrioux.net/videos/pointless.html
-		https://www.johnrioux.net/videos/please-hire-pat-hilling.html
-		https://www.johnrioux.net/videos/the-billion-dollar-code.html
-	https://www.johnrioux.net/design.html
+https://www.johnrioux.net/
+https://www.johnrioux.net/videos/
+	https://www.johnrioux.net/videos/pointless/
+	https://www.johnrioux.net/videos/please-hire-pat-hilling/
+	https://www.johnrioux.net/videos/the-billion-dollar-code/
+https://www.johnrioux.net/design/
+	https://www.johnrioux.net/design/arena-of-the-elders/
+	https://www.johnrioux.net/design/posters/
