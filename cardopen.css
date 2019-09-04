@@ -23,3 +23,8 @@
 .pagecontent {
     padding-top: 0;
 }
+@media only screen and (max-width: 66rem) {
+    .menu {
+        padding-top: 0;
+    }
+}
