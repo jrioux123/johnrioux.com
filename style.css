@@ -482,6 +482,12 @@ h1 {
 .gallery.open .title {
     display: none;
 }
+.gallery p {
+    padding: .5rem 0;
+}
+.gallery.open p {
+    display: none;
+}
 .enlarged {
     position: fixed;
     height: calc(100% - 8rem);
