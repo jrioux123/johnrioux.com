@@ -685,7 +685,7 @@ h1 {
         opacity: 0;
     }
     .pagecontent {
-        padding: 0;
+        padding: 0 0 1rem 0;
     }
 }
 
