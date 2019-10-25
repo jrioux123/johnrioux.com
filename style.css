@@ -355,8 +355,11 @@ a.menu-selected {
     font-size: .75rem;
     line-height: .75rem;
     letter-spacing: .09rem;
-    color: #db4437;
     text-transform: uppercase;
+}
+.chevron {
+    size: 1rem;
+    opacity: .7;
 }
 .title {
     font-size: 1.25rem;
@@ -557,7 +560,8 @@ h1 {
 }
 .card .label {
     font-size: .625rem;
-    line-height: .625rem;
+    line-height: .625rem;    
+    color: #db4437;
 }
 .card .title {
     padding-top: .5rem;
