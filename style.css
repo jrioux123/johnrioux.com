@@ -432,14 +432,14 @@ h1 {
 .gallery {
     padding: 1rem 0 0 1rem;
 }
-.gallery img {
+.galleryimage {
     width: 7.792rem;
     height: 7.792rem;
     margin: 0 .25rem .25rem 0;
     cursor: pointer;
     float: left;
 }
-.gallery img:hover {
+.galleryimage:hover {
     filter: brightness(70%);
 }
 .enlarged {
@@ -486,7 +486,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.enlarged img {
+.enlargedimage {
     position: relative;
     max-height: 100%;
     max-width: 100%;
