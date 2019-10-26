@@ -438,12 +438,6 @@ h1 {
     margin: 0 .25rem .25rem 0;
     cursor: pointer;
     float: left;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
 }
 .gallery img:hover {
     filter: brightness(70%);
@@ -504,7 +498,6 @@ h1 {
     z-index: 3;
     background-color: transparent;
 }
-
 .galleryscroll {
     position: fixed;
     width: 100%;

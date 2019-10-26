@@ -77,7 +77,7 @@ $(document).on("click", ".galleryimage", function(){
     _galleryID = $(this).parent().attr('id');
     document.getElementById('enlargedimage').src = _source;
     document.getElementById('imagetitle').innerHTML = _title;
-    document.getElementById('gallerywrapper').innerHTML = _galleryID.innerHTML;
+    document.getElementById('gallerywrapper').innerHTML = document.getElementById('_galleryID').innerHTML;
     document.getElementById("enlargedwrapper").classList.remove("hidden");
 });
 
