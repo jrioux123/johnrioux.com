@@ -74,15 +74,15 @@ function searchFocus() {
 $(document).on("click", ".galleryimage", function(){
     _source = $(this).attr("src");
     _title = $(this).attr("data-name");
+    _galleryID = $(this).parent().attr('id');
     document.getElementById('enlargedimage').src = _source;
     document.getElementById('imagetitle').innerHTML = _title;
+    document.getElementById('gallerywrapper').innerHTML = _galleryID.innerHTML;
     document.getElementById("enlargedwrapper").classList.remove("hidden");
-    document.getElementById("gallery").classList.add("open");
 });
 
 function enlargedClose() {
     document.getElementById("enlargedwrapper").classList.add("hidden");
-    document.getElementById("gallery").classList.remove("open");
 }
 
 

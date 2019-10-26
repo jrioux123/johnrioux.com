@@ -8,12 +8,6 @@ body {
 }
 a {
     text-decoration: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
 }
 .material-icons {
     font-size: 1.5rem;
@@ -438,15 +432,6 @@ h1 {
 .gallery {
     padding: 1rem 0 0 1rem;
 }
-.gallery.open {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    padding: .25rem 0 0 .25rem;
-    left: 0;
-    z-index: 3;
-    overflow: auto;
-}
 .gallery img {
     width: 7.792rem;
     height: 7.792rem;
@@ -462,31 +447,6 @@ h1 {
 }
 .gallery img:hover {
     filter: brightness(70%);
-}
-.gallery.open img {
-    width: 3.5rem;
-    height: 3.5rem;
-    box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
-    margin: 0 .25rem 0 0;
-    float: none;
-}
-.gallery.open .wrapper {
-    display: table;
-    margin: auto;
-    white-space: nowrap;
-    padding: 0 .5rem 0 .25rem;
-}
-.gallery .title {
-    padding: 1.25rem 0 1rem 0;
-}
-.gallery.open .title {
-    display: none;
-}
-.gallery p {
-    padding: .5rem 0;
-}
-.gallery.open p {
-    display: none;
 }
 .enlarged {
     position: fixed;
@@ -544,6 +504,29 @@ h1 {
     z-index: 3;
     background-color: transparent;
 }
+
+.galleryscroll {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: .25rem 0 0 .25rem;
+    left: 0;
+    z-index: 3;
+    overflow: auto;
+}
+.galleryscroll img {
+    width: 3.5rem;
+    height: 3.5rem;
+    box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
+    margin: 0 .25rem 0 0;
+    float: none;
+}
+.galleryscroll .wrapper {
+    display: table;
+    margin: auto;
+    white-space: nowrap;
+    padding: 0 .5rem 0 .25rem;
+}
 .card {
     font-size: .875rem;
     text-align: left; /* To override button style */
@@ -592,6 +575,7 @@ h1 {
     position: absolute;
     right: 0;
     top: 0;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,1));
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,1));
 }
 .big img {
