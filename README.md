@@ -1,4 +1,4 @@
-# johnrioux.net
+# johnrioux.com
 For all your John Rioux needs
 ---
-This is an experimental attempt at hosting a web portfolio through GitHub Pages.
+This is my personal website.
