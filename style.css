@@ -568,8 +568,8 @@ h1 {
     position: absolute;
     right: 0;
     top: 0;
-    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,1));
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,1));
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,.7), rgba(0,0,0,1), rgba(0,0,0,1));
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,.7), rgba(0,0,0,1), rgba(0,0,0,1));
 }
 .big img {
     width: 100%;
