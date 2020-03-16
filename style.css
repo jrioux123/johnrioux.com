@@ -394,6 +394,9 @@ img {
     object-fit: cover;
     background-color: #f5f5f5;
 }
+.fullimage {
+    margin-top: 1rem; /* Used for any subsequent full-size images */
+}
 .cardopen a {
     color: #db4437;
     font-weight: 500;
