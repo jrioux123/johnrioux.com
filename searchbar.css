@@ -108,6 +108,11 @@
 	padding: 0px;
 }
 
+.gsc-option-menu {
+	border: none;
+	top: 0;
+}
+
 .gsc-selected-option-container {
 	background-color: white;
 	border: none;
@@ -115,6 +120,7 @@
 	font-size: 13px;
 	font-weight: 300;
 	cursor: pointer;
+	text-align: left;
 }
 
 .gsc-selected-option-container:hover {
