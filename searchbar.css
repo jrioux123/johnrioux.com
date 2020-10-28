@@ -109,8 +109,8 @@
 }
 
 .gsc-option-menu {
-	border: none;
-	top: 0;
+	border: none !important;
+	top: 0 !important;
 }
 
 .gsc-selected-option-container {
