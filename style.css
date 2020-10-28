@@ -5,6 +5,7 @@ body {
     background-image: linear-gradient(#fafafa, white);
     background-size: contain;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
