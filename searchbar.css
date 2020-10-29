@@ -104,6 +104,10 @@
 	padding: 0px 16px 0px 16px;
 }
 
+.gcsc-branding-img-noclear {
+	background-color: white;
+}
+
 .gsc-orderby-container {
 	padding: 0px;
 }
