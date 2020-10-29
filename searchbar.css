@@ -94,6 +94,7 @@
 	font-family: Roboto;
 	padding: 24px 0px 16px 0px;
 	max-height: calc(100vh - 100px);
+	border-radius: 0 !important;
 }
 
 .gsc-above-wrapper-area {
@@ -115,7 +116,6 @@
 .gsc-option-menu {
 	border: none !important;
 	top: -6px !important;
-	border-radius: 2px !important;
 }
 
 .gsc-option-menu-item {
