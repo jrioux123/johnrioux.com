@@ -110,7 +110,12 @@
 
 .gsc-option-menu {
 	border: none !important;
-	top: 0 !important;
+	top: -6px !important;
+	border-radius: 2px !important;
+}
+
+.gsc-option-menu item {
+	padding: 0 28px 0 6px !important;
 }
 
 .gsc-selected-option-container {
