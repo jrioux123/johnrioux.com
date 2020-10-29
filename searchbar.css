@@ -130,6 +130,7 @@
 	font-weight: 300;
 	cursor: pointer;
 	text-align: left;
+	border-radius: 0;
 }
 
 .gsc-selected-option-container:hover {
