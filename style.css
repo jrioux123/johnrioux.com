@@ -216,6 +216,16 @@ button:focus {
     color: black;
     padding-left: .5rem;
 }
+.menu button {
+    height: 3rem;
+    line-height: 3rem;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;            
+    color: black;
+    padding-left: .5rem;
+    transition: .25s;
+}
 .menu .material-icons {
     margin: 0 1rem 0 .5rem;
     color: #616161;
@@ -243,7 +253,7 @@ button:focus {
 .menu a:hover {
     background-color: #f5f5f5;
 }            
-a.menu-selected {
+button.menu-selected {
     color: #db4437;
     background-color: #f5f5f5;
 }            
