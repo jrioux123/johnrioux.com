@@ -55,6 +55,29 @@ $("#navigation").load("/navigation.html", function() {
     });
 });
 
+// Menu-buttons
+$("#navigation").load("/navigation.html", function() {        
+    $(".menu").delegate("button", "click", function() {
+        $(".menu").children().css("animation","");        
+        this.style.cssText = "animation: tab-click .25s ease-in-out;";
+        document.getElementById("pagecontent").classList.add("exit");
+        _link = $(this).attr("href");
+        _name = $(this).attr("data-name");
+        history.pushState(null, null, _link);
+        setTimeout(function(){
+            $('#contentloader').load(_link + ' #pagecontent');
+            document.title = _name + " | John Rioux";
+            return false;
+        }, 125);
+    });
+    $(window).bind("popstate", function() {
+        document.getElementById("pagecontent").classList.add("exit");
+        _link = location.pathname.replace(/^.*[\\/]/, "");
+        setTimeout(function(){
+            $('#contentloader').load(_link + ' #pagecontent');
+        }, 125);
+    });
+});
 
 // Searchbar fix
 
