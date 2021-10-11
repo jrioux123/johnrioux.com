@@ -34,10 +34,13 @@ a {
 .logo img {
     max-height: calc(100% - 3.5rem);
     min-height: 2.5rem;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     padding-bottom: .5rem;
     background-color: transparent;
+    transition: .4s;
+}
+.logo.scrolled img {
+    width: 146.52px;
 }
 
 /* Navbar */
