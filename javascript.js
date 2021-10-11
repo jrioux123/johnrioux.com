@@ -68,7 +68,12 @@ $("#navigation").load("/navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent');
             document.title = _name + " | John Rioux";
             return false;
-        }, 125);
+        }, 125);    
+        $("#cardopenstyle").remove();
+        document.getElementById("menubutton").classList.remove("hidden");
+        document.getElementById("backbutton").classList.add("hidden");
+        document.getElementById("pagecontent").classList.add("exit");
+        _link = location.pathname.replace(/^.*[\\/]/, "");
     });
     $(window).bind("popstate", function() {
         document.getElementById("pagecontent").classList.add("exit");
