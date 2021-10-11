@@ -80,11 +80,6 @@ $("#navigation").load("/navigation.html", function() {
     });
 });
 
-// Menu-buttons
-$("#navigation").load("/navigation.html", function() {        
-    
-});
-
 // Searchbar fix
 
 $( window ).on( "load", function() {
