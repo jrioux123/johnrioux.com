@@ -33,6 +33,7 @@ a {
 }
 .logo img {
     height: calc(100% - 3.5rem);
+    min-height:2.5rem;
     width: auto;
     padding-bottom: .5rem;
     background-color: transparent;

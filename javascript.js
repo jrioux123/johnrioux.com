@@ -53,10 +53,6 @@ $("#navigation").load("/navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent');
         }, 125);
     });
-});
-
-// Menu-buttons
-$("#navigation").load("/navigation.html", function() {        
     $(".menu").delegate("button", "click", function() {
         $(".menu").children().css("animation","");        
         this.style.cssText = "animation: tab-click .25s ease-in-out;";
@@ -82,6 +78,11 @@ $("#navigation").load("/navigation.html", function() {
             $('#contentloader').load(_link + ' #pagecontent');
         }, 125);
     });
+});
+
+// Menu-buttons
+$("#navigation").load("/navigation.html", function() {        
+    
 });
 
 // Searchbar fix
