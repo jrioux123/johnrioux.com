@@ -1,6 +1,9 @@
 .logo {
     height: 3.5rem !important; /* !important overrides inline styles */
 }
+.logo img {
+    width: 9rem;
+}
 .topbar {
     margin-top: 0 !important;
     padding-bottom: 0 !important;
