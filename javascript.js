@@ -31,7 +31,7 @@ $(window).bind("popstate", function() {
     _link = location.pathname.replace(/^.*[\\/]/, "");
 });
 
-// Tab-switching
+// Tab-switching and menu buttons
 $("#navigation").load("/navigation.html", function() {        
     $(".tabsbar").delegate("button", "click", function() {
         $(".tabsbar").children().css("animation","");        
