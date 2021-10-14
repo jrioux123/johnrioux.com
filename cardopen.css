@@ -2,7 +2,7 @@
     height: 3.5rem !important; /* !important overrides inline styles */
 }
 .logo img {
-    width: 9rem;
+    width: 10rem;
 }
 .topbar {
     margin-top: 0 !important;
