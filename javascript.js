@@ -83,7 +83,7 @@ $("#navigation").load("/navigation.html", function() {
 // Email switcheroo
 $('a.emailurl').on('click', function(){
     var href = $(this).attr('href');
-    $(this).attr('href', href.replace('fakename', 'johnrioux98'));
+    $(this).attr('href', href.replace('spam.', ''));
 });
 
 // Searchbar fix
