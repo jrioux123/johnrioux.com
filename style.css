@@ -643,6 +643,9 @@ h1 {
 }
 
 /* World Without Warnock */
+.worldwithoutwarnock {
+    padding: 0.5rem 1rem;
+}
 .worldwithoutwarnock .datetime {
     font-size: .6875rem;
     text-align: center;
@@ -665,6 +668,7 @@ h1 {
     max-width: 564px;
     font-size: .9375rem;
     line-height: 20px;
+    display: inline-block;
 }
 .worldwithoutwarnock .top {
     border-radius: 18px 18px 18px 4px;
