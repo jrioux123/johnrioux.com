@@ -655,6 +655,7 @@ h1 {
 }
 .worldwithoutwarnock p {
     padding: 12px 8px;
+    margin: 2px 0;
     background-color: #e4e6eb;
     word-break: break-word;
     max-width: 564px;
