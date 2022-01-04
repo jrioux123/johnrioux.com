@@ -645,6 +645,7 @@ h1 {
 /* World Without Warnock */
 .worldwithoutwarnock {
     padding: 0.5rem 1rem;
+    line-height: 0;
 }
 .worldwithoutwarnock .datetime {
     font-size: .6875rem;
@@ -658,7 +659,6 @@ h1 {
     width: auto;
     display: block;
     margin: 2px 0;
-    margin-bottom: -.5rem; /* This seems to be a greater problem with images */
 }
 .worldwithoutwarnock p {
     padding: 8px 12px;
