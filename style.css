@@ -652,6 +652,7 @@ h1 {
 .worldwithoutwarnock img {
     max-height: 200px;
     max-width: 100%;
+    width: auto;
 }
 .worldwithoutwarnock p {
     padding: 12px 8px;
