@@ -642,6 +642,31 @@ h1 {
     display: none;
 }
 
+/* World Without Warnock */
+.worldwithoutwarnock .datetime {
+    font-size: .6875rem;
+    text-align: center;
+    font-weight: 600;
+    color: #8a8d91;
+    }    
+.worldwithoutwarnock p {
+    padding: 12px 8px;
+    background-color: #e4e6eb;
+    word-break: break-word;
+    max-width: 564px;
+    font-size: .9375rem;
+    line-height: 20px;
+}
+.worldwithoutwarnock p .top {
+    border-radius: 18px 18px 18px 4px;
+}
+.worldwithoutwarnock p .mid {
+    border-radius: 4px 18px 18px 4px;
+}
+.worldwithoutwarnock p .bot {
+    border-radius: 4px 18px 18px 18px;
+}
+
 /* Widescreen Mode */
 @media only screen and (min-width: 82rem) {
     .pagecontent {
