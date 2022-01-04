@@ -644,7 +644,7 @@ h1 {
 
 /* World Without Warnock */
 .worldwithoutwarnock {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 42px;
     line-height: 0;
 }
 .worldwithoutwarnock .datetime {
