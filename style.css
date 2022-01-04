@@ -457,7 +457,8 @@ h1 {
     position: absolute;
 }
 .gallery {
-    padding: 1rem 0 0 1rem;
+    padding: 1rem 0 .5rem 1rem;
+    display: inline-block;
 }
 .galleryimage {
     width: 7.792rem;
