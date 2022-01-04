@@ -653,9 +653,12 @@ h1 {
     max-height: 200px;
     max-width: 100%;
     width: auto;
+    display: block;
+    margin: 2px 0;
+    margin-bottom: -.5rem; /* This seems to be a greater problem with images */
 }
 .worldwithoutwarnock p {
-    padding: 12px 8px;
+    padding: 8px 12px;
     margin: 2px 0;
     background-color: #e4e6eb;
     word-break: break-word;
