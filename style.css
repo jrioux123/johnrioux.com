@@ -422,6 +422,9 @@ img {
 .fullimage {
     margin-top: 1rem; /* Used for any subsequent full-size images */
 }
+.cardopen b {
+    font-weight: 500;
+}
 .cardopen a {
     color: #db4437;
     font-weight: 500;
@@ -455,6 +458,9 @@ h1 {
     width: 100%;
     height: 100%;
     position: absolute;
+}
+.youtubemargin {
+    margin: 1.5rem 0;
 }
 .gallery {
     padding: 1rem 0 .5rem 1rem;
