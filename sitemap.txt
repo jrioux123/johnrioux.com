@@ -1,13 +1,14 @@
 https://www.johnrioux.com/
-https://www.johnrioux.com/videos/
-	https://www.johnrioux.com/videos/pointless/
-	https://www.johnrioux.com/videos/please-hire-pat-hilling/
-	https://www.johnrioux.com/videos/the-billion-dollar-code/
-https://www.johnrioux.com/art/
-        https://www.johnrioux.com/art/rogue/
-	https://www.johnrioux.com/art/arena-of-the-elders/
-	https://www.johnrioux.com/art/wormhole/
-https://www.johnrioux.com/design/
-	https://www.johnrioux.com/design/arena-of-the-elders/
-	https://www.johnrioux.com/design/posters/
-	https://www.johnrioux.com/design/john-rioux-dot-com/
+https://www.johnrioux.com/portfolio/videos/
+	https://www.johnrioux.com/portfolio/videos/pointless/
+	https://www.johnrioux.com/portfolio/videos/please-hire-pat-hilling/
+	https://www.johnrioux.com/portfolio/videos/the-billion-dollar-code/
+      https://www.johnrioux.com/portfolio/videos/a-universe-of-self-indulgence/
+https://www.johnrioux.com/portfolio/art/
+        https://www.johnrioux.com/portfolio/art/rogue/
+	https://www.johnrioux.com/portfolio/art/arena-of-the-elders/
+	https://www.johnrioux.com/portfolio/art/wormhole/
+https://www.johnrioux.com/portfolio/design/
+	https://www.johnrioux.com/design/portfolio/arena-of-the-elders/
+	https://www.johnrioux.com/design/portfolio/posters/
+	https://www.johnrioux.com/design/portfolio/john-rioux-dot-com/
