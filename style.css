@@ -634,11 +634,13 @@ h1 {
     background-color: white;
     box-sizing: border-box;
     padding-bottom: .5rem;
+    color: black;
 }
 .small .cardtext {
     box-sizing: border-box;
     width: calc(100% - 9rem);
     float: left;
+    color: black;
 }
 .small .label {
     padding-top: 0;
