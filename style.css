@@ -648,6 +648,9 @@ h1 {
 .small p {
     display: none;
 }
+.feature .label {
+    color: white;
+}
 
 /* World Without Warnock */
 .worldwithoutwarnock {
