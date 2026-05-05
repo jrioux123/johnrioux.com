@@ -595,7 +595,7 @@ h1 {
     box-sizing: border-box;
 }
 .feature img {
-    width: 80%;
+    width: 70%;
     height: 100%;
     object-fit: cover;
     position: absolute;
