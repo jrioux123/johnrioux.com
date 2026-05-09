@@ -832,12 +832,25 @@ h1 {
     height: 5.5rem !important;
     max-width: 5.5rem !important;
     margin-top: 0 !important;
+    background-color: #f5f5f5 !important;
+}
+
+.pagefind-ui__result-thumb::before {
+    font-family: "Material Icons";
+    content: "article";
+    opacity: 25%;
+    font-size: 3.5rem;
+    padding: 1rem;
+    float: left;
 }
 
 .pagefind-ui__result-image {
     object-fit: cover;
+    width: 100% !important;
     border-radius: 0 !important;
     height: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
 }
 
 .pagefind-ui__result-link {
@@ -852,8 +865,8 @@ h1 {
     font-size: .875rem !important;
     margin: 0 !important;
     padding: .5rem 1rem 0 0 !important;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
 }
