@@ -762,3 +762,98 @@ h1 {
         height: calc((100vw - 2.5rem) / 3);
     }
 }
+
+/* New Searchbar (Pagefind) */
+
+.pagefind-ui .pagefind-ui__form:before {
+    all: unset !important;
+}
+
+.pagefind-ui .pagefind-ui__search-input {
+    height: 3rem !important;
+    border: none !important;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+    padding: 0 3rem 0 0 !important;
+    outline: none;
+}
+
+.pagefind-ui__search-input::placeholder {
+    opacity: 0.4 !important;      /* controls faintness */
+}
+
+.pagefind-ui .pagefind-ui__search-clear {
+    font-size: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: .25rem !important;
+    padding: .5rem !important;
+    color: black !important;
+    opacity: .54;
+    height: inherit !important;
+}
+
+.pagefind-ui .pagefind-ui__search-clear::before {
+    font-family: "Material Icons";
+    content: "close";
+    font-size: 1.5rem !important;
+}
+
+.pagefind-ui .pagefind-ui__drawer {
+    width: calc(100% + 3rem);
+    position: relative;
+    left: -3rem;
+    background-color: white;
+}
+
+.pagefind-ui__results-area {
+    margin-top: 0 !important;
+    border-style: solid !important;
+    border-width: 2px 0 0 0 !important;
+    border-color: #eeeeee !important;
+    box-shadow: 0 1rem .25rem rgba(0, 0, 0, .14);
+}
+
+.pagefind-ui__message {
+    padding: 1rem !important;
+    font-weight: 500 !important;
+    font-size: inherit !important;
+}
+
+.pagefind-ui__result {
+    padding: 1rem !important;
+}
+
+.pagefind-ui__result-inner {
+    margin-top: .5rem !important;
+}
+
+.pagefind-ui__result-thumb {
+    height: 5.5rem !important;
+    max-width: 5.5rem !important;
+    margin-top: 0 !important;
+}
+
+.pagefind-ui__result-image {
+    object-fit: cover;
+    border-radius: 0 !important;
+    height: 100% !important;
+}
+
+.pagefind-ui__result-link {
+    color: #db4437 !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    padding: 1.25rem 1rem 0 0rem !important;
+    margin: 0 !important;
+}
+
+.pagefind-ui__result-excerpt {
+    font-size: .875rem !important;
+    margin: 0 !important;
+    padding: .5rem 1rem 0 0 !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

@@ -1,4 +1,102 @@
-// Ajax
+// ============================
+// PAGEFIND SEARCH
+// ============================
+
+let pagefindInitialized = false;
+
+function initSearch() {
+    const el = document.querySelector("#search");
+    if (!el) return;
+
+    if (pagefindInitialized) return;
+
+    new PagefindUI({
+        element: "#search"
+    });
+
+    pagefindInitialized = true;
+}
+
+
+// ============================
+// NAVBAR LOAD (ENTRY POINT)
+// ============================
+
+$("#navigation").load("/navigation.html", function () {
+
+    // ----------------------------
+    // NAV BUTTONS (tabsbar)
+    // ----------------------------
+    $(".tabsbar").on("click", "button", function () {
+
+        $(".tabsbar").children().css("animation", "");
+
+        this.style.cssText = "animation: tab-click .25s ease-in-out;";
+
+        document.getElementById("pagecontent").classList.add("exit");
+
+        const _link = $(this).attr("href");
+        const _name = $(this).attr("data-name");
+
+        history.pushState(null, null, _link);
+
+        setTimeout(function () {
+            $('#contentloader').load(_link + ' #pagecontent');
+            document.title = _name + " | John Rioux";
+        }, 125);
+    });
+
+
+    // ----------------------------
+    // MENU BUTTONS
+    // ----------------------------
+    $(".menu").on("click", "button", function () {
+
+        $(".menu").children().css("animation", "");
+
+        this.style.cssText = "animation: tab-click .25s ease-in-out;";
+
+        document.getElementById("pagecontent").classList.add("exit");
+
+        const _link = $(this).attr("href");
+        const _name = $(this).attr("data-name");
+
+        history.pushState(null, null, _link);
+
+        setTimeout(function () {
+            $('#contentloader').load(_link + ' #pagecontent');
+            document.title = _name + " | John Rioux";
+        }, 125);
+
+        $("#cardopenstyle").remove();
+
+        document.getElementById("menubutton").classList.remove("hidden");
+        document.getElementById("backbutton").classList.add("hidden");
+    });
+
+
+    // ============================
+    // PAGEFIND INIT (CRITICAL FIX)
+    // ============================
+    // This MUST happen AFTER navbar is loaded
+    initSearch();
+});
+
+
+// ============================
+// SINGLE POPSTATE HANDLER
+// ============================
+
+$(window).on("popstate", function () {
+
+    document.getElementById("pagecontent").classList.add("exit");
+
+    const _link = location.pathname.replace(/^.*[\\/]/, "");
+
+    setTimeout(function () {
+        $('#contentloader').load(_link + ' #pagecontent');
+    }, 125);
+});
 
 // Back button
 function goBack() {
@@ -31,54 +129,7 @@ $(window).bind("popstate", function() {
     _link = location.pathname.replace(/^.*[\\/]/, "");
 });
 
-// Tab-switching and menu buttons
-$("#navigation").load("/navigation.html", function() {        
-    $(".tabsbar").delegate("button", "click", function() {
-        $(".tabsbar").children().css("animation","");        
-        this.style.cssText = "animation: tab-click .25s ease-in-out;";
-        document.getElementById("pagecontent").classList.add("exit");
-        _link = $(this).attr("href");
-        _name = $(this).attr("data-name");
-        history.pushState(null, null, _link);
-        setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
-            document.title = _name + " | John Rioux";
-            return false;
-        }, 125);
-    });
-    $(window).bind("popstate", function() {
-        document.getElementById("pagecontent").classList.add("exit");
-        _link = location.pathname.replace(/^.*[\\/]/, "");
-        setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
-        }, 125);
-    });
-    $(".menu").delegate("button", "click", function() {
-        $(".menu").children().css("animation","");        
-        this.style.cssText = "animation: tab-click .25s ease-in-out;";
-        document.getElementById("pagecontent").classList.add("exit");
-        _link = $(this).attr("href");
-        _name = $(this).attr("data-name");
-        history.pushState(null, null, _link);
-        setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
-            document.title = _name + " | John Rioux";
-            return false;
-        }, 125);    
-        $("#cardopenstyle").remove();
-        document.getElementById("menubutton").classList.remove("hidden");
-        document.getElementById("backbutton").classList.add("hidden");
-        document.getElementById("pagecontent").classList.add("exit");
-        _link = location.pathname.replace(/^.*[\\/]/, "");
-    });
-    $(window).bind("popstate", function() {
-        document.getElementById("pagecontent").classList.add("exit");
-        _link = location.pathname.replace(/^.*[\\/]/, "");
-        setTimeout(function(){
-            $('#contentloader').load(_link + ' #pagecontent');
-        }, 125);
-    });
-});
+
 
 // Email switcheroo
 $('a.emailurl').on('click', function(){
@@ -174,6 +225,14 @@ function searchOpen() {
     if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
         window.scrollTo(0, 192);
     }
+    initSearch();
+
+    setTimeout(() => {
+        const input = document.querySelector("#search input");
+        if (input) {
+            input.focus();
+        }
+    }, 100);
 }
 function searchClose() {
     document.getElementById("logo").classList.remove("hidden");
