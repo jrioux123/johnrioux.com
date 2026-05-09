@@ -34,6 +34,20 @@
                     color: #db4437 !important;
                 }
             </style>
+            <div class="title">Searchbar test!</div> <!-- test start -->
+            <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+            <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
+
+            <div id="search"></div>
+
+            <script>
+            window.addEventListener('DOMContentLoaded', () => {
+            new PagefindUI({
+                element: "#search"
+            });
+            });
+            </script>
+            <div class="'title">Actual site below. (delete this later)</div> <!-- test end -->
             <button class="card feature" style="background-color: #254273;">
                 <img src="/images/john-rioux-online-photo.jpg">
                 <div class="cardtext">
