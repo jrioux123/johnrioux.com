@@ -222,6 +222,7 @@ function menuClose() {
 function searchOpen() {    
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
+    document.body.classList.add("searchopen");
     
     const input = document.querySelector(".pagefind-ui__search-input");
 
@@ -254,6 +255,7 @@ function searchClose() {
     setTimeout(function(){
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
+        document.body.classList.remove("searchopen");
         const width = document.documentElement.clientWidth;
         const scrollTop = document.documentElement.scrollTop;
         if (width <= 800 && scrollTop < 128) {
