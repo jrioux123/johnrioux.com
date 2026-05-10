@@ -222,19 +222,20 @@ function searchOpen() {
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
 
-    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
-        window.scrollTo(0, 128);
-    }
-    if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
-        window.scrollTo(0, 192);
-    }
-
     // Focus search input
     const input = document.querySelector(".pagefind-ui__search-input");
 
+    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
+            window.scrollTo(0, 128);
+        }
+        if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
+            window.scrollTo(0, 192);
+        }
+
     if (input) {
-        input.focus();
+        input.focus({ preventScroll: true });
     }
+
 }
 function searchClose() {
     document.getElementById("searchID").classList.add("animate");
