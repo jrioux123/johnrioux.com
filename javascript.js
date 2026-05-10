@@ -232,8 +232,13 @@ function searchOpen() {
     const width = document.documentElement.clientWidth;
     const scrollTop = document.documentElement.scrollTop;
 
-    if (width <= 800) {
-        window.scrollTo(0, 127);
+    if (width <= 800 && scrollTop < 128) {
+        document.getElementById("topbar").classList.add("scrolled");
+        document.getElementById("logo").classList.add("scrolled");
+        document.getElementById("menuID").classList.add("scrolled");
+        document.getElementById("searchbutton").classList.add("scrolled");        
+        document.getElementById("searchbuttonlong").classList.add("scrolled");
+        document.getElementById("searchID").classList.add("scrolled");
     } else if (width <= 1059 && scrollTop < 128) {
         window.scrollTo(0, 128);
     } else if (width > 1059 && scrollTop < 192) {
