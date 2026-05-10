@@ -354,6 +354,7 @@ button.menu-selected {
     margin: auto;
     max-width: 50rem;
     overflow: auto;
+    padding-bottom: 1rem;
     transition: .125s;
     animation: content-enter .125s 1;
     animation-timing-function: ease-in-out;
@@ -406,7 +407,6 @@ p {
     box-shadow: none;
     margin: 0;
     float: left;
-    padding-bottom: 1rem;
 }
 .cardopen:hover {
     transform: none;
