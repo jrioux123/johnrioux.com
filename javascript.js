@@ -229,13 +229,15 @@ function searchOpen() {
         input.focus();
     }
 
-    if (document.documentElement.clientWidth > 800) {    
-        if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
-                window.scrollTo(0, 128);
-            }
-        if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
-                window.scrollTo(0, 192);
-            }
+    const width = document.documentElement.clientWidth;
+    const scrollTop = document.documentElement.scrollTop;
+
+    if (width <= 800) {
+        window.scrollTo(0, 127);
+    } else if (width <= 1059 && scrollTop < 128) {
+        window.scrollTo(0, 128);
+    } else if (width > 1059 && scrollTop < 192) {
+        window.scrollTo(0, 192);
     }
 
 }
