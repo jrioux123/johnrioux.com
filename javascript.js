@@ -232,11 +232,15 @@ function searchOpen() {
             window.scrollTo(0, 192);
         }
 
-    document.body.classList.add("no-scroll");
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            const input = document.querySelector(".pagefind-ui__search-input");
 
-    if (input) {
-        input.focus();
-    }
+            if (input) {
+                input.focus({ preventScroll: true });
+            }
+        });
+    });
 
 }
 function searchClose() {

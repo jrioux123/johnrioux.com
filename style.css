@@ -7,9 +7,6 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-body.no-scroll {
-  overflow: hidden;
-}
 a {
     text-decoration: none;
 }
