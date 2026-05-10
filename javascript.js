@@ -236,7 +236,7 @@ function searchOpen() {
             const input = document.querySelector(".pagefind-ui__search-input");
 
             if (input) {
-                input.focus();
+                input.focus({ preventScroll: true });
             }
         });
     });
