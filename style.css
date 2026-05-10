@@ -776,6 +776,7 @@ h1 {
     font-weight: 400 !important;
     padding: 0 3rem 0 0 !important;
     outline: none;
+    background-color: transparent !important;
 }
 
 .pagefind-ui__search-input::placeholder {
@@ -804,14 +805,16 @@ h1 {
     position: relative;
     left: -3rem;
     background-color: white;
-}
-
-.pagefind-ui__results-area {
-    margin-top: 0 !important;
+    max-height: calc(100vh - 3.5rem);
+    overflow: scroll;
     border-style: solid !important;
     border-width: 2px 0 0 0 !important;
     border-color: #eeeeee !important;
     box-shadow: 0 1rem .25rem rgba(0, 0, 0, .14);
+}
+
+.pagefind-ui__results-area {
+    margin-top: 0 !important;
 }
 
 .pagefind-ui__message {
@@ -869,4 +872,12 @@ h1 {
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 2 !important;
     overflow: hidden !important;
+}
+
+.pagefind-ui__button {
+    border-style: unset !important;
+    color: #db4437 !important;
+    font-size: inherit !important;
+    margin: .5rem !important;
+    font-weight: 500 !important;
 }
