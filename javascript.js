@@ -269,3 +269,19 @@ function searchClose() {
         }
     }, 250);
 }
+
+//Test
+const vv = window.visualViewport;
+
+function update() {
+  const top = vv.offsetTop;
+  const height = vv.height;
+
+  document.body.style.transform = `translateY(${top}px)`;
+  document.body.style.height = `${height}px`;
+}
+
+vv.addEventListener('resize', update);
+vv.addEventListener('scroll', update);
+
+update();
