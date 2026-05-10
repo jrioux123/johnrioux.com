@@ -218,12 +218,6 @@ function menuClose() {
 function searchOpen() {    
     document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
-    setTimeout(() => {
-        const input = document.querySelector(".pagefind-ui__search-input");
-        if (input) {
-            input.focus();
-        }
-    }, 50);
     document.getElementById("searchshade").classList.remove("animate", "hidden");
     if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
         window.scrollTo(0, 128);
@@ -232,6 +226,12 @@ function searchOpen() {
         window.scrollTo(0, 192);
     }
     initSearch();
+    requestAnimationFrame(() => {
+        const input = document.querySelector(".pagefind-ui__search-input");
+        if (input) {
+            input.focus();
+        }
+    });
 
 }
 function searchClose() {
