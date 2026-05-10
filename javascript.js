@@ -232,8 +232,10 @@ function searchOpen() {
             window.scrollTo(0, 192);
         }
 
+    document.body.classList.add("no-scroll");
+
     if (input) {
-        input.focus({ preventScroll: true });
+        input.focus();
     }
 
 }
@@ -244,4 +246,5 @@ function searchClose() {
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
     }, 250);
+    document.body.classList.remove("no-scroll");
 }
