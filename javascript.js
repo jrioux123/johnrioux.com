@@ -222,7 +222,6 @@ function menuClose() {
 function searchOpen() {    
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
-    document.getElementById("app").classList.add("searchopen");
     
     const input = document.querySelector(".pagefind-ui__search-input");
 
@@ -230,6 +229,8 @@ function searchOpen() {
     if (input) {
         input.focus();
     }
+    
+    document.getElementById("app").classList.add("searchopen");
 
     const width = document.documentElement.clientWidth;
     const scrollTop = document.getElementById("app").scrollTop;
@@ -281,12 +282,6 @@ document.documentElement.style.setProperty(
 
 function update() {
   if (!vv) return;
-
-  const searchID = document.getElementById("searchID");
-  if (!searchID) return;
-
-  // Keep navbar pinned to visible top
-  searchID.style.top = `${vv.offsetTop}px`;
 
   // Expose visual viewport height globally
   document.documentElement.style.setProperty(
