@@ -353,7 +353,6 @@ button.menu-selected {
 .pagecontent {
     margin: auto;
     max-width: 50rem;
-    padding: 0 1rem 2rem 1rem;
     overflow: auto;
     transition: .125s;
     animation: content-enter .125s 1;
@@ -697,7 +696,7 @@ h1 {
 }
 
 /* Tablet Mode */
-@media only screen and (max-width: 66rem) {
+@media only screen and (max-width: 82rem) {
     .topbar {
         margin-top: 8rem;
     }
@@ -751,9 +750,9 @@ h1 {
 /* Mobile Mode */
 @media only screen and (max-width: 50rem) {
     .card {
-        width: 100%;
+        width: calc(100% - 2rem);
         max-width: 800px;
-        margin: 1rem 0 0 0;
+        margin: 1rem 0 0 1rem;
     }
     .gallery {
         padding: 1rem .75rem 0 1rem;
@@ -781,7 +780,7 @@ h1 {
 }
 
 .pagefind-ui__search-input::placeholder {
-    opacity: 0.4 !important;      /* controls faintness */
+    opacity: 0.4 !important;
 }
 
 .pagefind-ui .pagefind-ui__search-clear {
@@ -871,6 +870,7 @@ h1 {
     padding: .5rem 1rem 0 0 !important;
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
+    line-clamp: 2;
     -webkit-line-clamp: 2 !important;
     overflow: hidden !important;
 }
