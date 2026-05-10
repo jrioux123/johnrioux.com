@@ -219,15 +219,11 @@ function menuClose() {
 }
 
 function searchOpen() {    
-    document.getElementById("logo").classList.add("hidden");
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
-    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
-        window.scrollTo(0, 128);
-    }
-    if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
-        window.scrollTo(0, 192);
-    }
+
+    // Paste scroll behavior here! (in notepad)
+
     // Focus search input
     const input = document.querySelector(".pagefind-ui__search-input");
 
@@ -236,7 +232,6 @@ function searchOpen() {
     }
 }
 function searchClose() {
-    document.getElementById("logo").classList.remove("hidden");
     document.getElementById("searchID").classList.add("animate");
     document.getElementById("searchshade").classList.add("animate");
     setTimeout(function(){
