@@ -223,7 +223,6 @@ function searchOpen() {
     document.getElementById("searchshade").classList.remove("animate", "hidden");
 
     // Focus search input
-    const input = document.querySelector(".pagefind-ui__search-input");
 
     if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
             window.scrollTo(0, 128);
@@ -237,7 +236,7 @@ function searchOpen() {
             const input = document.querySelector(".pagefind-ui__search-input");
 
             if (input) {
-                input.focus({ preventScroll: true });
+                input.focus();
             }
         });
     });
