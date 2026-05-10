@@ -371,6 +371,9 @@ button.menu-selected {
     margin-top: 56px;
     opacity: 0;
 }
+.pagecontent.force-scrolled {
+    transform: translateY(-128px)
+}
 @keyframes content-enter {
     from {opacity: 0; margin-top: 3.5rem;}
     to {opacity: 1; margin-top: 0;}

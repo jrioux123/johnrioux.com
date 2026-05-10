@@ -194,7 +194,8 @@ function scrollFunction() {
         document.getElementById("menuID").classList.remove("scrolled");
         document.getElementById("searchbutton").classList.remove("scrolled");
         document.getElementById("searchbuttonlong").classList.remove("scrolled");
-        document.getElementById("searchID").classList.remove("scrolled");
+        document.getElementById("searchID").classList.remove("scrolled");        
+        document.getElementById("pagecontent").classList.remove("force-scrolled");
     }
 }
 
@@ -232,13 +233,14 @@ function searchOpen() {
     const width = document.documentElement.clientWidth;
     const scrollTop = document.documentElement.scrollTop;
 
-    if (width <= 800 && scrollTop < 128) {
+    if (width <= 800 && scrollTop < 128) {        
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
         document.getElementById("searchbutton").classList.add("scrolled");        
         document.getElementById("searchbuttonlong").classList.add("scrolled");
         document.getElementById("searchID").classList.add("scrolled");
+        document.getElementById("pagecontent").classList.add("force-scrolled");
     } else if (width <= 1059 && scrollTop < 128) {
         window.scrollTo(0, 128);
     } else if (width > 1059 && scrollTop < 192) {
@@ -252,6 +254,16 @@ function searchClose() {
     setTimeout(function(){
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
+        const width = document.documentElement.clientWidth;
+        const scrollTop = document.documentElement.scrollTop;
+        if (width <= 800 && scrollTop < 128) {
+            document.getElementById("topbar").classList.remove("scrolled");
+            document.getElementById("logo").classList.remove("scrolled");
+            document.getElementById("menuID").classList.remove("scrolled");
+            document.getElementById("searchbutton").classList.remove("scrolled");
+            document.getElementById("searchbuttonlong").classList.remove("scrolled");
+            document.getElementById("searchID").classList.remove("scrolled");        
+            document.getElementById("pagecontent").classList.remove("force-scrolled");
+        }
     }, 250);
-    document.body.classList.remove("no-scroll");
 }
