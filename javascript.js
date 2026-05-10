@@ -282,11 +282,11 @@ document.documentElement.style.setProperty(
 function update() {
   if (!vv) return;
 
-  const navbar = document.getElementById("navbar");
-  if (!navbar) return;
+  const searchID = document.getElementById("searchID");
+  if (!searchID) return;
 
   // Keep navbar pinned to visible top
-  navbar.style.top = `${vv.offsetTop}px`;
+  searchID.style.top = `${vv.offsetTop}px`;
 
   // Expose visual viewport height globally
   document.documentElement.style.setProperty(
