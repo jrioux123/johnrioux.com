@@ -285,3 +285,11 @@ vv.addEventListener('resize', update);
 vv.addEventListener('scroll', update);
 
 update();
+
+function syncToolbar() {
+  document.getElementById("navbar").style.top =
+    `${window.visualViewport.offsetTop}px`;
+}
+
+visualViewport.addEventListener('resize', syncToolbar);
+visualViewport.addEventListener('scroll', syncToolbar);
