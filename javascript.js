@@ -271,24 +271,37 @@ function searchClose() {
 }
 
 //Test
+
 const vv = window.visualViewport;
-const navbar = document.getElementById("navbar");
+
+document.documentElement.style.setProperty(
+    '--vvh',
+    `${vv.height}px`
+);
 
 function update() {
   if (!vv) return;
 
-  // Keep navbar pinned to visible top
-  navbar.style.top =
-  `${visualViewport.offsetTop}px`;
+  const navbar = document.getElementById("navbar");
+  if (!navbar) return;
 
-  // Optional: expose visible viewport height to CSS
+  // Keep navbar pinned to visible top
+  navbar.style.top = `${vv.offsetTop}px`;
+
+  // Expose visual viewport height globally
   document.documentElement.style.setProperty(
     '--vvh',
     `${vv.height}px`
   );
 }
 
-vv?.addEventListener('resize', update);
-vv?.addEventListener('scroll', update);
+function init() {
+  update();
 
-update();
+  if (!vv) return;
+
+  vv.addEventListener('resize', update);
+  vv.addEventListener('scroll', update);
+}
+
+init();

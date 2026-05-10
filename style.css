@@ -11,7 +11,7 @@ body {
   position: fixed;
   inset: 0;
   overflow-y: scroll;
-  height: 100dvh;
+  height: var(--vvh);
 }
 #app.searchopen {
     overflow: hidden;
@@ -829,7 +829,7 @@ h1 {
     position: relative;
     left: -3rem;
     background-color: white;
-    max-height: calc(100dvh - 3.5rem);
+    max-height: calc(var(--vvh) - 3.5rem);
     overflow: scroll;
     overflow-x: hidden;
     border-style: solid !important;
