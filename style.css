@@ -299,6 +299,11 @@ button.menu-selected {
 .menu.hidden {
     display: block !important;
 }
+.searchcontainer.hidden {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+}
 @keyframes shade-enter {
     from {opacity: 0;}
     to {opacity: 1;}
