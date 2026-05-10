@@ -222,7 +222,12 @@ function searchOpen() {
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
 
-    // Paste scroll behavior here! (in notepad)
+    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
+        window.scrollTo(0, 128);
+    }
+    if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
+        window.scrollTo(0, 192);
+    }
 
     // Focus search input
     const input = document.querySelector(".pagefind-ui__search-input");
