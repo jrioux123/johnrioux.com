@@ -221,25 +221,22 @@ function menuClose() {
 function searchOpen() {    
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
+    
+    const input = document.querySelector(".pagefind-ui__search-input");
 
-    // Focus search input
+    // 1. focus immediately (must be first or near-first)
+    if (input) {
+        input.focus();
+    }
 
-    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
-            window.scrollTo(0, 128);
-        }
-        if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
-            window.scrollTo(0, 192);
-        }
-
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            const input = document.querySelector(".pagefind-ui__search-input");
-
-            if (input) {
-                input.focus({ preventScroll: true });
+    if (document.documentElement.clientWidth > 800) {    
+        if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop < 128) {
+                window.scrollTo(0, 128);
             }
-        });
-    });
+        if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
+                window.scrollTo(0, 192);
+            }
+    }
 
 }
 function searchClose() {
