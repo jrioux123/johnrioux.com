@@ -272,24 +272,23 @@ function searchClose() {
 
 //Test
 const vv = window.visualViewport;
+const navbar = document.getElementById("navbar");
 
 function update() {
-  const top = vv.offsetTop;
-  const height = vv.height;
+  if (!vv) return;
 
-  document.body.style.transform = `translateY(${top}px)`;
-  document.body.style.height = `${height}px`;
+  // Keep navbar pinned to visible top
+  navbar.style.transform =
+    `translateY(${vv.offsetTop}px)`;
+
+  // Optional: expose visible viewport height to CSS
+  document.documentElement.style.setProperty(
+    '--vvh',
+    `${vv.height}px`
+  );
 }
 
-vv.addEventListener('resize', update);
-vv.addEventListener('scroll', update);
+vv?.addEventListener('resize', update);
+vv?.addEventListener('scroll', update);
 
 update();
-
-function syncToolbar() {
-  document.getElementById("navbar").style.top =
-    `${window.visualViewport.offsetTop}px`;
-}
-
-visualViewport.addEventListener('resize', syncToolbar);
-visualViewport.addEventListener('scroll', syncToolbar);

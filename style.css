@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 body.searchopen {
-    position: fixed;
     overflow: hidden;
 }
 a {
@@ -820,7 +819,7 @@ h1 {
     position: relative;
     left: -3rem;
     background-color: white;
-    max-height: calc(100vh - 3.5rem);
+    max-height: calc(100dvh - 3.5rem);
     overflow: scroll;
     overflow-x: hidden;
     border-style: solid !important;
