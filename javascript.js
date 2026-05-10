@@ -113,7 +113,7 @@ $(document).on("click", ".card", function() {
     _name = $(this).attr("data-name");
     history.pushState(null, null, _link);
     setTimeout(function(){
-        window.scrollTo(0, 0);
+        document.getElementById("app").scrollTo(0, 0);
         $('#contentloader').load(_link + ' #pagecontent');
         document.title = _name + " | John Rioux";
         $("head").append($("<link>",{id: "cardopenstyle", rel: "stylesheet", type: "text/css", href: "/cardopen.css"}));
@@ -172,16 +172,16 @@ function enlargedClose() {
 
 // Animations
 
-window.onscroll = function() {scrollFunction()};
+document.getElementById("app").onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    if (document.getElementById("app").scrollTop > 0 || document.documentElement.scrollTop > 0) {
         document.getElementById("navbar").classList.add("scrolled");
         
     } else {
         document.getElementById("navbar").classList.remove("scrolled");
     }
-    if (document.documentElement.clientWidth <= 1059 && document.documentElement.scrollTop >= 128 || document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop >= 192 || document.body.clientWidth <= 1059 && document.body.scrollTop >= 128 || document.body.clientWidth > 1059 && document.body.scrollTop >= 192) {
+    if (document.documentElement.clientWidth <= 1059 && document.getElementById("app").scrollTop >= 128 || document.documentElement.clientWidth > 1059 && document.getElementById("app").scrollTop >= 192) {
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
@@ -222,7 +222,7 @@ function menuClose() {
 function searchOpen() {    
     document.getElementById("searchID").classList.remove("animate", "hidden");
     document.getElementById("searchshade").classList.remove("animate", "hidden");
-    document.body.classList.add("searchopen");
+    document.getElementById("app").classList.add("searchopen");
     
     const input = document.querySelector(".pagefind-ui__search-input");
 
@@ -232,7 +232,7 @@ function searchOpen() {
     }
 
     const width = document.documentElement.clientWidth;
-    const scrollTop = document.documentElement.scrollTop;
+    const scrollTop = document.getElementById("app").scrollTop;
 
     if (width <= 800 && scrollTop < 128) {        
         document.getElementById("topbar").classList.add("scrolled");
@@ -243,9 +243,9 @@ function searchOpen() {
         document.getElementById("searchID").classList.add("scrolled");
         document.getElementById("pagecontent").classList.add("force-scrolled");
     } else if (width <= 1059 && scrollTop < 128) {
-        window.scrollTo(0, 128);
+        document.getElementById("app").scrollTo(0, 128);
     } else if (width > 1059 && scrollTop < 192) {
-        window.scrollTo(0, 192);
+        document.getElementById("app").scrollTo(0, 192);
     }
 
 }
@@ -255,7 +255,7 @@ function searchClose() {
     setTimeout(function(){
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
-        document.body.classList.remove("searchopen");
+        document.getElementById("app").classList.remove("searchopen");
         const width = document.documentElement.clientWidth;
         const scrollTop = document.documentElement.scrollTop;
         if (width <= 800 && scrollTop < 128) {

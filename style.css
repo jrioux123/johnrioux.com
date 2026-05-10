@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 0;
     font-family: "Roboto";
     background-color: #fafafa;
     background-image: linear-gradient(#fafafa, white);
@@ -7,7 +7,13 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-body.searchopen {
+#app {
+  position: fixed;
+  inset: 0;
+  overflow-y: scroll;
+  height: 100dvh;
+}
+#app.searchopen {
     overflow: hidden;
 }
 a {
