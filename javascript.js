@@ -278,8 +278,8 @@ function update() {
   if (!vv) return;
 
   // Keep navbar pinned to visible top
-  navbar.style.transform =
-    `translateY(${vv.offsetTop}px)`;
+  navbar.style.top =
+  `${visualViewport.offsetTop}px`;
 
   // Optional: expose visible viewport height to CSS
   document.documentElement.style.setProperty(
