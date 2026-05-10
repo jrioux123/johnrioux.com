@@ -44,6 +44,9 @@ $("#navigation").load("/navigation.html", function () {
             $('#contentloader').load(_link + ' #pagecontent');
             document.title = _name + " | John Rioux";
         }, 125);
+
+        
+        initSearch();
     });
 
 
@@ -225,14 +228,12 @@ function searchOpen() {
     if (document.documentElement.clientWidth > 1059 && document.documentElement.scrollTop < 192) {
         window.scrollTo(0, 192);
     }
-    initSearch();
-    requestAnimationFrame(() => {
-        const input = document.querySelector(".pagefind-ui__search-input");
-        if (input) {
-            input.focus();
-        }
-    });
+    // Focus search input
+    const input = document.querySelector(".pagefind-ui__search-input");
 
+    if (input) {
+        input.focus();
+    }
 }
 function searchClose() {
     document.getElementById("logo").classList.remove("hidden");

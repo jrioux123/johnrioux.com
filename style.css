@@ -807,6 +807,7 @@ h1 {
     background-color: white;
     max-height: calc(100vh - 3.5rem);
     overflow: scroll;
+    overflow-x: hidden;
     border-style: solid !important;
     border-width: 2px 0 0 0 !important;
     border-color: #eeeeee !important;
