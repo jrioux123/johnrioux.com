@@ -106,6 +106,9 @@ button:focus {
 .backbutton {
     float: left;
 }
+.backbutton:active {
+    color: black;
+}
 .searchbutton {
     float: right;
     display: none;
