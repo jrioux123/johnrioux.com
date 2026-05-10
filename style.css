@@ -1,11 +1,17 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     margin: 0;
+    height: 100%;
     font-family: "Roboto";
     background-color: #fafafa;
     background-image: linear-gradient(#fafafa, white);
     background-size: contain;
     background-attachment: fixed;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #app {
   position: fixed;
