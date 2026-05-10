@@ -273,6 +273,12 @@ function searchClose() {
 
 //Test
 
+document.addEventListener('touchmove', (e) => {
+  if (!e.target.closest('.pagefind-ui__drawer')) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
 const vv = window.visualViewport;
 
 document.documentElement.style.setProperty(
