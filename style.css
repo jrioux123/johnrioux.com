@@ -582,7 +582,7 @@ h1 {
     padding-top: .5rem;
 }
 .feature {
-    min-height: 13.25rem;
+    min-height: 21rem;
     width: calc(100% - 2rem);
     background-color: black;
 }
@@ -595,14 +595,14 @@ h1 {
     box-sizing: border-box;
 }
 .feature img {
-    width: 70%;
+    width: 85%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     right: 0;
     top: 0;
-    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,.7), rgba(0,0,0,1), rgba(0,0,0,1));
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,.7), rgba(0,0,0,1), rgba(0,0,0,1));
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
 }
 .big img {
     width: 100%;
