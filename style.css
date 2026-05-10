@@ -370,6 +370,7 @@ button.menu-selected {
     float: left;
     cursor: pointer;	
     transition: 0.4s;
+    color: black;
 }
 .exitsearch:active {
     border-radius: 100%;
