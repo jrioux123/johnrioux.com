@@ -222,15 +222,14 @@ function searchOpen() {
     document.getElementById("searchshade").classList.remove("animate", "hidden");
     
     const input = document.querySelector(".pagefind-ui__search-input");
-
-    // 1. focus immediately (must be first or near-first)
+    
+    input?.focus();
+    
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
             input?.focus();
         });
     });
-    
-    document.getElementById("app").classList.add("searchopen");
 
     const width = document.documentElement.clientWidth;
     const scrollTop = document.getElementById("app").scrollTop;
