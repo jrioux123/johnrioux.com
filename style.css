@@ -54,9 +54,6 @@ a .material-icons {
 }
 
 /* Navbar */
-#navigation {
-    position: absolute;
-}
 .navbar {
     width: 100%;
     background-color: white;
@@ -371,7 +368,6 @@ button.menu-selected {
 /* Page Content */
 .pagecontent {
     margin: auto;
-    margin-top: 14.5rem;
     max-width: 50rem;
     overflow: auto;
     padding-bottom: 1rem;
