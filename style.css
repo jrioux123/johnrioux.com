@@ -13,9 +13,6 @@ body {
   overflow-y: scroll;
   height: var(--vvh);
 }
-#app.searchopen {
-    overflow: hidden;
-}
 a {
     text-decoration: none;
 }
