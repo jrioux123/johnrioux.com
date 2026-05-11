@@ -415,6 +415,10 @@ p {
     margin: 0; /* Overrides automatic styles */
     padding: .5rem 1rem;
 }
+p .material-icons {
+    font-size: inherit;
+    padding: 0;
+}
 .cardopen {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -572,7 +576,8 @@ h1 {
     padding: 0 .5rem 0 .25rem;
 }
 .card {
-    font-size: .875rem;
+    font-size: .875rem;    
+    line-height: 1.15rem;
     text-align: left; /* To override button style */
     margin: 1rem 0 0 1rem;
     padding: 0; /* To override button style */
@@ -777,12 +782,12 @@ h1 {
     .feature .cardtext {
         position: absolute;
         bottom: 0;
-        min-height: 7.125rem;
         width: 100%;
         box-sizing: border-box;
         padding-bottom: .5rem;
     }
     .feature img {
+        width: 100%;
         mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
     }
     .gallery {
