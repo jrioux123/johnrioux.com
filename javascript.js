@@ -219,7 +219,6 @@ function menuClose() {
 
 function searchOpen() {    
     document.getElementById("searchID").classList.remove("animate", "hidden");
-    document.getElementById("searchshade").classList.remove("animate", "hidden");
     
     const input = document.querySelector(".pagefind-ui__search-input");
     
@@ -230,11 +229,13 @@ function searchOpen() {
             input?.focus();
         });
     });
+    
+    document.getElementById("searchshade").classList.remove("animate", "hidden");
 
     const width = document.documentElement.clientWidth;
     const scrollTop = document.getElementById("app").scrollTop;
 
-    if (width <= 800 && scrollTop < 128) {        
+    if (width < 1312 && scrollTop < 128) {        
         document.getElementById("topbar").classList.add("scrolled");
         document.getElementById("logo").classList.add("scrolled");
         document.getElementById("menuID").classList.add("scrolled");
@@ -242,13 +243,9 @@ function searchOpen() {
         document.getElementById("searchbuttonlong").classList.add("scrolled");
         document.getElementById("searchID").classList.add("scrolled");
         document.getElementById("pagecontent").classList.add("force-scrolled");
-    } else if (width <= 1059 && scrollTop < 128) {
-        document.getElementById("app").scrollTo(0, 128);
-    } else if (width > 1059 && scrollTop < 192) {
-        document.getElementById("app").scrollTo(0, 192);
     }
-
 }
+
 function searchClose() {
     document.getElementById("searchID").classList.add("animate");
     document.getElementById("searchshade").classList.add("animate");
@@ -258,7 +255,7 @@ function searchClose() {
         document.getElementById("app").classList.remove("searchopen");
         const width = document.documentElement.clientWidth;
         const scrollTop = document.getElementById("app").scrollTop;
-        if (width <= 800 && scrollTop < 128) {
+        if (width < 1312 && scrollTop <= 128) {
             document.getElementById("topbar").classList.remove("scrolled");
             document.getElementById("logo").classList.remove("scrolled");
             document.getElementById("menuID").classList.remove("scrolled");
