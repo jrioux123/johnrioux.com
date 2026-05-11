@@ -1,8 +1,3 @@
-html {
-    height: 100%;
-    overflow: hidden;
-}
-
 body {
     margin: 0;
     height: 100%;
@@ -11,7 +6,6 @@ body {
     background-image: linear-gradient(#fafafa, white);
     background-size: contain;
     background-attachment: fixed;
-    overflow: hidden;
 }
 #app {
   position: fixed;
@@ -834,12 +828,11 @@ h1 {
 
 .pagefind-ui .pagefind-ui__drawer {
     width: calc(100% + 3rem);
-    position: relative;
+    position: absolute;
     left: -3rem;
     background-color: white;
-    max-height: calc(var(--vvh) - 3.5rem);
-    overflow: scroll;
-    overflow-x: hidden;
+    height: calc(var(--vvh) - 3.5rem);
+    overflow-y: scroll;
     border-style: solid !important;
     border-width: 2px 0 0 0 !important;
     border-color: #eeeeee !important;
