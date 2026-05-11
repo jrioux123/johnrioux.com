@@ -258,7 +258,7 @@ function searchClose() {
         document.getElementById("searchshade").classList.add("hidden");
         document.getElementById("app").classList.remove("searchopen");
         const width = document.documentElement.clientWidth;
-        const scrollTop = document.documentElement.scrollTop;
+        const scrollTop = document.getElementById("app").scrollTop;
         if (width <= 800 && scrollTop < 128) {
             document.getElementById("topbar").classList.remove("scrolled");
             document.getElementById("logo").classList.remove("scrolled");
