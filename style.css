@@ -334,6 +334,7 @@ button.menu-selected {
     opacity: 1;
     transition: .25s;
     height: var(--vvh);
+    -webkit-overflow-scrolling: touch;
 }
 .searchcontainer.animate {
     opacity: 0;
@@ -825,7 +826,8 @@ h1 {
     left: -3rem;
     background-color: white;
     height: calc(var(--vvh) - 3.5rem);
-    overflow-y: scroll;
+    overflow-y: scroll;    
+    transform: translateZ(0);
     border-style: solid !important;
     border-width: 2px 0 0 0 !important;
     border-color: #eeeeee !important;
