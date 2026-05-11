@@ -224,9 +224,11 @@ function searchOpen() {
     const input = document.querySelector(".pagefind-ui__search-input");
 
     // 1. focus immediately (must be first or near-first)
-    if (input) {
-        input.focus();
-    }
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            input?.focus();
+        });
+    });
     
     document.getElementById("app").classList.add("searchopen");
 
