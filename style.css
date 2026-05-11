@@ -905,6 +905,6 @@ h1 {
     border-style: unset !important;
     color: #db4437 !important;
     font-size: inherit !important;
-    margin: .5rem !important;
+    margin: 0 !important;
     font-weight: 500 !important;
 }
