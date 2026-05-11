@@ -333,8 +333,6 @@ button.menu-selected {
     animation-timing-function: ease-in-out;
     opacity: 1;
     transition: .25s;
-    height: var(--vvh);
-    -webkit-overflow-scrolling: touch;
 }
 .searchcontainer.animate {
     opacity: 0;
