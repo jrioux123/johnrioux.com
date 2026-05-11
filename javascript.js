@@ -239,6 +239,7 @@ function searchOpen() {
         document.getElementById("menuID").classList.add("scrolled");
         document.getElementById("searchbutton").classList.add("scrolled");        
         document.getElementById("searchbuttonlong").classList.add("scrolled");
+        document.getElementById("searchID").classList.add("scrolled");
         document.getElementById("pagecontent").classList.add("force-scrolled");
     } else if (width <= 1059 && scrollTop < 128) {
         document.getElementById("app").scrollTo(0, 128);
@@ -262,6 +263,7 @@ function searchClose() {
             document.getElementById("menuID").classList.remove("scrolled");
             document.getElementById("searchbutton").classList.remove("scrolled");
             document.getElementById("searchbuttonlong").classList.remove("scrolled");
+            document.getElementById("searchID").classList.remove("scrolled");        
             document.getElementById("pagecontent").classList.remove("force-scrolled");
         }
     }, 250);
