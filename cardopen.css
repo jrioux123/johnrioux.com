@@ -31,3 +31,13 @@
         padding-top: 0;
     }
 }
+
+/* Searchbar stuff! */
+
+.pagefind-ui .pagefind-ui__drawer {
+    height: calc(var(--vvh) - 3.5rem);
+}
+
+.shade {
+    background-color: rgba(0, 0, 0, 0.4);
+}
