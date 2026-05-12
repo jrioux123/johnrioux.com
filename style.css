@@ -131,13 +131,18 @@ button:focus {
     padding: 0;
     font-size: 1rem;
     cursor: default;
-    animation: searchbar-enter .4s 1;
+    animation: searchbar-enter .25s 1;
     animation-timing-function: ease-in;
-    transition: .25s;
+    transition: .25s;    
+    transform: scale(.98);
+}
+.searchbuttonlong:hover {
+    box-shadow: 0 .375rem .875rem rgba(0, 0, 0, 0.3);
+    transform: scale(1);
 }
 @keyframes searchbar-enter {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {transform: scale(1);}
+    to {transform: scale(.98);}
 }
 .searchbuttonlong.scrolled {
     display: none;
@@ -156,7 +161,13 @@ button:focus {
     cursor: text;
     opacity: .54;
     text-align: left;
-}    
+}
+.searchbuttonlongclicked {    
+    animation: none;
+    animation-timing-function: none;
+    transition: 0s;    
+    transform: scale(1);
+}
 .tabsbar {
     display: table;
     height: 3rem;
@@ -329,10 +340,7 @@ button.menu-selected {
     transform: translatex(-50%);
     max-width: 40rem;
     width: 100%;
-    animation: search-enter .25s 1;
-    animation-timing-function: ease-in-out;
     opacity: 1;
-    transition: .25s;
 }
 .searchcontainer.animate {
     opacity: 0;
@@ -346,10 +354,12 @@ button.menu-selected {
 }
 .searchbar {
     height: 3rem;
-    background-color: white;
-    box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, .14);
     max-width: 39.5rem;
     margin: auto;
+}
+.searchcard {
+    background-color: white;
+    box-shadow: 0 .375rem .875rem rgba(0, 0, 0, 0.3);
 }
 .exitsearch {
     margin: .25rem;
@@ -763,6 +773,9 @@ h1 {
     }
     .searchcontainer {
         top: 8rem;
+        animation: search-enter .25s 1;
+        animation-timing-function: ease-in-out;
+        transition: .25s;
     }
     .searchcontainer.animate {
         opacity: 0;
@@ -772,6 +785,9 @@ h1 {
     }
     .shade {
         background-color: rgba(0,0,0,0.4);	
+    }
+    .exitsearch {
+        display: block;
     }
 }
 
@@ -807,6 +823,11 @@ h1 {
 
 /* New Searchbar (Pagefind) */
 
+#search {
+    width: calc(100% - 3rem);
+    margin-left: 3rem;
+}
+
 .pagefind-ui .pagefind-ui__form:before {
     all: unset !important;
 }
@@ -817,8 +838,9 @@ h1 {
     font-size: inherit !important;
     font-weight: 400 !important;
     padding: 0 3rem 0 0 !important;
-    outline: none;
-    background-color: transparent !important;
+    outline: none;    
+    border-radius: 0 !important;
+    width: calc(100% - 3rem) !important;
 }
 
 .pagefind-ui__search-input::placeholder {
@@ -843,9 +865,6 @@ h1 {
 }
 
 .pagefind-ui .pagefind-ui__drawer {
-    width: calc(100% + 3rem);
-    position: absolute;
-    left: -3rem;
     background-color: white;
     height: calc(var(--vvh) - 15.5rem);
     overflow-y: scroll;    
@@ -853,7 +872,8 @@ h1 {
     border-style: solid !important;
     border-width: 2px 0 0 0 !important;
     border-color: #eeeeee !important;
-    box-shadow: 0 .2rem .25rem rgba(0, 0, 0, .14);
+    width: calc(100% + 3rem);
+    transform: translatex(-3rem);
 }
 
 .pagefind-ui__results-area {

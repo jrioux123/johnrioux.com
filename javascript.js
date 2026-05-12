@@ -231,6 +231,7 @@ function searchOpen() {
     });
     
     document.getElementById("searchshade").classList.remove("animate", "hidden");
+    document.getElementById("searchbuttonlong").classList.add("searchbuttonlongclicked");
 
     const width = document.documentElement.clientWidth;
     const scrollTop = document.getElementById("app").scrollTop;
@@ -253,6 +254,7 @@ function searchClose() {
         document.getElementById("searchID").classList.add("hidden");
         document.getElementById("searchshade").classList.add("hidden");
         document.getElementById("app").classList.remove("searchopen");
+        document.getElementById("searchbuttonlong").classList.remove("searchbuttonlongclicked");
         const width = document.documentElement.clientWidth;
         const scrollTop = document.getElementById("app").scrollTop;
         if (width < 1312 && scrollTop <= 128) {
